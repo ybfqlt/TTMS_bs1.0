@@ -9,7 +9,7 @@
   <!-- Spring整合mybatis所使用的配置文件 -->
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>classpath:spring-mybatis.xml</param-value>
+    <param-value>classpath*:spring-mybatis.xml</param-value>
   </context-param>
 
 
@@ -20,7 +20,7 @@
     <!-- 配置springMVC需要加载的配置文件-->
     <init-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value>classpath:spring-mvc.xml</param-value>
+      <param-value>classpath*:spring-mvc.xml</param-value>
     </init-param>
     <!--当值为正数或零时：Servlet容器先加载数值小的servlet，再依次加载其他数值大的servlet.-->
     <load-on-startup>1</load-on-startup>
