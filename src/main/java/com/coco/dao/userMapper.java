@@ -1,10 +1,12 @@
 package com.coco.dao;
 
 import com.coco.entity.user;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Mapper
 @Repository
 public interface userMapper {
     int deleteByPrimaryKey(Integer userId);

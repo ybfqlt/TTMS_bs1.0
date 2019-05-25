@@ -7,74 +7,89 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c5630d8-ffb1-4fde-9070-9c9b14214d73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/14a6b766-0aa6-4b3c-b11f-74f1e69334d0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/14a6b766-0aa6-4b3c-b11f-74f1e69334d0/storage_v2/_src_/schema/Demo.A3IgAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/14a6b766-0aa6-4b3c-b11f-74f1e69334d0/storage_v2/_src_/schema/chapter3.hg2DVQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/14a6b766-0aa6-4b3c-b11f-74f1e69334d0/storage_v2/_src_/schema/chapter4.hw2DVQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/14a6b766-0aa6-4b3c-b11f-74f1e69334d0/storage_v2/_src_/schema/chapter5.iA2DVQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war2/TTMS_bs1.0_war.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/classes/com/coco/controller/LoginController$log.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/classes/com/coco/controller/LoginController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/classes/com/coco/dao/userMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/classes/com/coco/entity/user.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/classes/com/coco/service/LoginService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/classes/com/coco/service/impl/LoginServiceimpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/aspectjrt-1.9.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/aspectjweaver-1.9.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/commons-beanutils-1.8.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/commons-collections-3.2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/commons-dbcp-1.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/commons-lang-2.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/commons-pool-1.5.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/ezmorph-1.0.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/jackson-annotations-2.9.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/jackson-core-2.9.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/jackson-databind-2.9.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/json-lib-2.4-jdk15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/mybatis-3.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/mybatis-generator-core-1.3.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/mybatis-spring-1.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/protobuf-java-3.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/slf4j-api-1.7.26.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-aop-4.3.18.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-beans-4.3.18.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-context-4.3.18.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-context-support-4.3.18.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-core-4.3.18.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-expression-4.3.18.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-jdbc-4.3.18.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-oxm-4.3.18.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-test-4.3.18.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-tx-4.3.18.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-web-4.3.18.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-webmvc-4.3.18.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/views/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/views/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/views/success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/TTMS_bs1.0.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/coco/controller/LoginController$log.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/coco/controller/LoginController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/coco/dao/userMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/coco/entity/user.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/coco/service/LoginService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/coco/service/impl/LoginServiceimpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/dao/userMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/mapper/userMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/mybatis-generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/spring-mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/userMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis-generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/TTMS_bs1_0_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/TTMS_bs1_0_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war2/TTMS_bs1.0_war.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/classes/com/coco/controller/LoginController$log.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/controller/LoginController$log.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/classes/com/coco/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/classes/com/coco/dao/userMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/classes/com/coco/entity/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/entity/user.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/classes/com/coco/service/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/classes/com/coco/service/impl/LoginServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/impl/LoginServiceimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/aspectjrt-1.9.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/aspectjrt-1.9.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/aspectjweaver-1.9.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/aspectjweaver-1.9.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/commons-beanutils-1.8.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/commons-beanutils-1.8.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/commons-collections-3.2.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/commons-collections-3.2.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/commons-dbcp-1.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/commons-dbcp-1.4.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/commons-lang-2.5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/commons-lang-2.5.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/commons-pool-1.5.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/commons-pool-1.5.4.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/ezmorph-1.0.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/ezmorph-1.0.6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/jackson-annotations-2.9.8.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/jackson-annotations-2.9.8.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/jackson-core-2.9.8.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/jackson-core-2.9.8.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/jackson-databind-2.9.8.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/jackson-databind-2.9.8.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/json-lib-2.4-jdk15.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/json-lib-2.4-jdk15.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/mybatis-3.5.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/mybatis-3.5.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/mybatis-generator-core-1.3.7.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/mybatis-generator-core-1.3.7.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/mybatis-spring-1.3.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/mybatis-spring-1.3.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.15.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/mysql-connector-java-8.0.15.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/protobuf-java-3.6.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/protobuf-java-3.6.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/slf4j-api-1.7.26.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/slf4j-api-1.7.26.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-aop-4.3.18.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/spring-aop-4.3.18.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-beans-4.3.18.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/spring-beans-4.3.18.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-context-4.3.18.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/spring-context-4.3.18.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-context-support-4.3.18.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/spring-context-support-4.3.18.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-core-4.3.18.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/spring-core-4.3.18.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-expression-4.3.18.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/spring-expression-4.3.18.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-jdbc-4.3.18.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/spring-jdbc-4.3.18.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-oxm-4.3.18.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/spring-oxm-4.3.18.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-test-4.3.18.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/spring-test-4.3.18.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-tx-4.3.18.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/spring-tx-4.3.18.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-web-4.3.18.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/spring-web-4.3.18.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/lib/spring-webmvc-4.3.18.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/spring-webmvc-4.3.18.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/views/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/views/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/views/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded/views/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/views/success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/TTMS_bs1.0-1.0-SNAPSHOT.pom" beforeDir="false" afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/TTMS_bs1.0-1.0-SNAPSHOT.pom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/TTMS_bs1.0-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/TTMS_bs1.0-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/_remote.repositories" beforeDir="false" afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/_remote.repositories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/maven-metadata-local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/maven-metadata-local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/maven-metadata-local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/maven-metadata-local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/controller/LoginController$log.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/controller/LoginController$log.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/dao/userMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/dao/userMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/entity/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/entity/user.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/service/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/service/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/service/impl/LoginServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/service/impl/LoginServiceimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -100,6 +115,24 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="TTMS: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="TTMS: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="User: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -109,10 +142,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/sql/Create.sql">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="667">
+              <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -120,8 +153,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+            <state relative-caret-position="138">
+              <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,10 +187,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+            <state relative-caret-position="140">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+              <folding>
+                <element signature="e#1337#1353#0" expanded="true" />
+                <element signature="e#1391#1404#0" expanded="true" />
+                <element signature="e#1447#1465#0" expanded="true" />
+                <element signature="e#1508#1526#0" expanded="true" />
+                <element signature="e#1575#1591#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -173,25 +246,26 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/14a6b766-0aa6-4b3c-b11f-74f1e69334d0/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.html" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/controller/loginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/controller/LoginControllet.java" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/service/LoginService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/success.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/sql/Create.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/register.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/target/classes/spring-mybatis.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java" />
       </list>
     </option>
   </component>
@@ -297,6 +371,43 @@
               <item name="TTMS_bs1.0" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="coco" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TTMS_bs1.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TTMS_bs1.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="coco" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TTMS_bs1.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TTMS_bs1.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="coco" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TTMS_bs1.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TTMS_bs1.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="coco" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TTMS_bs1.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TTMS_bs1.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -350,16 +461,19 @@
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/classes" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="spring" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target/classes" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
@@ -378,7 +492,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.0.53">
+  <component name="RunManager" selected="Deploy to Host.Deploy to Host">
     <configuration name="Deploy to Host" type="DEPLOY_HOST_RUN_CONFIGURATION" factoryName="Deploy to Host">
       <option name="address" value="120.78.64.17" />
       <option name="alreadyReset" value="true" />
@@ -511,12 +625,20 @@
       <workItem from="1558758430541" duration="15209000" />
       <workItem from="1558781552690" duration="287000" />
       <workItem from="1558781980793" duration="3471000" />
-      <workItem from="1558785547157" duration="1145000" />
+      <workItem from="1558785547157" duration="12134000" />
     </task>
+    <task id="LOCAL-00001" summary="对了">
+      <created>1558786779538</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558786779538</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124173000" />
+    <option name="totallyTimeSpent" value="135162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="25" width="1366" height="743" extended-state="6" />
@@ -530,23 +652,23 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Alibaba Cloud Explorer" order="7" weight="0.32852808" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32956383" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32901135" />
       <window_info anchor="bottom" id="Web" order="2" weight="0.32956383" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.8960546" visible="true" weight="0.40518638" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.8960546" visible="true" weight="0.30307943" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.47811994" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32956383" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.103945374" side_tool="true" weight="0.4701131" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.17298938" side_tool="true" weight="0.17179903" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="bottom" id="Messages" order="15" weight="0.32956383" />
       <window_info anchor="bottom" id="Application Servers" order="16" weight="0.32901135" />
-      <window_info anchor="bottom" id="Database Console" order="17" weight="0.17285945" />
+      <window_info anchor="bottom" id="Database Console" order="17" sideWeight="0.82701063" weight="0.25931928" />
       <window_info anchor="bottom" id="Alibaba Cloud View" order="18" weight="0.6365105" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962063" />
@@ -566,22 +688,15 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="对了" />
+    <option name="LAST_COMMIT_MESSAGE" value="对了" />
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/controller.java" />
-    <entry file="file://$USER_HOME$/shoucang/Mavenrepository/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2860">
-          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/entity/UserDto.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/dao/IUserDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/UserService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/UserService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/UserServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/utils/result.java" />
@@ -620,54 +735,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/entity/user.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/success.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -680,45 +751,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/applicationContext.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4660">
-          <caret line="233" column="24" selection-start-line="233" selection-start-column="24" selection-end-line="233" selection-end-column="24" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="55" column="66" selection-start-line="55" selection-start-column="66" selection-end-line="55" selection-end-column="66" />
-          <folding>
-            <element signature="e#1386#1394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -729,31 +768,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-generatorConfig.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="23" column="100" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="100" />
+        <state relative-caret-position="140">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        <state relative-caret-position="-135">
+          <caret line="23" column="100" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="100" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/sql/Create.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="80">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java">
+    <entry file="das://14a6b766-0aa6-4b3c-b11f-74f1e69334d0/schema/TTMS/table/User">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="123f37a0-e7c1-4bd7-95ff-74bbd3b28f3a">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/spring-mybatis.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+        <state relative-caret-position="151">
+          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/mybatis-generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-280">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-267">
+          <caret line="192" column="20" selection-start-line="192" selection-start-column="20" selection-end-line="192" selection-end-column="20" />
+          <folding>
+            <element signature="n#build#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/entity/user.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -762,8 +855,97 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/mapper/userMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/shoucang/Mavenrepository/org/springframework/spring-webmvc/4.3.18.RELEASE/spring-webmvc-4.3.18.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="95" column="154" selection-start-line="95" selection-start-column="154" selection-end-line="95" selection-end-column="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/shoucang/Mavenrepository/org/springframework/spring-webmvc/4.3.18.RELEASE/spring-webmvc-4.3.18.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="115" column="263" selection-start-line="115" selection-start-column="263" selection-end-line="115" selection-end-column="263" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/shoucang/Mavenrepository/org/springframework/spring-web/4.3.18.RELEASE/spring-web-4.3.18.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+          <folding>
+            <element signature="e#1337#1353#0" expanded="true" />
+            <element signature="e#1391#1404#0" expanded="true" />
+            <element signature="e#1447#1465#0" expanded="true" />
+            <element signature="e#1508#1526#0" expanded="true" />
+            <element signature="e#1575#1591#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -772,14 +954,7 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor>
-            <show-content>
-              <type id="javaee-facet-resources" />
-              <type id="library" />
-              <type id="jpa-descriptors" />
-              <type id="artifact" />
-            </show-content>
-          </artifact-editor>
+          <artifact-editor />
           <last-edited>TTMS_bs1.0:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
@@ -833,6 +1008,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

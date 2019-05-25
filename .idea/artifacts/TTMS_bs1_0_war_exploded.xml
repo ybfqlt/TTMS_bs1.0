@@ -1,6 +1,13 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="TTMS_bs1.0:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/TTMS_bs1_0_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/target/TTMS_bs1.0</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>TTMS_bs1.0</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -41,6 +48,9 @@
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.2" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.9.2" />
         </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/TTMS_bs1.0/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="TTMS_bs1.0/web/Web" />
     </root>

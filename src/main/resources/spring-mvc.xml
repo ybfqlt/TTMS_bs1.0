@@ -24,6 +24,7 @@
     <!--自动扫描该包，使springMVC认为包下用了@controller注解的类是控制器-->
     <context:component-scan base-package="com.coco.controller"/>
 
+
     <!-- 静态资源可访问的设置方式 -->
     <mvc:default-servlet-handler/>
 
@@ -34,13 +35,11 @@
         <property name="supportedMediaTypes">
             <list>
                 <value>application/json;charset=UTF-8</value>
-                <value>text/json;charset=UTF-8</value>
                 <value>text/*;charset=UTF-8</value>
-                <value>text/plain;charset=UTF-8</value>
                 <value>*/*;charset=UTF-8</value>
             </list>
         </property>
-        <property name="objectMapper">
+        <!--<property name="objectMapper">
             <bean class="com.fasterxml.jackson.databind.ObjectMapper">
                 <property name="dateFormat">
                     <bean class="java.text.SimpleDateFormat">
@@ -48,7 +47,7 @@
                     </bean>
                 </property>
             </bean>
-        </property>
+        </property>-->
     </bean>
     <!--启动SpringMvc的注解功能，完成请求和注解POJO的映射-->
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">

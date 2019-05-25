@@ -28,7 +28,7 @@
   </update>
   <select id="selectByuserName" parameterType="String" resultMap="BaseResultMap">
     select user_id, user_name, user_password, user_type, user_qq
-    from User where user_name=#{userName,jdbcType=CHAR}
+    from User where user_name=#{userName}
   </select>
   <select id="selectAll" resultMap="BaseResultMap">
     select user_id, user_name, user_password, user_type, user_qq

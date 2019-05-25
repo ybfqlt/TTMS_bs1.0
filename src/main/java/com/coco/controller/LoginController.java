@@ -56,7 +56,7 @@ public class LoginController {
         Boolean judge = loginService.judgelogin(logl.name,logl.password);
         ModelAndView mv = new ModelAndView();
         mv.addObject(judge);
-        mv.setViewName("/views/success");
+        mv.setView(new MappingJackson2JsonView());
         return mv;
     }
 
