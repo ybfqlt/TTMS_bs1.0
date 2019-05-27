@@ -2,4 +2,5 @@
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/controller/LoginController.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/impl/LoginServiceimpl.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/user.java
+/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/Interceptor/Crossdomain.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/dao/userMapper.java

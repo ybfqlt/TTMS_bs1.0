@@ -13,12 +13,27 @@
     <!--1、配置映射器与适配器-->
     <mvc:annotation-driven/>
 
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="com.coco.Interceptor.Crossdomain">
+            <property name="excludedUrls">
+            <list>
+                <value>/</value>
+            </list>
+            </property>
+            </bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+    <!--跨域end-->
+
+
     <!--2、视图解析器 定义跳转的文件的前后缀，视图模式配置-->
     <bean class ="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!--<span style="white-space:pre">    </span>前缀和后缀-->
         <!-- controller最后返回的值xx，则页面即是webapp/views/xx.html -->
-        <property name="prefix" value="/WEB-INF/views/"/>
-        <property name="suffix" value=".html"/>
+        <property name="prefix" value="/views/"/>
+        <!--<property name="suffix" value=".html"/>-->
     </bean>
 
     <!--自动扫描该包，使springMVC认为包下用了@controller注解的类是控制器-->

@@ -55,7 +55,7 @@ public class LoginController {
         System.out.println(logl.name+"   "+logl.password);
         Boolean judge = loginService.judgelogin(logl.name,logl.password);
         ModelAndView mv = new ModelAndView();
-        mv.addObject(judge);
+        mv.addObject("loginInfo",judge);
         mv.setView(new MappingJackson2JsonView());
         return mv;
     }

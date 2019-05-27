@@ -1,5 +1,6 @@
 com/coco/service/impl/LoginServiceimpl.class
 com/coco/service/LoginService.class
+com/coco/Interceptor/Crossdomain.class
 com/coco/controller/LoginController.class
 com/coco/entity/user.class
 com/coco/controller/LoginController$log.class
