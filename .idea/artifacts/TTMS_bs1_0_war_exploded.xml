@@ -31,6 +31,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.3.18.RELEASE" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.0" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:1.3.2" />
+          <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.6.0" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.15" />
           <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.6.1" />
           <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.4" />
@@ -44,6 +45,9 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.8" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.8" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1.1" />
+          <element id="library" level="project" name="Maven: javax.mail:mail:1.4.7" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-email:1.5" />
           <element id="library" level="project" name="Maven: org.mybatis.generator:mybatis-generator-core:1.3.7" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.2" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.9.2" />

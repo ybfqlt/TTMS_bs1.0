@@ -1,12 +1,12 @@
 package com.coco.service.impl;
 
 import com.coco.dao.userMapper;
+import com.coco.entity.Result;
 import com.coco.entity.user;
 import com.coco.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.xml.registry.infomodel.User;
 
 /**
  * @Classname LoginServiceimpl
@@ -28,34 +28,38 @@ public class LoginServiceimpl implements LoginService {
     *
     **/
     @Override
-    public boolean judgelogin(String name,String password){
+    public Result judgelogin(String name,String password){
         user userr = usermapper.selectByuserName(name);
+        Result result = new Result();
         if(userr == null){
-            return false;
+            result.setMessage("用户名不存在");
         }else{
             if(userr.getUserPassword().equals(password)){
-                return true;
+                result.setJudge(true);
+                result.setMessage(userr.getUserType());
             }else{
-                return false;
+                result.setJudge(false);
+                result.setMessage("密码错误");
             }
-
         }
+        return result;
     }
 
     /**
-    * @Description 查询是否注册过，若未注册过则注册，将其插入数据库
+    * @Description 注册第一步，验证qq号是否存在，如果存在返回false,否则返回true
     * @return boolean
     *
     **/
     @Override
-    public boolean judgeregister(user users){
-        user useru = usermapper.selectByuserName(users.getUserName());
+    public Result securityqq(String qq){
+        user useru = usermapper.selectByuserQq(qq);
+        Result result = new Result();
         if(useru==null){
-            usermapper.insert(users);
-            return true;
+            result.setJudge(true);
         }
         else{
-            return false;
+            result.setJudge(false);
         }
+        return result;
     }
 }

@@ -1,5 +1,6 @@
 package com.coco.service;
 
+import com.coco.entity.Result;
 import com.coco.entity.user;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Service;
 
 
 public interface LoginService {
-    boolean judgelogin(String name,String password);
+    Result judgelogin(String name, String password);
 
-    boolean judgeregister(user users);
+    Result securityqq(String qq);
 }

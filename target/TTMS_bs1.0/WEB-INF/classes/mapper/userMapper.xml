@@ -28,8 +28,13 @@
   </update>
   <select id="selectByuserName" parameterType="String" resultMap="BaseResultMap">
     select user_id, user_name, user_password, user_type, user_qq
-    from User where user_name=#{userName}
+    from User where user_qq=#{userQq}
   </select>
+    <select id="selectByuserQq" parameterType="String" resultMap="BaseResultMap">
+        select user_id, user_name, user_password, user_type, user_qq
+        from User where user_name=#{userName}
+    </select>
+
   <select id="selectAll" resultMap="BaseResultMap">
     select user_id, user_name, user_password, user_type, user_qq
     from User

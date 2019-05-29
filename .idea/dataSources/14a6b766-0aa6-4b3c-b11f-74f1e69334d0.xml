@@ -1562,7 +1562,7 @@
     </column>
     <column id="410" parent="331" name="user_password">
       <Position>3</Position>
-      <DataType>char(20)|0s</DataType>
+      <DataType>char(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>

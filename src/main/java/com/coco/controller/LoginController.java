@@ -1,12 +1,15 @@
 package com.coco.controller;
 
-import com.coco.entity.user;
+import com.coco.entity.Result;
 import com.coco.service.LoginService;
+import com.coco.service.MailService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
+
+import java.util.Map;
 
 /**
  * @Classname loginController
@@ -18,12 +21,15 @@ import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 @RestController
 @RequestMapping("/up")
 public class LoginController {
-    private Logger logger = Logger.getLogger(LoginController.class);
+    /*private Logger logger = Logger.getLogger(LoginController.class);*/
 
     @Autowired
     private LoginService loginService;
 
-    public static class log{
+    @Autowired
+    private MailService mailservice;
+
+    public static class temp{
         private String name;
         private String password;
 
@@ -50,28 +56,37 @@ public class LoginController {
     * @return org.springframework.web.servlet.ModelAndView
     *
     **/
-    @RequestMapping(value="/login",method= RequestMethod.POST)
-    public ModelAndView getlogin(@RequestBody log logl){
-        System.out.println(logl.name+"   "+logl.password);
-        Boolean judge = loginService.judgelogin(logl.name,logl.password);
+    @RequestMapping(value="/login",method= RequestMethod.POST,headers = "Accept=application/json")
+    public ModelAndView getlogin(@RequestBody temp log){
+        Result res = loginService.judgelogin(log.name,log.password);
         ModelAndView mv = new ModelAndView();
-        mv.addObject("loginInfo",judge);
+        mv.addObject("loginInfo",res.getJudge());
+        mv.addObject("type",res.getMessage());
         mv.setView(new MappingJackson2JsonView());
         return mv;
     }
 
     /**
-    * @Description 注册
+    * @Description 注册firststep
     * @return org.springframework.web.servlet.ModelAndView
     *
     **/
-    @RequestMapping(value="/register",method=RequestMethod.POST)
-    public ModelAndView getRegister(@RequestBody user users){
-        System.out.println(users);
-        Boolean succes = loginService.judgeregister(users);
+    @RequestMapping(value="/Securityqq",method=RequestMethod.POST)
+    public ModelAndView securityQq(@RequestBody String qq){
+        Result res = loginService.securityqq(qq);
         ModelAndView mv=new ModelAndView();
-        mv.addObject(succes);
+        mv.addObject("qqState",res.getJudge());
         mv.setView(new MappingJackson2JsonView());
+        return mv;
+    }
+
+    @RequestMapping(value="/Securitycode",method = RequestMethod.POST,headers="application/json;charset=utf-8")
+    public ModelAndView sendSecuritycode(@RequestBody Map<String,Object> map){
+        System.out.println(map.get("userQq"));
+        ModelAndView mv = new ModelAndView();
+        Result result = mailservice.SendSecuritycode(map.get("userQq")+"@qq.com");
+        mv.addObject("securityCodeState",result.getJudge());
+        mv.addObject("securitycode",result.getMessage());
         return mv;
     }
 }
