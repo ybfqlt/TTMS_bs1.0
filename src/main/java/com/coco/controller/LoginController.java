@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
+import javax.servlet.http.HttpSession;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -20,6 +22,8 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/up")
+//将Model中的属性同步到session当中
+@SessionAttributes("Securitycode")
 public class LoginController {
     /*private Logger logger = Logger.getLogger(LoginController.class);*/
 
@@ -80,13 +84,31 @@ public class LoginController {
         return mv;
     }
 
-    @RequestMapping(value="/Securitycode",method = RequestMethod.POST,headers="application/json;charset=utf-8")
-    public ModelAndView sendSecuritycode(@RequestBody Map<String,Object> map){
+    @RequestMapping(value="/Securitycode",method = RequestMethod.POST)
+    public Object sendSecuritycode(HttpSession session,@RequestBody Map<String,Object> map){
         System.out.println(map.get("userQq"));
-        ModelAndView mv = new ModelAndView();
+        /*ModelAndView mv = new ModelAndView();*/
         Result result = mailservice.SendSecuritycode(map.get("userQq")+"@qq.com");
-        mv.addObject("securityCodeState",result.getJudge());
-        mv.addObject("securitycode",result.getMessage());
-        return mv;
+        System.out.println(result.getMessage());
+        /*mv.addObject("Securitycode",result.getMessage());*/
+        session.setAttribute("Securitycode",result.getMessage());
+        Map ma = new HashMap();
+        ma.put("securityCodeState",result.getJudge());
+        return ma;
+    }
+
+    @RequestMapping(value="/Senameandcode",method = RequestMethod.POST)
+    public Map<String,Object> SecurityName(HttpSession session, @RequestBody Map<String,String> map){
+        System.out.println(map.get("username")+" "+session.getAttribute("Securitycode"));
+        Boolean result = mailservice.Securitycodeandname(map.get("username"));
+        Map ma = new HashMap();
+        ma.put("nameState",result);
+        if(map.get("securityCode").equals(session.getAttribute("Securitycode"))){
+            ma.put("securityCodeState", true);
+        }
+        else {
+            ma.put("securityCodeState", false);
+        }
+        return ma;
     }
 }

@@ -1,9 +1,12 @@
 package com.coco.service.impl;
 
+import com.coco.dao.userMapper;
 import com.coco.entity.Result;
+import com.coco.entity.user;
 import com.coco.service.MailService;
 import com.coco.utils.RandomSecuritycode;
 import org.apache.commons.mail.SimpleEmail;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,6 +19,16 @@ import org.springframework.stereotype.Service;
 @Service("MailService")
 public class MailServiceimpl implements MailService {
 
+
+    @Autowired
+    private userMapper usermapper;
+
+    /**
+    * @Description 发送邮箱验证码
+    * @return com.coco.entity.Result
+    *
+    **/
+    @Override
     public Result SendSecuritycode(String mail) {
         Result re = new Result();
         SimpleEmail email = new SimpleEmail();//创建一个HtmlEmail实例对象
@@ -39,5 +52,20 @@ public class MailServiceimpl implements MailService {
         }
         re.setJudge(true);
         return re;
+    }
+
+
+    /**
+    * @Description 验证码和名
+    * @return com.coco.entity.Result
+    *
+    **/
+    @Override
+    public Boolean Securitycodeandname(String name){
+        user uu = usermapper.selectByuserName(name);
+        if(uu == null){
+            return true;
+        }
+        return false;
     }
 }

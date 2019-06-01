@@ -15,9 +15,13 @@
       <w>judgelogin</w>
       <w>judgeregister</w>
       <w>logl</w>
+      <w>mailservice</w>
       <w>mavenrepository</w>
       <w>securitycode</w>
+      <w>securitycodeandname</w>
+      <w>securityname</w>
       <w>securityqq</w>
+      <w>senameandcode</w>
       <w>serviceimpl</w>
       <w>shoucang</w>
       <w>sljbjdmdpyxtbfbh</w>

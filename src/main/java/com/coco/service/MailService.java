@@ -10,5 +10,7 @@ import com.coco.entity.Result;
  */
 public interface MailService {
 
-    public Result SendSecuritycode(String mail);
+    Result SendSecuritycode(String mail);
+
+    Boolean Securitycodeandname(String name);
 }
