@@ -12,8 +12,8 @@ create table User
     user_id       int not null auto_increment,
     user_name     char(20) not null unique,
     user_password char(50) not null,
-    user_type     char(2) not null comment 'u:普通用户 g:管理员 j:经理',
     user_qq       char(11) not null,
+    user_type     char(2) not null default 'u' comment 'u:普通用户 g:管理员 j:经理',
     primary key(user_id)
 );
 

@@ -17,6 +17,7 @@
       <w>logl</w>
       <w>mailservice</w>
       <w>mavenrepository</w>
+      <w>registeruser</w>
       <w>securitycode</w>
       <w>securitycodeandname</w>
       <w>securityname</w>
@@ -33,6 +34,8 @@
       <w>ttmslog</w>
       <w>tuser</w>
       <w>userdao</w>
+      <w>userpassword</w>
+      <w>userqq</w>
       <w>userr</w>
       <w>useru</w>
       <w>xddbvafjxydobeej</w>

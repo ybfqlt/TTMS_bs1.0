@@ -1,7 +1,11 @@
+com/coco/controller/LoginController$temp.class
 com/coco/service/impl/LoginServiceimpl.class
 com/coco/service/LoginService.class
+com/coco/service/MailService.class
 com/coco/Interceptor/Crossdomain.class
+com/coco/utils/RandomSecuritycode.class
+com/coco/service/impl/MailServiceimpl.class
+com/coco/entity/Result.class
 com/coco/controller/LoginController.class
 com/coco/entity/user.class
-com/coco/controller/LoginController$log.class
 com/coco/dao/userMapper.class

@@ -1,6 +1,8 @@
 package com.coco.controller;
 
+
 import com.coco.entity.Result;
+import com.coco.entity.user;
 import com.coco.service.LoginService;
 import com.coco.service.MailService;
 import org.apache.log4j.Logger;
@@ -22,8 +24,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/up")
-//将Model中的属性同步到session当中
-@SessionAttributes("Securitycode")
 public class LoginController {
     /*private Logger logger = Logger.getLogger(LoginController.class);*/
 
@@ -56,11 +56,11 @@ public class LoginController {
     }
 
     /**
-    * @Description 登录
+    * @Description login in
     * @return org.springframework.web.servlet.ModelAndView
     *
     **/
-    @RequestMapping(value="/login",method= RequestMethod.POST,headers = "Accept=application/json")
+    @RequestMapping(value="/login",method= RequestMethod.POST)
     public ModelAndView getlogin(@RequestBody temp log){
         Result res = loginService.judgelogin(log.name,log.password);
         ModelAndView mv = new ModelAndView();
@@ -84,24 +84,32 @@ public class LoginController {
         return mv;
     }
 
+    /**
+    * @Description send Securitycode
+    * @return java.lang.Object
+    *
+    **/
     @RequestMapping(value="/Securitycode",method = RequestMethod.POST)
-    public Object sendSecuritycode(HttpSession session,@RequestBody Map<String,Object> map){
-        System.out.println(map.get("userQq"));
-        /*ModelAndView mv = new ModelAndView();*/
-        Result result = mailservice.SendSecuritycode(map.get("userQq")+"@qq.com");
+    public Object sendSecuritycode(HttpSession session,@RequestBody Map<String,String> map){
+        System.out.println(map.get("userqq"));
+        Result result = mailservice.SendSecuritycode(map.get("userqq")+"@qq.com");
         System.out.println(result.getMessage());
-        /*mv.addObject("Securitycode",result.getMessage());*/
         session.setAttribute("Securitycode",result.getMessage());
-        Map ma = new HashMap();
+        Map<String,Object> ma = new HashMap<>();
         ma.put("securityCodeState",result.getJudge());
         return ma;
     }
 
+    /**
+    * @Description Verify that the verification code is entered correctly and the name is available
+    * @return java.util.Map<java.lang.String,java.lang.Object>
+    *
+    **/
     @RequestMapping(value="/Senameandcode",method = RequestMethod.POST)
     public Map<String,Object> SecurityName(HttpSession session, @RequestBody Map<String,String> map){
         System.out.println(map.get("username")+" "+session.getAttribute("Securitycode"));
         Boolean result = mailservice.Securitycodeandname(map.get("username"));
-        Map ma = new HashMap();
+        Map<String,Object> ma = new HashMap<>();
         ma.put("nameState",result);
         if(map.get("securityCode").equals(session.getAttribute("Securitycode"))){
             ma.put("securityCodeState", true);
@@ -109,6 +117,23 @@ public class LoginController {
         else {
             ma.put("securityCodeState", false);
         }
+        return ma;
+    }
+
+    /**
+    * @Description User final registration
+    * @return java.util.Map<java.lang.String,java.lang.Object>
+    *
+    **/
+    @RequestMapping(value="/register",method=RequestMethod.POST)
+    public Map<String,Object> Registeruser(@RequestBody Map<String,String> map){
+        user us = new user();
+        us.setUserName(map.get("username"));
+        us.setUserQq(map.get("userqq"));
+        us.setUserPassword(map.get("userpassword"));
+        Boolean judge = loginService.registeruser(us);
+        Map<String,Object> ma = new HashMap<>();
+        ma.put("registerState",judge);
         return ma;
     }
 }

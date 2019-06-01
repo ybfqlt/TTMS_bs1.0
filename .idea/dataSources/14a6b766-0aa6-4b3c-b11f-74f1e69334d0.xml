@@ -1566,17 +1566,18 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="411" parent="331" name="user_type">
+    <column id="411" parent="331" name="user_qq">
       <Position>4</Position>
-      <Comment>u:普通用户 g:管理员 j:经理</Comment>
-      <DataType>char(2)|0s</DataType>
+      <DataType>char(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="412" parent="331" name="user_qq">
+    <column id="412" parent="331" name="user_type">
       <Position>5</Position>
-      <DataType>char(11)|0s</DataType>
+      <Comment>u:普通用户 g:管理员 j:经理</Comment>
+      <DataType>char(2)|0s</DataType>
       <NotNull>1</NotNull>
+      <DefaultExpression>&apos;u&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="413" parent="331" name="user_name">

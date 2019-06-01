@@ -7,29 +7,79 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c5630d8-ffb1-4fde-9070-9c9b14214d73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/fasterxml/jackson/core/jackson-core/2.9.9/_remote.repositories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/fasterxml/jackson/core/jackson-core/2.9.9/jackson-core-2.9.9.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/fasterxml/jackson/core/jackson-core/2.9.9/jackson-core-2.9.9.pom.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/fasterxml/jackson/core/jackson-databind/2.9.9/_remote.repositories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/fasterxml/jackson/core/jackson-databind/2.9.9/jackson-databind-2.9.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/fasterxml/jackson/core/jackson-databind/2.9.9/jackson-databind-2.9.9.jar.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/fasterxml/jackson/core/jackson-databind/2.9.9/jackson-databind-2.9.9.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/fasterxml/jackson/core/jackson-databind/2.9.9/jackson-databind-2.9.9.pom.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/fasterxml/jackson/jackson-base/2.9.9/_remote.repositories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/fasterxml/jackson/jackson-base/2.9.9/jackson-base-2.9.9.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/fasterxml/jackson/jackson-base/2.9.9/jackson-base-2.9.9.pom.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/fasterxml/jackson/jackson-bom/2.9.9/_remote.repositories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/fasterxml/jackson/jackson-bom/2.9.9/jackson-bom-2.9.9.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/fasterxml/jackson/jackson-bom/2.9.9/jackson-bom-2.9.9.pom.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/sun/mail/all/1.4.7/_remote.repositories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/sun/mail/all/1.4.7/all-1.4.7.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/sun/mail/all/1.4.7/all-1.4.7.pom.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/sun/mail/all/1.5.6/_remote.repositories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/sun/mail/all/1.5.6/all-1.5.6.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/sun/mail/all/1.5.6/all-1.5.6.pom.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/sun/mail/javax.mail/1.5.6/_remote.repositories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/sun/mail/javax.mail/1.5.6/javax.mail-1.5.6.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/sun/mail/javax.mail/1.5.6/javax.mail-1.5.6.pom.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/javax/activation/activation/1.1.1/_remote.repositories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/javax/activation/activation/1.1.1/activation-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/javax/activation/activation/1.1.1/activation-1.1.1.jar.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/javax/activation/activation/1.1.1/activation-1.1.1.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/javax/activation/activation/1.1.1/activation-1.1.1.pom.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/javax/mail/mail/1.4.7/_remote.repositories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/javax/mail/mail/1.4.7/mail-1.4.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/javax/mail/mail/1.4.7/mail-1.4.7.jar.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/javax/mail/mail/1.4.7/mail-1.4.7.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/javax/mail/mail/1.4.7/mail-1.4.7.pom.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/org/apache/commons/commons-email/1.5/_remote.repositories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/org/apache/commons/commons-email/1.5/commons-email-1.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/org/apache/commons/commons-email/1.5/commons-email-1.5.jar.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/org/apache/commons/commons-email/1.5/commons-email-1.5.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/org/apache/commons/commons-email/1.5/commons-email-1.5.pom.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/org/apache/commons/commons-parent/40/_remote.repositories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/org/apache/commons/commons-parent/40/commons-parent-40.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/org/apache/commons/commons-parent/40/commons-parent-40.pom.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/14a6b766-0aa6-4b3c-b11f-74f1e69334d0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/14a6b766-0aa6-4b3c-b11f-74f1e69334d0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ltt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ltt.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/coco/Interceptor/Crossdomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/coco/Interceptor/Crossdomain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/TTMS_bs1.0-1.0-SNAPSHOT.pom" beforeDir="false" afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/TTMS_bs1.0-1.0-SNAPSHOT.pom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/TTMS_bs1.0-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/TTMS_bs1.0-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/_remote.repositories" beforeDir="false" afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/_remote.repositories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/maven-metadata-local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/maven-metadata-local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/maven-metadata-local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/maven-metadata-local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/coco/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/coco/service/MailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/coco/service/impl/MailServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/coco/service/impl/MailServiceimpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/success.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/Interceptor/Crossdomain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/Interceptor/Crossdomain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/coco/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/coco/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/Create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/Create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/META-INF/TTMS_bs1.0.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/controller/LoginController$temp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/controller/LoginController$temp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/MailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/MailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/impl/MailServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/impl/MailServiceimpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/lib/jackson-databind-2.9.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/Interceptor/Crossdomain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/Interceptor/Crossdomain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/impl/LoginServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/impl/LoginServiceimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/mapper/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/mapper/userMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/TTMS_bs1.0.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/coco/controller/LoginController$temp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/controller/LoginController$temp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/coco/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/service/MailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/service/MailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/service/impl/MailServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/service/impl/MailServiceimpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/service/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/service/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/service/impl/LoginServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/service/impl/LoginServiceimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/userMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,11 +131,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="108" column="79" selection-start-line="108" selection-start-column="79" selection-end-line="108" selection-end-column="79" />
+            <state relative-caret-position="255">
+              <caret line="134" column="48" selection-start-line="134" selection-start-column="48" selection-end-line="134" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,23 +143,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/Interceptor/Crossdomain.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/sql/Create.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="220">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-generatorConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="37" column="10" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+            <state relative-caret-position="-380">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -117,17 +164,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="48" column="65" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="33" column="43" lean-forward="true" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+            <state relative-caret-position="512">
+              <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -135,8 +173,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/MailServiceimpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1120">
-              <caret line="63" column="50" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
+            <state relative-caret-position="120">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,10 +183,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/entity/user.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="-168">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,10 +204,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="19" selection-start-line="19" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="160">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -177,11 +218,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/LoginService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+            <state relative-caret-position="260">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -231,16 +281,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/views/register.html" />
         <option value="$PROJECT_DIR$/target/classes/spring-mybatis.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/filter/Crossdomainfilter.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/sql/Create.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/entity/Result.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/entity/Mail.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/coco/service/LoginService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext-mail.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/utils/RandomSecuritycode.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -248,7 +293,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/coco/service/MailService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/service/impl/MailServiceimpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/sql/Create.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/coco/service/LoginService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" />
       </list>
     </option>
   </component>
@@ -305,6 +355,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -354,7 +406,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="coco" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TTMS_bs1.0" type="b2602c69:ProjectViewProjectNode" />
@@ -363,7 +415,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="coco" type="462c0819:PsiDirectoryNode" />
-              <item name="Interceptor" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TTMS_bs1.0" type="b2602c69:ProjectViewProjectNode" />
@@ -413,6 +465,14 @@
               <item name="TTMS_bs1.0" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TTMS_bs1.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TTMS_bs1.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -422,22 +482,11 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TTMS_bs1.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TTMS_bs1.0" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -452,10 +501,10 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -480,7 +529,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.0.53">
+  <component name="RunManager" selected="Deploy to Host.Deploy to Host">
     <configuration name="Deploy to Host" type="DEPLOY_HOST_RUN_CONFIGURATION" factoryName="Deploy to Host">
       <option name="address" value="120.78.64.17" />
       <option name="alreadyReset" value="true" />
@@ -628,7 +677,8 @@
       <workItem from="1559199073670" duration="597000" />
       <workItem from="1559294268022" duration="11069000" />
       <workItem from="1559353966016" duration="630000" />
-      <workItem from="1559354717954" duration="11589000" />
+      <workItem from="1559354717954" duration="18115000" />
+      <workItem from="1559380024311" duration="5655000" />
     </task>
     <task id="LOCAL-00001" summary="对了">
       <created>1558786779538</created>
@@ -672,11 +722,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559138164517</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="6/1快乐，验证securitycode是否输入正确">
+      <created>1559372564650</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559372564653</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218923000" />
+    <option name="totallyTimeSpent" value="231104000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -689,9 +746,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="-26" width="1366" height="794" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20713201" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21016692" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -702,7 +758,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32784432" />
       <window_info anchor="bottom" id="Web" order="2" weight="0.32956383" />
-      <window_info active="true" anchor="bottom" x="1385" y="84" width="1328" height="580" id="Run" order="3" sideWeight="0.8960546" visible="true" weight="0.44161677" />
+      <window_info anchor="bottom" x="1385" y="84" width="1328" height="580" id="Run" order="3" sideWeight="0.8960546" visible="true" weight="0.3997006" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39371258" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3279483" />
@@ -713,7 +769,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.17298938" side_tool="true" weight="0.17179903" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32934132" />
       <window_info anchor="bottom" id="Messages" order="15" weight="0.32934132" />
       <window_info anchor="bottom" id="Application Servers" order="16" weight="0.32901135" />
       <window_info anchor="bottom" id="Database Console" order="17" sideWeight="0.82701063" weight="0.04491018" />
@@ -736,12 +792,53 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="对了" />
     <MESSAGE value="2/25" />
     <MESSAGE value="2/27" />
     <MESSAGE value="2/29验证邮箱是否存在" />
-    <option name="LAST_COMMIT_MESSAGE" value="2/29验证邮箱是否存在" />
+    <MESSAGE value="6/1快乐，验证securitycode是否输入正确" />
+    <option name="LAST_COMMIT_MESSAGE" value="6/1快乐，验证securitycode是否输入正确" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -753,32 +850,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/controller/LoginControllet.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml.tld" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/success.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/success.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.html" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/applicationContext.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.html" />
     <entry file="das://14a6b766-0aa6-4b3c-b11f-74f1e69334d0/schema/TTMS/table/User" />
     <entry file="file://$PROJECT_DIR$/target/classes/spring-mybatis.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -854,13 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/Create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/shoucang/Mavenrepository/org/springframework/spring-webmvc/4.3.18.RELEASE/spring-webmvc-4.3.18.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-900">
@@ -868,31 +940,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/utils/Randomcode.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/entity/Mail.java" />
     <entry file="jar://$USER_HOME$/shoucang/Mavenrepository/org/springframework/spring-context-support/4.3.18.RELEASE/spring-context-support-4.3.18.RELEASE.jar!/org/springframework/mail/javamail/JavaMailSenderImpl.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -910,6 +958,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
@@ -918,19 +967,11 @@
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/MailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -951,57 +992,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/MailServiceimpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="63" column="50" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/entity/user.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/entity/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="19" selection-start-line="19" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="48" column="65" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/Interceptor/Crossdomain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1012,27 +1002,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="33" column="43" lean-forward="true" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
-          <caret line="37" column="10" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/entity/user.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/MailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/entity/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/MailServiceimpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-380">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="108" column="79" selection-start-line="108" selection-start-column="79" selection-end-line="108" selection-end-column="79" />
+        <state relative-caret-position="255">
+          <caret line="134" column="48" selection-start-line="134" selection-start-column="48" selection-end-line="134" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/Create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -1089,11 +1168,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|TTMS_bs1.0</last-edited>
+          <last-edited>TTMS_bs1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

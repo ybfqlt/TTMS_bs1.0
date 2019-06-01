@@ -2,7 +2,7 @@ package com.coco.service;
 
 import com.coco.entity.Result;
 import com.coco.entity.user;
-import org.springframework.stereotype.Service;
+
 
 /**
  * @Classname LoginService
@@ -16,4 +16,6 @@ public interface LoginService {
     Result judgelogin(String name, String password);
 
     Result securityqq(String qq);
+
+    Boolean registeruser(user uu);
 }

@@ -6,6 +6,7 @@ import com.coco.entity.user;
 import com.coco.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 
 /**
@@ -16,6 +17,7 @@ import org.springframework.stereotype.Service;
  */
 
 @Service("LoginService")
+@Transactional
 public class LoginServiceimpl implements LoginService {
 
     @Autowired
@@ -61,5 +63,16 @@ public class LoginServiceimpl implements LoginService {
             result.setJudge(false);
         }
         return result;
+    }
+
+    @Override
+    public Boolean registeruser(user uu){
+        int a = usermapper.insert(uu);
+        if(a==1) {
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }
