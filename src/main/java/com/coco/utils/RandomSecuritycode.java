@@ -11,6 +11,11 @@ import java.util.List;
  * @Created by ltt
  */
 public class RandomSecuritycode {
+    /**
+    * @Description Generate random verification code
+    * @return java.lang.String
+    *
+    **/
     public static String achieveCode() {  //由于数字 1 、 0 和字母 O 、l 有时分不清楚，所以，没有数字 1 、 0
         String[] beforeShuffle= new String[] {"0","1","2", "3", "4", "5", "6", "7", "8", "9"};
         List list = Arrays.asList(beforeShuffle);//将数组转换为集合

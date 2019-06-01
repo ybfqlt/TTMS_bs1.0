@@ -65,6 +65,11 @@ public class LoginServiceimpl implements LoginService {
         return result;
     }
 
+    /**
+    * @Description insert user
+    * @return java.lang.Boolean
+    *
+    **/
     @Override
     public Boolean registeruser(user uu){
         int a = usermapper.insert(uu);
