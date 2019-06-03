@@ -2,13 +2,21 @@
   <dictionary name="ltt">
     <words>
       <w>alibaba</w>
+      <w>andlogout</w>
+      <w>andlogoutimpl</w>
       <w>aregister</w>
       <w>banexfbaotwmbeie</w>
       <w>byuser</w>
+      <w>changepassword</w>
       <w>crossdomain</w>
       <w>crossdomainfilter</w>
       <w>fastjson</w>
+      <w>findname</w>
+      <w>findpassword</w>
+      <w>findqq</w>
+      <w>finduser</w>
       <w>firststep</w>
+      <w>forgotpassword</w>
       <w>getlogin</w>
       <w>introspector</w>
       <w>judgearegister</w>
@@ -18,11 +26,14 @@
       <w>mailservice</w>
       <w>mavenrepository</w>
       <w>registeruser</w>
+      <w>returnqq</w>
       <w>securitycode</w>
       <w>securitycodeandname</w>
       <w>securityname</w>
       <w>securityqq</w>
+      <w>seecoderight</w>
       <w>senameandcode</w>
+      <w>sercuritycode</w>
       <w>serviceimpl</w>
       <w>shoucang</w>
       <w>sljbjdmdpyxtbfbh</w>
@@ -33,6 +44,8 @@
       <w>ttms</w>
       <w>ttmslog</w>
       <w>tuser</w>
+      <w>updatepassword</w>
+      <w>updatepassworduser</w>
       <w>userdao</w>
       <w>userpassword</w>
       <w>userqq</w>

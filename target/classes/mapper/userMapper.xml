@@ -18,14 +18,18 @@
     values (#{userId,jdbcType=INTEGER}, #{userName,jdbcType=CHAR}, #{userPassword,jdbcType=CHAR}, 
       #{userQq,jdbcType=CHAR})
   </insert>
-  <update id="updateByPrimaryKey" parameterType="com.coco.entity.user">
+  <update id="updatepasswordByQq" parameterType="com.coco.entity.user">
     update User
-    set user_name = #{userName,jdbcType=CHAR},
-      user_password = #{userPassword,jdbcType=CHAR},
-      user_type = #{userType,jdbcType=CHAR},
-      user_qq = #{userQq,jdbcType=CHAR}
-    where user_id = #{userId,jdbcType=INTEGER}
+    set user_password = #{userPassword,jdbcType=CHAR}
+    where user_qq = #{userQq,jdbcType=CHAR}
   </update>
+
+  <update id="updatepassworduserName" parameterType="com.coco.entity.user">
+    update User
+    set user_password = #{userPassword,jdbcType=CHAR}
+    where user_name = #{userName,jdbcType=CHAR}
+  </update>
+
   <select id="selectByuserQq" parameterType="String" resultMap="BaseResultMap">
     select user_id, user_name, user_password, user_type, user_qq
     from User where user_qq=#{userQq}

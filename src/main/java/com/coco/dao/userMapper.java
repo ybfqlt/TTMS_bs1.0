@@ -19,5 +19,8 @@ public interface userMapper {
 
     List<user> selectAll();
 
-    int updateByPrimaryKey(user record);
+    int updatepasswordByQq(user record);
+
+    int updatepassworduserName(user record);
+
 }

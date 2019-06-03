@@ -7,8 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c5630d8-ffb1-4fde-9070-9c9b14214d73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/coco/controller/FindpasswordAndlogout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/coco/service/FindpasswordAndlogoutService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/coco/service/impl/FindpasswordAndlogoutimpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/controller/FindpasswordAndlogout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/FindpasswordAndlogoutService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/impl/FindpasswordAndlogoutimpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/coco/controller/FindpasswordAndlogout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/coco/service/FindpasswordAndlogoutService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/coco/service/impl/FindpasswordAndlogoutimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ltt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ltt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/dao/userMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/dao/userMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/utils/RandomSecuritycode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/utils/RandomSecuritycode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/mapper/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/mapper/userMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/dao/userMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/dao/userMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/utils/RandomSecuritycode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/utils/RandomSecuritycode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/userMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,8 +80,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+            <state relative-caret-position="1840">
+              <caret line="112" column="31" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/controller/FindpasswordAndlogout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="102" column="18" lean-forward="true" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,37 +102,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/sql/Create.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-generatorConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-380">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/MailServiceimpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-660">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="1120">
+              <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/FindpasswordAndlogoutService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/MailService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/FindpasswordAndlogoutimpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,8 +158,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="33" column="43" lean-forward="true" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+            <state relative-caret-position="340">
+              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,22 +168,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/entity/Result.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="620">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -147,20 +179,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/LoginService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
+            <state relative-caret-position="280">
               <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -213,10 +236,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/coco/filter/Crossdomainfilter.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/entity/Result.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/entity/Mail.java" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext-mail.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/coco/utils/RandomSecuritycode.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/Interceptor/Crossdomain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/service/MailService.java" />
@@ -224,10 +245,15 @@
         <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/sql/Create.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/service/LoginService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/coco/utils/RandomSecuritycode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/coco/service/FindpasswordAndlogoutService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/coco/controller/FindpasswordAndlogout.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/coco/service/impl/FindpasswordAndlogoutimpl.java" />
       </list>
     </option>
   </component>
@@ -607,7 +633,10 @@
       <workItem from="1559294268022" duration="11069000" />
       <workItem from="1559353966016" duration="630000" />
       <workItem from="1559354717954" duration="18115000" />
-      <workItem from="1559380024311" duration="6469000" />
+      <workItem from="1559380024311" duration="9099000" />
+      <workItem from="1559440618563" duration="9657000" />
+      <workItem from="1559486409938" duration="2806000" />
+      <workItem from="1559530037257" duration="722000" />
     </task>
     <task id="LOCAL-00001" summary="对了">
       <created>1558786779538</created>
@@ -665,11 +694,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559392877768</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="6/1快乐,login and register done">
+      <created>1559393732975</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1559393732975</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231918000" />
+    <option name="totallyTimeSpent" value="247733000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -682,9 +718,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="-26" width="1366" height="794" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21016692" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17830046" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -695,7 +730,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32784432" />
       <window_info anchor="bottom" id="Web" order="2" weight="0.32956383" />
-      <window_info active="true" anchor="bottom" x="1385" y="84" width="1328" height="580" id="Run" order="3" sideWeight="0.8960546" visible="true" weight="0.3997006" />
+      <window_info anchor="bottom" x="1385" y="84" width="1328" height="580" id="Run" order="3" sideWeight="0.8960546" visible="true" weight="0.33982036" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39371258" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3279483" />
@@ -783,11 +818,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/controller/loginController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/LoginService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/controller/LoginControllet.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml.tld" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/success.html" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.html" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/applicationContext.xml" />
@@ -896,7 +926,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
@@ -905,6 +934,7 @@
           </folding>
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -920,26 +950,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/utils/RandomSecuritycode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/Interceptor/Crossdomain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
@@ -947,31 +957,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/entity/user.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/MailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/entity/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -996,40 +985,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/MailServiceimpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/entity/Result.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="380">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/entity/user.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/Interceptor/Crossdomain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/utils/RandomSecuritycode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/FindpasswordAndlogout.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/FindpasswordAndlogoutimol.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+        <state relative-caret-position="1840">
+          <caret line="112" column="31" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/LoginService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/MailServiceimpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        <state relative-caret-position="1120">
+          <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/FindpasswordAndlogoutService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="33" column="43" lean-forward="true" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+        <state relative-caret-position="280">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/MailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/FindpasswordAndlogoutimpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1038,8 +1067,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        <state relative-caret-position="340">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/LoginServiceimpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1048,8 +1087,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        <state relative-caret-position="620">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/controller/FindpasswordAndlogout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="102" column="18" lean-forward="true" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
