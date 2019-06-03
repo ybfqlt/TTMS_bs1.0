@@ -7,25 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c5630d8-ffb1-4fde-9070-9c9b14214d73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/coco/controller/FindpasswordAndlogout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/coco/service/FindpasswordAndlogoutService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/coco/service/impl/FindpasswordAndlogoutimpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/controller/FindpasswordAndlogout.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/FindpasswordAndlogoutService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/impl/FindpasswordAndlogoutimpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/coco/controller/FindpasswordAndlogout.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/coco/service/FindpasswordAndlogoutService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/coco/service/impl/FindpasswordAndlogoutimpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ltt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ltt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/coco/dao/userMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/TTMS_bs1.0-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/TTMS_bs1.0-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/_remote.repositories" beforeDir="false" afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/_remote.repositories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/maven-metadata-local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/1.0-SNAPSHOT/maven-metadata-local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/maven-metadata-local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shoucang/Mavenrepository/com/keshe/TTMS_bs1.0/maven-metadata-local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/controller/FindpasswordAndlogout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/controller/FindpasswordAndlogout.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/dao/userMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/dao/userMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/FindpasswordAndlogoutService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/FindpasswordAndlogoutService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/impl/FindpasswordAndlogoutimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/impl/FindpasswordAndlogoutimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/impl/LoginServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/service/impl/LoginServiceimpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/utils/RandomSecuritycode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/com/coco/utils/RandomSecuritycode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/mapper/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS_bs1.0/WEB-INF/classes/mapper/userMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/controller/FindpasswordAndlogout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/controller/FindpasswordAndlogout.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/coco/dao/userMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/dao/userMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/service/FindpasswordAndlogoutService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/service/FindpasswordAndlogoutService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/service/impl/FindpasswordAndlogoutimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/service/impl/FindpasswordAndlogoutimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/service/impl/LoginServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/service/impl/LoginServiceimpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/coco/utils/RandomSecuritycode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/utils/RandomSecuritycode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/userMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -78,10 +81,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/controller/FindpasswordAndlogout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1840">
-              <caret line="112" column="31" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
+            <state relative-caret-position="195">
+              <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,27 +93,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/controller/FindpasswordAndlogout.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="102" column="18" lean-forward="true" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/service/impl/MailServiceimpl.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1120">
-              <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
+            <state relative-caret-position="347">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#build#0;n#project#0;n#!!top" />
               </folding>
             </state>
           </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -254,6 +255,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/coco/service/FindpasswordAndlogoutService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/controller/FindpasswordAndlogout.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/coco/service/impl/FindpasswordAndlogoutimpl.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -423,21 +425,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="sql" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="TTMS_bs1.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TTMS_bs1.0" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TTMS_bs1.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TTMS_bs1.0" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -484,7 +471,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.0.53">
+  <component name="RunManager" selected="Deploy to Host.Deploy to Host">
     <configuration name="Deploy to Host" type="DEPLOY_HOST_RUN_CONFIGURATION" factoryName="Deploy to Host">
       <option name="address" value="120.78.64.17" />
       <option name="alreadyReset" value="true" />
@@ -636,7 +623,7 @@
       <workItem from="1559380024311" duration="9099000" />
       <workItem from="1559440618563" duration="9657000" />
       <workItem from="1559486409938" duration="2806000" />
-      <workItem from="1559530037257" duration="722000" />
+      <workItem from="1559530037257" duration="2206000" />
     </task>
     <task id="LOCAL-00001" summary="对了">
       <created>1558786779538</created>
@@ -701,11 +688,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559393732975</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="6/3,Retrieve password, complete">
+      <created>1559530840195</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1559530840195</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247733000" />
+    <option name="totallyTimeSpent" value="249217000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -718,6 +712,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="-26" width="1366" height="794" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17830046" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -811,7 +806,8 @@
     <MESSAGE value="2/29验证邮箱是否存在" />
     <MESSAGE value="6/1快乐，验证securitycode是否输入正确" />
     <MESSAGE value="6/1快乐,login and register done" />
-    <option name="LAST_COMMIT_MESSAGE" value="6/1快乐,login and register done" />
+    <MESSAGE value="6/3,Retrieve password, complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="6/3,Retrieve password, complete" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -822,9 +818,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.html" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/applicationContext.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.html" />
     <entry file="das://14a6b766-0aa6-4b3c-b11f-74f1e69334d0/schema/TTMS/table/User" />
     <entry file="file://$PROJECT_DIR$/target/classes/spring-mybatis.xml">
@@ -924,17 +917,6 @@
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="n#build#0;n#project#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -1104,11 +1086,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/coco/controller/FindpasswordAndlogout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="102" column="18" lean-forward="true" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+        <state relative-caret-position="195">
+          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="n#build#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>

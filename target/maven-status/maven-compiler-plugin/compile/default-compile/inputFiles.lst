@@ -1,10 +1,13 @@
-/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/LoginService.java
-/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/utils/RandomSecuritycode.java
-/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/controller/LoginController.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/Result.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/impl/MailServiceimpl.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/impl/LoginServiceimpl.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/user.java
-/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/Interceptor/Crossdomain.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/MailService.java
+/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/FindpasswordAndlogoutService.java
+/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/LoginService.java
+/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/utils/RandomSecuritycode.java
+/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/impl/FindpasswordAndlogoutimpl.java
+/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/controller/LoginController.java
+/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/controller/FindpasswordAndlogout.java
+/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/Interceptor/Crossdomain.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/dao/userMapper.java
