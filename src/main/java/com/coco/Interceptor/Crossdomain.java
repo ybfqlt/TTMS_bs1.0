@@ -6,6 +6,7 @@ package com.coco.Interceptor;
  * @Date 19-5-27 下午5:02
  * @Created by ltt
  */
+
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -37,7 +38,7 @@ public class Crossdomain implements HandlerInterceptor {
             response.setHeader("Access-Control-Allow-Origin",request.getHeader("Origin"));
             response.setHeader("Access-Control-Allow-Methods", "*");
             response.setHeader("Access-Control-Max-Age", "20000");
-            response.setHeader("Access-Control-Allow-Credentials","true");//是否支持cookie跨域
+            /*response.setHeader("Access-Control-Allow-Credentials","true");//***重点是否支持cookie跨域*/
             response.setHeader("Access-Control-Allow-Headers", "Origin,X-Requested-With,Content-Type,Accept");
         }
         return true;

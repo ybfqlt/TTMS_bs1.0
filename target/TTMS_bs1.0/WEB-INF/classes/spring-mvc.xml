@@ -12,6 +12,7 @@
                         http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
     <!--1、配置映射器与适配器-->
     <mvc:annotation-driven/>
+    <!--解决跨域请求-->
 
     <mvc:interceptors>
         <mvc:interceptor>

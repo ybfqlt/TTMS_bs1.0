@@ -8,6 +8,7 @@ com/coco/Interceptor/Crossdomain.class
 com/coco/utils/RandomSecuritycode.class
 com/coco/service/FindpasswordAndlogoutService.class
 com/coco/service/impl/MailServiceimpl.class
+com/coco/Filter/AjaxFilter.class
 com/coco/entity/Result.class
 com/coco/controller/LoginController.class
 com/coco/entity/user.class

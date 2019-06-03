@@ -7,10 +7,12 @@ import com.coco.service.LoginService;
 import com.coco.service.MailService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.Map;
@@ -71,24 +73,32 @@ public class LoginController {
     }
 
     /**
-    * @Description 注册firststep
+    * @Description 验证qq并且send Securitycode
     * @return org.springframework.web.servlet.ModelAndView
     *
     **/
-    @RequestMapping(value="/Securityqq",method=RequestMethod.POST)
-    public ModelAndView securityQq(@RequestBody String qq){
-        Result res = loginService.securityqq(qq);
-        ModelAndView mv=new ModelAndView();
-        mv.addObject("qqState",res.getJudge());
-        mv.setView(new MappingJackson2JsonView());
-        return mv;
+    @RequestMapping(value="/Securityqqtocode",method=RequestMethod.POST)
+    public Map<String,Object> securityQq(HttpServletRequest request, @RequestBody Map<String, String> map){
+        Result res = loginService.securityqq(map.get("qq"));
+        Map<String,Object> ma = new HashMap<>();
+        if(res.getJudge()==true){
+            ma.put("qqState",res.getJudge());
+            Result result = mailservice.SendSecuritycode(map.get("qq")+"@qq.com");
+            System.out.println(result.getMessage());
+            request.getSession().setAttribute("Securitycode",result.getMessage());
+            /*ma.put("securityCodeState",result.getJudge());*/
+        }
+        else {
+            ma.put("qqState",false);
+        }
+        return ma;
     }
 
-    /**
+   /* *//**
     * @Description send Securitycode
     * @return java.lang.Object
     *
-    **/
+    **//*
     @RequestMapping(value="/Securitycode",method = RequestMethod.POST)
     public Object sendSecuritycode(HttpSession session,@RequestBody Map<String,String> map){
         System.out.println(map.get("userqq"));
@@ -98,7 +108,7 @@ public class LoginController {
         Map<String,Object> ma = new HashMap<>();
         ma.put("securityCodeState",result.getJudge());
         return ma;
-    }
+    }*/
 
     /**
     * @Description Verify that the verification code is entered correctly and the name is available
@@ -106,12 +116,15 @@ public class LoginController {
     *
     **/
     @RequestMapping(value="/Senameandcode",method = RequestMethod.POST)
-    public Map<String,Object> SecurityName(HttpSession session, @RequestBody Map<String,String> map){
-        System.out.println(map.get("username")+" "+session.getAttribute("Securitycode"));
+    public Map<String,Object> SecurityName(HttpServletRequest request, @RequestBody Map<String,String> map){
+        System.out.println(map.get("username")+" "+request.getSession().getAttribute("Securitycode"));
         Boolean result = mailservice.Securitycodeandname(map.get("username"));
         Map<String,Object> ma = new HashMap<>();
         ma.put("nameState",result);
-        if(map.get("securityCode").equals(session.getAttribute("Securitycode"))){
+        //注意，多余的
+        /*ma.put("Securitycode",request.getSession().getAttribute("Securitycode"));*/
+        if(map.get("securityCode").equals(request.getSession().getAttribute("Securitycode"))){
+            ma.put("Securitycode",request.getSession().getAttribute("Securitycode"));
             ma.put("securityCodeState", true);
         }
         else {

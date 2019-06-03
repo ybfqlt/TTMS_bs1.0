@@ -11,3 +11,4 @@
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/controller/FindpasswordAndlogout.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/Interceptor/Crossdomain.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/dao/userMapper.java
+/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/Filter/AjaxFilter.java
