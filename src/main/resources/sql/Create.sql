@@ -17,6 +17,29 @@ create table User
     primary key(user_id)
 );
 
+/*========================================================================*/
+/* Table:Movie 影片表                                            */
+/*========================================================================*/
+create table Movie
+(
+    movie_id            int not null auto_increment,
+    movie_rating        double not null,
+    movie_genres        varchar(20) not null,
+    movie_runtime       int not null,
+    movie_title         varchar(50) not null unique,
+    movie_poster        varchar(50) not null,
+    movie_Writers       varchar(40) not null,
+    movie_directors     varchar(40) not null,
+    movie_actors        varchar(60) not null,
+    movie_plot_simple   varchar(1000) not null,
+    movie_country       varchar(20) not null,
+    movie_also_known_as varchar(40) not null,
+    primary key(movie_id)
+);
+
+
+
+
 
 
 /*========================================================================*/
@@ -35,8 +58,3 @@ create table Studio
     primary key (studio_id)
 );
 
-
-
-/*========================================================================*/
-/* Table:                                                */
-/*========================================================================*/

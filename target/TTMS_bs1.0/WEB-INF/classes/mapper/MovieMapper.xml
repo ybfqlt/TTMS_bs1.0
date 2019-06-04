@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coco.dao.MovieMapper">
+  <resultMap id="BaseResultMap" type="com.coco.entity.Movie">
+    <id column="movie_id" jdbcType="INTEGER" property="movieId" />
+    <result column="movie_rating" jdbcType="DOUBLE" property="movieRating" />
+    <result column="movie_genres" jdbcType="VARCHAR" property="movieGenres" />
+    <result column="movie_runtime" jdbcType="INTEGER" property="movieRuntime" />
+    <result column="movie_title" jdbcType="VARCHAR" property="movieTitle" />
+    <result column="movie_poster" jdbcType="VARCHAR" property="moviePoster" />
+    <result column="movie_Writers" jdbcType="VARCHAR" property="movieWriters" />
+    <result column="movie_directors" jdbcType="VARCHAR" property="movieDirectors" />
+    <result column="movie_actors" jdbcType="VARCHAR" property="movieActors" />
+    <result column="movie_plot_simple" jdbcType="VARCHAR" property="moviePlotSimple" />
+    <result column="movie_country" jdbcType="VARCHAR" property="movieCountry" />
+    <result column="movie_also_known_as" jdbcType="VARCHAR" property="movieAlsoKnownAs" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from Movie
+    where movie_id = #{movieId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.coco.entity.Movie">
+    insert into Movie (movie_id, movie_rating, movie_genres, 
+      movie_runtime, movie_title, movie_poster, 
+      movie_Writers, movie_directors, movie_actors, 
+      movie_plot_simple, movie_country, movie_also_known_as
+      )
+    values (#{movieId,jdbcType=INTEGER}, #{movieRating,jdbcType=DOUBLE}, #{movieGenres,jdbcType=VARCHAR}, 
+      #{movieRuntime,jdbcType=INTEGER}, #{movieTitle,jdbcType=VARCHAR}, #{moviePoster,jdbcType=VARCHAR}, 
+      #{movieWriters,jdbcType=VARCHAR}, #{movieDirectors,jdbcType=VARCHAR}, #{movieActors,jdbcType=VARCHAR}, 
+      #{moviePlotSimple,jdbcType=VARCHAR}, #{movieCountry,jdbcType=VARCHAR}, #{movieAlsoKnownAs,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.coco.entity.Movie">
+    update Movie
+    set movie_rating = #{movieRating,jdbcType=DOUBLE},
+      movie_genres = #{movieGenres,jdbcType=VARCHAR},
+      movie_runtime = #{movieRuntime,jdbcType=INTEGER},
+      movie_title = #{movieTitle,jdbcType=VARCHAR},
+      movie_poster = #{moviePoster,jdbcType=VARCHAR},
+      movie_Writers = #{movieWriters,jdbcType=VARCHAR},
+      movie_directors = #{movieDirectors,jdbcType=VARCHAR},
+      movie_actors = #{movieActors,jdbcType=VARCHAR},
+      movie_plot_simple = #{moviePlotSimple,jdbcType=VARCHAR},
+      movie_country = #{movieCountry,jdbcType=VARCHAR},
+      movie_also_known_as = #{movieAlsoKnownAs,jdbcType=VARCHAR}
+    where movie_id = #{movieId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select movie_id, movie_rating, movie_genres, movie_runtime, movie_title, movie_poster, 
+    movie_Writers, movie_directors, movie_actors, movie_plot_simple, movie_country, movie_also_known_as
+    from Movie
+    where movie_id = #{movieId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select movie_id, movie_rating, movie_genres, movie_runtime, movie_title, movie_poster, 
+    movie_Writers, movie_directors, movie_actors, movie_plot_simple, movie_country, movie_also_known_as
+    from Movie
+  </select>
+</mapper>
