@@ -6,7 +6,7 @@ import com.coco.entity.user;
  * @Classname FindpasswordAndlogoutService
  * @Description TODO
  * @Date 19-6-2 上午10:50
- * @Created by ltt
+ * @Created by xns
  */
 
 public interface FindpasswordAndlogoutService {

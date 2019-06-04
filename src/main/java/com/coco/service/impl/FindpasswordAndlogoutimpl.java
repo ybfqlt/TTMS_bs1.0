@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
  * @Classname FindpasswordAndlogoutimpl
  * @Description TODO
  * @Date 19-6-2 上午10:54
- * @Created by ltt
+ * @Created by xns
  */
 @Service("FindpasswordAndlogoutService")
 public class FindpasswordAndlogoutimpl implements FindpasswordAndlogoutService {

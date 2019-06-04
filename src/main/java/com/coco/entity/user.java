@@ -13,6 +13,16 @@ public class user implements Serializable {
 
     private String userQq;
 
+    private String userRegistertime;
+
+    public String getUserRegistertime() {
+        return userRegistertime;
+    }
+
+    public void setUserRegistertime(String userRegistertime) {
+        this.userRegistertime = userRegistertime;
+    }
+
     private static final long serialVersionUID = 1L;
 
     public Integer getUserId() {

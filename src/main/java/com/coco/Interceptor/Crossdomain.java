@@ -4,7 +4,7 @@ package com.coco.Interceptor;
  * @Classname Crossdomain
  * @Description 跨域请求的拦截器
  * @Date 19-5-27 下午5:02
- * @Created by ltt
+ * @Created by xns
  */
 
 import org.springframework.web.servlet.HandlerInterceptor;

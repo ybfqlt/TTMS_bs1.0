@@ -4,7 +4,7 @@ package com.coco.entity;
  * @Classname Result
  * @Description TODO
  * @Date 19-5-29 下午2:22
- * @Created by ltt
+ * @Created by xns
  */
 public class Result {
     private boolean judge;

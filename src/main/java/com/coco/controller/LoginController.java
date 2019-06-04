@@ -21,7 +21,7 @@ import java.util.Map;
  * @Classname loginController
  * @Description TODO
  * @Date 19-5-24 下午4:53
- * @Created by ltt
+ * @Created by xns
  */
 
 @RestController
@@ -93,22 +93,6 @@ public class LoginController {
         }
         return ma;
     }
-
-   /* *//**
-    * @Description send Securitycode
-    * @return java.lang.Object
-    *
-    **//*
-    @RequestMapping(value="/Securitycode",method = RequestMethod.POST)
-    public Object sendSecuritycode(HttpSession session,@RequestBody Map<String,String> map){
-        System.out.println(map.get("userqq"));
-        Result result = mailservice.SendSecuritycode(map.get("userqq")+"@qq.com");
-        System.out.println(result.getMessage());
-        session.setAttribute("Securitycode",result.getMessage());
-        Map<String,Object> ma = new HashMap<>();
-        ma.put("securityCodeState",result.getJudge());
-        return ma;
-    }*/
 
     /**
     * @Description Verify that the verification code is entered correctly and the name is available

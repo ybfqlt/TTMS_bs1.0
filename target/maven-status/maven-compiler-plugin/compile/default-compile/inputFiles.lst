@@ -11,6 +11,7 @@
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/LoginService.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/utils/RandomSecuritycode.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/impl/FindpasswordAndlogoutimpl.java
+/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/HalfMovie.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/controller/LoginController.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/dao/MovieMapper.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/controller/FindpasswordAndlogout.java

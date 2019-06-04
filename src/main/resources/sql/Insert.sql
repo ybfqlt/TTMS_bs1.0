@@ -47,3 +47,15 @@ values(7.6,'动作/冒险/科幻',141,'复仇者联盟2：奥创纪元','http://
        '影片故事承接上一集，钢铁侠研发的一个维和项目意外成为危机导火索，本来用于保护世界的奥创机器人却拥有了自我意识，扭曲的信念导致它掀起了一场意图灭绝人类的邪恶攻势。超级英雄们——钢铁侠、美国队长、雷神、绿巨人、黑寡妇和鹰眼等面临着又一次艰巨考验，他们更因为各自理念发生争执，内部矛盾使得复仇者联盟几近分崩离析。随着奥创崛起，复仇者联盟必须重新站在一起面对前所未有的强大劲敌；一场遍布全球、独一无二的史诗冒险就此展开！',
        '美国','复仇者联盟2,复仇者联盟：奥创时代,复仇者联盟：奥创年代');
 
+insert into Movie(movie_rating,movie_genres,movie_runtime,movie_title,movie_poster,movie_Writers,movie_directors,movie_actors,movie_plot_simple,movie_country,movie_also_known_as)
+values(7.7,'惊悚/喜剧/犯罪',139,'调音师','http://img5.mtime.cn/mg/2019/04/01/170857.92282290_270X405X4.jpg','奥利维耶·特雷内,Arijit Biswas,...','斯里兰姆·拉格万','阿尤斯曼·库拉纳 Ayushmann Khurrana,塔布 Tabu,拉迪卡·艾普特 Radhika Apte,阿尼尔·达万 Anil Dhawan',
+    '电影《调音师》的故事灵感来自于2010年的同名法国短片。影片讲述了一直假装盲人的钢琴调音师阿卡什（Akash），在意外成为一起凶杀案的“目击证人”后，所遭遇的种种出其不意的经历。影片故事波折惊奇，反转不断，是2018年度IMDb评分最高的印度影片。','印度','看不见的旋律,调琴师,盲调');
+
+insert into Movie(movie_rating,movie_genres,movie_runtime,movie_title,movie_poster,movie_Writers,movie_directors,movie_actors,movie_plot_simple,movie_country,movie_also_known_as)
+values(8.2,'剧情/喜剧/传记',130,'绿皮书','http://img5.mtime.cn/mg/2019/02/27/171111.35675299_270X405X4.jpg','尼克·维勒欧嘉,布莱恩·海耶斯·库瑞,...','彼得·法雷里',
+       '维果·莫腾森 Viggo Mortensen,马赫沙拉·阿里 Mahershala Ali,琳达·卡德里尼 Linda Cardellini,伊克博·塞巴 Iqbal Theba',
+       '一名黑人钢琴家，为前往种族歧视严重的南方巡演，找了一个粗暴的白人混混做司机。在一路开车南下的过程里，截然不同的两人矛盾不断，引发了不少争吵和笑料。但又在彼此最需要的时候，一起共渡难关。行程临近结束，两人也慢慢放下了偏见......     绿皮书，是一本专为黑人而设的旅行指南，标注了各城市中允许黑人进入的旅店、餐馆。电影由真实故事改编。',
+       '美国','绿簿旅友.....(香港译名),幸福绿皮书.....(台湾译名),绿书');
+
+
+

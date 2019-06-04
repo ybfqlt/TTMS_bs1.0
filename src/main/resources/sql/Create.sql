@@ -9,11 +9,12 @@ use TTMS;
 /*========================================================================*/
 create table User
 (
-    user_id       int not null auto_increment,
-    user_name     char(20) not null unique,
-    user_password char(50) not null,
-    user_qq       char(11) not null,
-    user_type     char(2) not null default 'u' comment 'u:普通用户 g:管理员 j:经理',
+    user_id           int not null auto_increment,
+    user_name         varchar(20) not null unique,
+    user_password     varchar(50) not null,
+    user_qq           varchar(15) not null,
+    user_type         varchar(2)  not null default 'u' comment 'u:普通用户 g:管理员 j:经理',
+    user_registertime varchar(30) default CURRENT_TIMESTAMP not null,
     primary key(user_id)
 );
 
@@ -36,9 +37,6 @@ create table Movie
     movie_also_known_as varchar(100),
     primary key(movie_id)
 );
-
-
-
 
 
 

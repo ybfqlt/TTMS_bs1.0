@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
  * @Classname MailServiceimpl
  * @Description TODO
  * @Date 19-5-29 下午6:19
- * @Created by ltt
+ * @Created by xns
  */
 
 @Service("MailService")

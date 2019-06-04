@@ -1,4 +1,5 @@
 com/coco/service/impl/LoginServiceimpl.class
+com/coco/entity/HalfMovie.class
 com/coco/service/LoginService.class
 com/coco/service/impl/Showhomepageimpl.class
 com/coco/Interceptor/Crossdomain.class

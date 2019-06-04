@@ -1,5 +1,6 @@
 package com.coco.dao;
 
+import com.coco.entity.HalfMovie;
 import com.coco.entity.Movie;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
@@ -15,6 +16,8 @@ public interface MovieMapper {
 
     Movie selectBymovieTitle(String movieTitle);
 
+
+    List<HalfMovie> selectpart();
 
     List<Movie> selectAll();
 
