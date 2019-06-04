@@ -124,7 +124,7 @@ public class LoginController {
         //注意，多余的
         /*ma.put("Securitycode",request.getSession().getAttribute("Securitycode"));*/
         if(map.get("securityCode").equals(request.getSession().getAttribute("Securitycode"))){
-            ma.put("Securitycode",request.getSession().getAttribute("Securitycode"));
+            /*ma.put("Securitycode",request.getSession().getAttribute("Securitycode"));*/
             ma.put("securityCodeState", true);
         }
         else {

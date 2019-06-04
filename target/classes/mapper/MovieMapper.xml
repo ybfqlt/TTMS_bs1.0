@@ -15,9 +15,9 @@
     <result column="movie_country" jdbcType="VARCHAR" property="movieCountry" />
     <result column="movie_also_known_as" jdbcType="VARCHAR" property="movieAlsoKnownAs" />
   </resultMap>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+  <delete id="deleteBymovieTitle" parameterType="java.lang.String">
     delete from Movie
-    where movie_id = #{movieId,jdbcType=INTEGER}
+    where movie_id = #{movieTitle,jdbcType=VARCHAR}
   </delete>
   <insert id="insert" parameterType="com.coco.entity.Movie">
     insert into Movie (movie_id, movie_rating, movie_genres, 
@@ -46,11 +46,11 @@
       movie_also_known_as = #{movieAlsoKnownAs,jdbcType=VARCHAR}
     where movie_id = #{movieId,jdbcType=INTEGER}
   </update>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  <select id="selectBymovieTitle" parameterType="java.lang.String" resultMap="BaseResultMap">
     select movie_id, movie_rating, movie_genres, movie_runtime, movie_title, movie_poster, 
     movie_Writers, movie_directors, movie_actors, movie_plot_simple, movie_country, movie_also_known_as
     from Movie
-    where movie_id = #{movieId,jdbcType=INTEGER}
+    where movie_title = #{movieTitle,jdbcType=VARCHAR}
   </select>
   <select id="selectAll" resultMap="BaseResultMap">
     select movie_id, movie_rating, movie_genres, movie_runtime, movie_title, movie_poster, 

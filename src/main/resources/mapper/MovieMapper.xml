@@ -17,7 +17,7 @@
   </resultMap>
   <delete id="deleteBymovieTitle" parameterType="java.lang.String">
     delete from Movie
-    where movie_id = #{movieTitle,jdbcType=VARCHAAR}
+    where movie_id = #{movieTitle,jdbcType=VARCHAR}
   </delete>
   <insert id="insert" parameterType="com.coco.entity.Movie">
     insert into Movie (movie_id, movie_rating, movie_genres, 

@@ -6,7 +6,7 @@ import com.coco.service.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpSession;
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,10 +32,10 @@ public class FindpasswordAndlogout {
     *
     **/
     @RequestMapping(value="/forgotpassword",method= RequestMethod.POST)
-    public Map<String,Object> sendSercuritycode(HttpSession session,@RequestBody Map<String, Object> map) {
+    public Map<String,Object> sendSercuritycode(HttpServletRequest request, @RequestBody Map<String, Object> map) {
         boolean judge;
         Map<String, Object> ma = new HashMap<>();
-        System.out.println((Boolean)map.get("dataType"));
+        /*System.out.println((Boolean)map.get("dataType"))*/;
         //输入的是用户名
         if ((Boolean) map.get("dataType") == true) {
             judge = findpasswordAndlogoutService.findname((String) map.get("data"));
@@ -43,7 +43,7 @@ public class FindpasswordAndlogout {
                 String qq = findpasswordAndlogoutService.returnqq((String) map.get("data"));
                 Result result = mailservice.SendSecuritycode(qq+"@qq.com");
                 System.out.println(result.getMessage());//测试
-                session.setAttribute("Securitycode", result.getMessage());
+                request.getSession().setAttribute("Securitycode", result.getMessage());
                 ma.put("sendSecurityCodeState", result.getJudge());
             } else {
                 ma.put("sendSecurityCodeState",false);
@@ -55,7 +55,7 @@ public class FindpasswordAndlogout {
             if (judge == true) {
                 Result result = mailservice.SendSecuritycode(map.get("data") + "@qq.com");
                 System.out.println(result.getMessage());//测试
-                session.setAttribute("Securitycode", result.getMessage());
+                request.getSession().setAttribute("Securitycode", result.getMessage());
                 ma.put("sendSecurityCodeState", result.getJudge());
             } else {
                 ma.put("sendSecurityCodeState",false);
@@ -70,11 +70,11 @@ public class FindpasswordAndlogout {
     *
     **/
     @RequestMapping(value="/seecoderight",method=RequestMethod.POST)
-    public Map<String,Object> SecurityCode(HttpSession session, @RequestBody Map<String,String> map){
+    public Map<String,Object> SecurityCode(HttpServletRequest request, @RequestBody Map<String,String> map){
         //测试
-        System.out.println(session.getAttribute("Securitycode"));
+        /*System.out.println(request.getSession().getAttribute("Securitycode"));*/
         Map<String,Object> ma = new HashMap<>();
-        if(map.get("securityCode").equals(session.getAttribute("Securitycode"))){
+        if(map.get("securityCode").equals(request.getSession().getAttribute("Securitycode"))){
             ma.put("securityCodeState", true);
         }
         else {
