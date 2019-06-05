@@ -95,4 +95,20 @@ public class FindpasswordAndlogoutimpl implements FindpasswordAndlogoutService {
             return false;
         }
     }
+
+    /**
+    * @Description logout
+    * @return java.lang.Boolean
+    *
+    **/
+    @Override
+    public Boolean logout(String userName){
+        user uu = usermapper.selectByuserName(userName);
+        if(uu==null){
+            return false;
+        }else{
+            usermapper.deleteByPrimaryKey(uu.getUserId());
+            return true;
+        }
+    }
 }

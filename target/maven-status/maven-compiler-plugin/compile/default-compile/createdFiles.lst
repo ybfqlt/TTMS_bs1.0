@@ -1,4 +1,5 @@
 com/coco/service/impl/LoginServiceimpl.class
+com/coco/dao/HallMapper.class
 com/coco/entity/HalfMovie.class
 com/coco/service/LoginService.class
 com/coco/service/impl/Showhomepageimpl.class
@@ -11,11 +12,15 @@ com/coco/dao/userMapper.class
 com/coco/controller/LoginController$temp.class
 com/coco/controller/FindpasswordAndlogout.class
 com/coco/service/impl/FindpasswordAndlogoutimpl.class
+com/coco/service/impl/HallServiceimpl.class
+com/coco/entity/Hall.class
 com/coco/dao/MovieMapper.class
 com/coco/service/MailService.class
 com/coco/utils/RandomSecuritycode.class
 com/coco/service/FindpasswordAndlogoutService.class
 com/coco/service/impl/MailServiceimpl.class
+com/coco/service/HallService.class
 com/coco/Filter/AjaxFilter.class
+com/coco/controller/HallController.class
 com/coco/controller/LoginController.class
 com/coco/service/ShowhomepageService.class

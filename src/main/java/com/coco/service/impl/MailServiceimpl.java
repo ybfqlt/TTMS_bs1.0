@@ -41,7 +41,7 @@ public class MailServiceimpl implements MailService {
             email.setAuthentication("672107240@qq.com", "sljbjdmdpyxtbfbh");
             email.setSSLOnConnect(true);
             String securitycode = RandomSecuritycode.achieveCode();
-            re.setMessage(securitycode);
+            re.setMes(securitycode);
             email.setSubject("注册验证码");
             email.setMsg("尊敬的用户:你好!\n注册验证码为:"+ securitycode + "\n");
             email.send();

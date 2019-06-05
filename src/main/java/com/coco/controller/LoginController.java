@@ -1,19 +1,13 @@
 package com.coco.controller;
 
-
 import com.coco.entity.Result;
 import com.coco.entity.user;
 import com.coco.service.LoginService;
 import com.coco.service.MailService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpRequest;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
-
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -27,7 +21,6 @@ import java.util.Map;
 @RestController
 @RequestMapping("/up")
 public class LoginController {
-    /*private Logger logger = Logger.getLogger(LoginController.class);*/
 
     @Autowired
     private LoginService loginService;
@@ -35,41 +28,40 @@ public class LoginController {
     @Autowired
     private MailService mailservice;
 
-    public static class temp{
-        private String name;
-        private String password;
-
-        public String getPassword() {
-            return password;
-        }
-
-        public void setPassword(String password) {
-            this.password = password;
-        }
-
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-    }
-
     /**
     * @Description login in
     * @return org.springframework.web.servlet.ModelAndView
     *
     **/
     @RequestMapping(value="/login",method= RequestMethod.POST)
-    public ModelAndView getlogin(@RequestBody temp log){
-        Result res = loginService.judgelogin(log.name,log.password);
-        ModelAndView mv = new ModelAndView();
-        mv.addObject("loginInfo",res.getJudge());
-        mv.addObject("type",res.getMessage());
-        mv.setView(new MappingJackson2JsonView());
-        return mv;
+    public Map<String,Object> getlogin(HttpServletRequest request,@RequestBody Map<String,String> map){
+        Result res = loginService.judgelogin(map.get("name"),map.get("password"));
+        Map ma = new HashMap();
+        if(res.getJudge()==true){
+            ma.put("loginInfo",res.getJudge());
+            ma.put("type",res.getMes());
+            ma.put("msg","登陆成功，欢迎使用!!!");
+            request.getSession().setAttribute("user",map.get("name"));
+            request.getSession().setAttribute("login",true);
+        }
+        else{
+            ma.put("loginInfo",res.getJudge());
+            ma.put("type",res.getMes());
+        }
+        return ma;
+    }
+
+    /**
+    * @Description Get the currently logged in user
+    * @return java.util.Map<java.lang.String,java.lang.Object>
+    *
+    **/
+    @RequestMapping(value="/Currentuser",method=RequestMethod.GET)
+    public Map<String,Object> getCurrentUser(HttpServletRequest request){
+        Map ma = new HashMap();
+        ma.put("loginuser",request.getSession().getAttribute("user"));
+        ma.put("loginState",request.getSession().getAttribute("login"));
+        return ma;
     }
 
     /**
@@ -84,9 +76,10 @@ public class LoginController {
         if(res.getJudge()==true){
             ma.put("qqState",res.getJudge());
             Result result = mailservice.SendSecuritycode(map.get("qq")+"@qq.com");
-            System.out.println(result.getMessage());
-            request.getSession().setAttribute("Securitycode",result.getMessage());
+            System.out.println(result.getMes());
+            request.getSession().setAttribute("Securitycode",result.getMes());
             /*ma.put("securityCodeState",result.getJudge());*/
+            ma.put("Securitycode",result.getMes());
         }
         else {
             ma.put("qqState",false);
@@ -106,9 +99,8 @@ public class LoginController {
         Map<String,Object> ma = new HashMap<>();
         ma.put("nameState",result);
         //注意，多余的
-        /*ma.put("Securitycode",request.getSession().getAttribute("Securitycode"));*/
+        ma.put("Securitycode",request.getSession().getAttribute("Securitycode"));
         if(map.get("securityCode").equals(request.getSession().getAttribute("Securitycode"))){
-            /*ma.put("Securitycode",request.getSession().getAttribute("Securitycode"));*/
             ma.put("securityCodeState", true);
         }
         else {

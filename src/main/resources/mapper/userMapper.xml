@@ -3,10 +3,10 @@
 <mapper namespace="com.coco.dao.userMapper">
   <resultMap id="BaseResultMap" type="com.coco.entity.user">
     <id column="user_id" jdbcType="INTEGER" property="userId" />
-    <result column="user_name" jdbcType="CHAR" property="userName" />
-    <result column="user_password" jdbcType="CHAR" property="userPassword" />
-    <result column="user_type" jdbcType="CHAR" property="userType" />
-    <result column="user_qq" jdbcType="CHAR" property="userQq" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_password" jdbcType="VARCHAR" property="userPassword" />
+    <result column="user_type" jdbcType="VARCHAR" property="userType" />
+    <result column="user_qq" jdbcType="VARCHAR" property="userQq" />
   </resultMap>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from User
@@ -15,19 +15,19 @@
   <insert id="insert" parameterType="com.coco.entity.user">
     insert into User (user_id, user_name, user_password, 
      user_qq)
-    values (#{userId,jdbcType=INTEGER}, #{userName,jdbcType=CHAR}, #{userPassword,jdbcType=CHAR}, 
-      #{userQq,jdbcType=CHAR})
+    values (#{userId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{userPassword,jdbcType=VARCHAR},
+      #{userQq,jdbcType=VARCHAR})
   </insert>
   <update id="updatepasswordByQq" parameterType="com.coco.entity.user">
     update User
-    set user_password = #{userPassword,jdbcType=CHAR}
-    where user_qq = #{userQq,jdbcType=CHAR}
+    set user_password = #{userPassword,jdbcType=VARCHAR}
+    where user_qq = #{userQq,jdbcType=VARCHAR}
   </update>
 
   <update id="updatepassworduserName" parameterType="com.coco.entity.user">
     update User
-    set user_password = #{userPassword,jdbcType=CHAR}
-    where user_name = #{userName,jdbcType=CHAR}
+    set user_password = #{userPassword,jdbcType=VARCHAR}
+    where user_name = #{userName,jdbcType=VARCHAR}
   </update>
 
   <select id="selectByuserQq" parameterType="String" resultMap="BaseResultMap">

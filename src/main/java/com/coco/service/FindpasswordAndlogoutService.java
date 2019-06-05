@@ -19,4 +19,6 @@ public interface FindpasswordAndlogoutService {
     Boolean changePasswordByqq(String userQq,String password);
 
     Boolean changePasswordByname(String userName,String password);
+
+    Boolean logout(String userName);
 }

@@ -34,14 +34,15 @@ public class LoginServiceimpl implements LoginService {
         user userr = usermapper.selectByuserName(name);
         Result result = new Result();
         if(userr == null){
-            result.setMessage("用户名不存在");
+            result.setJudge(false);
+            result.setMes("对不起，用户名不存在!!!");
         }else{
             if(userr.getUserPassword().equals(password)){
                 result.setJudge(true);
-                result.setMessage(userr.getUserType());
+                result.setMes(userr.getUserType());
             }else{
                 result.setJudge(false);
-                result.setMessage("密码错误");
+                result.setMes("您的密码输入错误!!!");
             }
         }
         return result;

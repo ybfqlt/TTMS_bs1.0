@@ -42,8 +42,8 @@ public class FindpasswordAndlogout {
             if (judge == true) {
                 String qq = findpasswordAndlogoutService.returnqq((String) map.get("data"));
                 Result result = mailservice.SendSecuritycode(qq+"@qq.com");
-                System.out.println(result.getMessage());//测试
-                request.getSession().setAttribute("Securitycode", result.getMessage());
+                System.out.println(result.getMes());//测试
+                request.getSession().setAttribute("Securitycode", result.getMes());
                 ma.put("sendSecurityCodeState", result.getJudge());
             } else {
                 ma.put("sendSecurityCodeState",false);
@@ -54,8 +54,8 @@ public class FindpasswordAndlogout {
             judge = findpasswordAndlogoutService.findqq((String) map.get("data"));
             if (judge == true) {
                 Result result = mailservice.SendSecuritycode(map.get("data") + "@qq.com");
-                System.out.println(result.getMessage());//测试
-                request.getSession().setAttribute("Securitycode", result.getMessage());
+                System.out.println(result.getMes());//测试
+                request.getSession().setAttribute("Securitycode", result.getMes());
                 ma.put("sendSecurityCodeState", result.getJudge());
             } else {
                 ma.put("sendSecurityCodeState",false);
@@ -100,6 +100,37 @@ public class FindpasswordAndlogout {
             judge=findpasswordAndlogoutService.changePasswordByqq((String)map.get("data"),(String)map.get("newPassword"));
         }
         ma.put("state",judge);
+        return ma;
+    }
+
+    /**
+    * @Description logout
+    * @return void
+    *
+    **/
+    @RequestMapping(value="/signout",method=RequestMethod.GET)
+    public void Signout(HttpServletRequest request){
+        if(request.getSession(false)!=null){
+            request.getSession(false).invalidate();
+        }
+    }
+
+    /**
+    * @Description logout
+    * @return java.util.Map<java.lang.String,java.lang.Object>
+    *
+    **/
+    @RequestMapping(value="/logout",method=RequestMethod.POST)
+    public Map<String,Object> Logout(HttpServletRequest request,Map<String,String> map){
+        Map<String,Object> ma =new HashMap<>();
+        Boolean judge = findpasswordAndlogoutService.logout(map.get("userName"));
+        ma.put("logoutState",judge);
+        if(judge==false){
+            ma.put("msg","请先登录!!!");
+        }else{
+            request.getSession(false).invalidate();
+            ma.put("msg","注销成功!!!");
+        }
         return ma;
     }
 }

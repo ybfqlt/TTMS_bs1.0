@@ -46,7 +46,8 @@
             <property name="enableSubPackages" value="true"></property>
         </javaClientGenerator>
         <!--为哪些表生成代码 tableName=表名字  domainObjectName 生成实体类名字-->
-        <table catalog="TTMS" tableName="User" domainObjectName="user" />
-        <table catalog="TTMS" tableName="Movie" domainObjectName="Movie" />
+<!--        <table catalog="TTMS" tableName="User" domainObjectName="user" />
+        <table catalog="TTMS" tableName="Movie" domainObjectName="Movie" />-->
+        <table catalog="TTMS" tableName="Hall" domainObjectName="Hall"/>
     </context>
 </generatorConfiguration>

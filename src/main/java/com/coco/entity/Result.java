@@ -8,13 +8,13 @@ package com.coco.entity;
  */
 public class Result {
     private boolean judge;
-    private Object message;
+    private Object mes;
 
     public Result(){
     }
     public Result(boolean judge,Object type){
         this.judge=judge;
-        this.message = message;
+        this.mes = mes;
     }
 
     public boolean getJudge() {
@@ -25,11 +25,11 @@ public class Result {
         this.judge = judge;
     }
 
-    public Object getMessage() {
-        return message;
+    public Object getMes() {
+        return mes;
     }
 
-    public void setMessage(Object message) {
-        this.message = message;
+    public void setMes(Object mes) {
+        this.mes = mes;
     }
 }
