@@ -1,5 +1,6 @@
 package com.coco.service;
 
+import com.coco.entity.Result;
 import com.coco.entity.user;
 
 /**
@@ -20,5 +21,5 @@ public interface FindpasswordAndlogoutService {
 
     Boolean changePasswordByname(String userName,String password);
 
-    Boolean logout(String name);
+    Result logout(String name);
 }

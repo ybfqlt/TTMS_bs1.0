@@ -1,6 +1,7 @@
 package com.coco.service.impl;
 
 import com.coco.dao.userMapper;
+import com.coco.entity.Result;
 import com.coco.entity.user;
 import com.coco.service.FindpasswordAndlogoutService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -102,13 +103,16 @@ public class FindpasswordAndlogoutimpl implements FindpasswordAndlogoutService {
     *
     **/
     @Override
-    public Boolean logout(String name){
+    public Result logout(String name){
+        Result res = new Result();
         user userr = usermapper.selectByuserName(name);
         if(userr == null){
-            return false;
+            res.setJudge(false);
         }else{
             usermapper.deleteByPrimaryKey(userr.getUserId());
-            return true;
+            res.setJudge(true);
+            res.setMes(userr.getUserQq());
         }
+        return res;
     }
 }
