@@ -79,7 +79,7 @@ public class LoginController {
             System.out.println(result.getMes());
             request.getSession().setAttribute("Securitycode",result.getMes());
             /*ma.put("securityCodeState",result.getJudge());*/
-            ma.put("Securitycode",result.getMes());
+            /*ma.put("Securitycode",result.getMes());*/
         }
         else {
             ma.put("qqState",false);
@@ -99,7 +99,7 @@ public class LoginController {
         Map<String,Object> ma = new HashMap<>();
         ma.put("nameState",result);
         //注意，多余的
-        ma.put("Securitycode",request.getSession().getAttribute("Securitycode"));
+        /*ma.put("Securitycode",request.getSession().getAttribute("Securitycode"));*/
         if(map.get("securityCode").equals(request.getSession().getAttribute("Securitycode"))){
             ma.put("securityCodeState", true);
         }

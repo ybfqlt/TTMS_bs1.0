@@ -102,12 +102,12 @@ public class FindpasswordAndlogoutimpl implements FindpasswordAndlogoutService {
     *
     **/
     @Override
-    public Boolean logout(String userName){
-        user uu = usermapper.selectByuserName(userName);
-        if(uu==null){
+    public Boolean logout(String name){
+        user userr = usermapper.selectByuserName(name);
+        if(userr == null){
             return false;
         }else{
-            usermapper.deleteByPrimaryKey(uu.getUserId());
+            usermapper.deleteByPrimaryKey(userr.getUserId());
             return true;
         }
     }

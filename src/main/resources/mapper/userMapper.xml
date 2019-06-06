@@ -7,15 +7,16 @@
     <result column="user_password" jdbcType="VARCHAR" property="userPassword" />
     <result column="user_type" jdbcType="VARCHAR" property="userType" />
     <result column="user_qq" jdbcType="VARCHAR" property="userQq" />
+    <result column="user_registertime" jdbcType="VARCHAR" property="userRegistertime"/>
   </resultMap>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from User
     where user_id = #{userId,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.coco.entity.user">
-    insert into User (user_id, user_name, user_password, 
+    insert into User (user_name, user_password,
      user_qq)
-    values (#{userId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{userPassword,jdbcType=VARCHAR},
+    values (#{userName,jdbcType=VARCHAR}, #{userPassword,jdbcType=VARCHAR},
       #{userQq,jdbcType=VARCHAR})
   </insert>
   <update id="updatepasswordByQq" parameterType="com.coco.entity.user">

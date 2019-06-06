@@ -4,12 +4,12 @@ com/coco/entity/HalfMovie.class
 com/coco/service/LoginService.class
 com/coco/service/impl/Showhomepageimpl.class
 com/coco/Interceptor/Crossdomain.class
+com/coco/controller/ManageuserController.class
 com/coco/entity/Movie.class
 com/coco/entity/Result.class
 com/coco/controller/ShowhomepageController.class
 com/coco/entity/user.class
 com/coco/dao/userMapper.class
-com/coco/controller/LoginController$temp.class
 com/coco/controller/FindpasswordAndlogout.class
 com/coco/service/impl/FindpasswordAndlogoutimpl.class
 com/coco/service/impl/HallServiceimpl.class

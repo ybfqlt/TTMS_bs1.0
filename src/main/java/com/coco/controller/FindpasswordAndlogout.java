@@ -121,9 +121,9 @@ public class FindpasswordAndlogout {
     *
     **/
     @RequestMapping(value="/logout",method=RequestMethod.POST)
-    public Map<String,Object> Logout(HttpServletRequest request,Map<String,String> map){
+    public Map<String,Object> Logout(HttpServletRequest request,@RequestBody Map<String,String> map){
         Map<String,Object> ma =new HashMap<>();
-        Boolean judge = findpasswordAndlogoutService.logout(map.get("userName"));
+        Boolean judge = findpasswordAndlogoutService.logout(map.get("username"));
         ma.put("logoutState",judge);
         if(judge==false){
             ma.put("msg","请先登录!!!");
