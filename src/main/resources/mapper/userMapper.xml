@@ -31,6 +31,12 @@
     where user_name = #{userName,jdbcType=VARCHAR}
   </update>
 
+  <update id="updateByuserId" parameterType="com.coco.entity.user">
+    update User
+    set user_name = #{userName,jdbcType=VARCHAR},user_password = #{userPassword,jdbcType=VARCHAR}
+    where user_id = #{userId,jdbcType=INTEGER}
+  </update>
+
   <select id="selectByuserQq" parameterType="String" resultMap="BaseResultMap">
     select user_id, user_name, user_password, user_type, user_qq, user_registertime
     from User where user_qq=#{userQq}
@@ -43,5 +49,11 @@
   <select id="selectAll" resultMap="BaseResultMap">
     select user_id, user_name, user_password, user_type, user_qq ,user_registertime
     from User
+  </select>
+
+  <select id="selectjAll" resultMap="BaseResultMap">
+    select user_id, user_name, user_password, user_type, user_qq ,user_registertime
+    from User
+    where user_type ='j';
   </select>
 </mapper>

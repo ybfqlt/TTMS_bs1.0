@@ -18,9 +18,11 @@ public interface userMapper {
     user selectByuserQq(String userQq);
 
     List<user> selectAll();
+    List<user> selectjAll();
 
     int updatepasswordByQq(user record);
 
     int updatepassworduserName(user record);
 
+    int updateByuserId(user uu);
 }
