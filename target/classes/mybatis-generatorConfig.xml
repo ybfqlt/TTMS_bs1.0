@@ -49,6 +49,7 @@
 <!--        <table catalog="TTMS" tableName="User" domainObjectName="user" />
         <table catalog="TTMS" tableName="Movie" domainObjectName="Movie" />-->
         <!--<table catalog="TTMS" tableName="Hall" domainObjectName="Hall"/>-->
-        <table catalog="TTMS" tableName="Seat" domainObjectName="Seat"/>
+        <!--<table catalog="TTMS" tableName="Seat" domainObjectName="Seat"/>-->
+        <table catalog="TTMS" tableName="Schedule" domainObjectName="Schedule"/>
     </context>
 </generatorConfiguration>

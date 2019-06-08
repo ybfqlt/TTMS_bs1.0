@@ -6,7 +6,7 @@
     <result column="hall_id" jdbcType="INTEGER" property="hallId" />
     <result column="seat_row" jdbcType="INTEGER" property="seatRow" />
     <result column="seat_col" jdbcType="INTEGER" property="seatCol" />
-    <result column="seat_status" jdbcType="TINYINT" property="seatStatus" />
+    <result column="seat_status" jdbcType="SMALLINT" property="seatStatus" />
   </resultMap>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from Seat
@@ -16,20 +16,20 @@
     insert into Seat (seat_id, hall_id, seat_row, 
       seat_col, seat_status)
     values (#{seatId,jdbcType=INTEGER}, #{hallId,jdbcType=INTEGER}, #{seatRow,jdbcType=INTEGER}, 
-      #{seatCol,jdbcType=INTEGER}, #{seatStatus,jdbcType=TINYINT})
+      #{seatCol,jdbcType=INTEGER}, #{seatStatus,jdbcType=SMALLINT})
   </insert>
   <update id="updateByPrimaryKey" parameterType="com.coco.entity.Seat">
     update Seat
     set hall_id = #{hallId,jdbcType=INTEGER},
       seat_row = #{seatRow,jdbcType=INTEGER},
       seat_col = #{seatCol,jdbcType=INTEGER},
-      seat_status = #{seatStatus,jdbcType=TINYINT}
+      seat_status = #{seatStatus,jdbcType=SMALLINT}
     where seat_id = #{seatId,jdbcType=INTEGER}
   </update>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  <select id="selectByHallId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select seat_id, hall_id, seat_row, seat_col, seat_status
     from Seat
-    where seat_id = #{seatId,jdbcType=INTEGER}
+    where hall_id = #{hallId,jdbcType=INTEGER}
   </select>
   <select id="selectAll" resultMap="BaseResultMap">
     select seat_id, hall_id, seat_row, seat_col, seat_status

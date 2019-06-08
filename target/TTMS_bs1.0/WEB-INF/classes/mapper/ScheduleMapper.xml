@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coco.dao.ScheduleMapper">
+  <resultMap id="BaseResultMap" type="com.coco.entity.Schedule">
+    <id column="schedule_id" jdbcType="INTEGER" property="scheduleId" />
+    <result column="hall_id" jdbcType="INTEGER" property="hallId" />
+    <result column="movie_id" jdbcType="INTEGER" property="movieId" />
+    <result column="schedule_start_time" jdbcType="TIMESTAMP" property="scheduleStartTime" />
+    <result column="schedule_end_time" jdbcType="TIMESTAMP" property="scheduleEndTime" />
+    <result column="schedule_ticket_price" jdbcType="DECIMAL" property="scheduleTicketPrice" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from Schedule
+    where schedule_id = #{scheduleId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.coco.entity.Schedule">
+    insert into Schedule (schedule_id, hall_id, movie_id, 
+      schedule_start_time, schedule_end_time, 
+      schedule_ticket_price)
+    values (#{scheduleId,jdbcType=INTEGER}, #{hallId,jdbcType=INTEGER}, #{movieId,jdbcType=INTEGER}, 
+      #{scheduleStartTime,jdbcType=TIMESTAMP}, #{scheduleEndTime,jdbcType=TIMESTAMP}, 
+      #{scheduleTicketPrice,jdbcType=DECIMAL})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.coco.entity.Schedule">
+    update Schedule
+    set hall_id = #{hallId,jdbcType=INTEGER},
+      movie_id = #{movieId,jdbcType=INTEGER},
+      schedule_start_time = #{scheduleStartTime,jdbcType=TIMESTAMP},
+      schedule_end_time = #{scheduleEndTime,jdbcType=TIMESTAMP},
+      schedule_ticket_price = #{scheduleTicketPrice,jdbcType=DECIMAL}
+    where schedule_id = #{scheduleId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select schedule_id, hall_id, movie_id, schedule_start_time, schedule_end_time, schedule_ticket_price
+    from Schedule
+    where schedule_id = #{scheduleId,jdbcType=INTEGER}
+  </select>
+  <select id="selectByhallId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select schedule_id, hall_id, movie_id, schedule_start_time, schedule_end_time, schedule_ticket_price
+    from Schedule
+    where hall_id = #{hallId,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectByhallIdstarttime"  resultMap="BaseResultMap">
+    select schedule_id, hall_id, movie_id, schedule_start_time, schedule_end_time, schedule_ticket_price
+    from Schedule
+    where hall_id = #{hallId} and schedule_start_time >= #{starttime} and #{endtime} > schedule_start_time
+  </select>
+
+  <select id="selectByhallIdendtime"  resultMap="BaseResultMap">
+    select schedule_id, hall_id, movie_id, schedule_start_time, schedule_end_time, schedule_ticket_price
+    from Schedule
+    where hall_id = #{hallId} and schedule_end_time >= #{starttime} and #{endtime} > schedule_end_time
+  </select>
+
+  <select id="selectAll" resultMap="BaseResultMap">
+    select schedule_id, hall_id, movie_id, schedule_start_time, schedule_end_time, schedule_ticket_price
+    from Schedule
+  </select>
+</mapper>

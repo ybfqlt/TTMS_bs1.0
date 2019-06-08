@@ -14,8 +14,11 @@ public interface MovieMapper {
 
     int insert(Movie record);
 
+    //根据电影名称进行查询
     Movie selectBymovieTitle(String movieTitle);
 
+    //根据电影id进行查询
+    Movie selectBymovieId(Integer movieId);
 
     List<HalfMovie> selectpart();
 
