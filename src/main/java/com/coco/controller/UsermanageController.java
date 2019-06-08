@@ -19,7 +19,7 @@ import java.util.Map;
  * @Created by xns
  */
 @RestController
-@RequestMapping(value="/manager")
+@RequestMapping(value="/in/manager")
 public class UsermanageController {
 
     @Autowired

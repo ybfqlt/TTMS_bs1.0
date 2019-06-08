@@ -15,7 +15,7 @@ import java.util.Map;
  * @Created by xns
  */
 @RestController
-@RequestMapping("/in/manager")
+@RequestMapping("/in/jingli")
 public class HallController {
     @Autowired
     private HallService hallService;

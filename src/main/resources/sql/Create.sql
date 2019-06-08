@@ -57,6 +57,7 @@ create table Hall
     primary key (hall_id)
 );
 
+drop table Seat;
 /*========================================================================*/
 /* Table: Seat座位表                                             */
 /*========================================================================*/
@@ -66,8 +67,8 @@ create table Seat
     hall_id      int,
     seat_row     int,
     seat_col     int,
-    seat_status  tinyint comment '1:有座
-                                  0:无座位/损坏',
+    seat_status  smallint comment '1:有座
+                                   0:无座位/损坏',
     primary key (seat_id)
 );
 
@@ -86,7 +87,7 @@ create table Schedule
     primary key (schedule_id)
 );
 
-
+drop table Ticket;
 /*========================================================================*/
 /* Table: Ticket票表                                                */
 /*========================================================================*/
@@ -95,23 +96,23 @@ create table Ticket
     ticket_id      bigint not null auto_increment,
     seat_id        int,
     schedule_id    int,
-    ticket_status  tinyint comment '1:已购
+    ticket_status  smallint comment '1:已购
                                     0:未购',
     primary key (ticket_id)
 );
 
-
+drop table Orders;
 /*========================================================================*/
 /* Table:  Order订单表                                              */
 /*========================================================================*/
 create table Orders
 (
     orders_id       int not null auto_increment,
-    user_id        int,
-    ticket_id      bigint,
+    user_id         int,
+    ticket_id       bigint,
     orders_time     datetime not null,
-    orders_type     tinyint comment '1:购买订单
-                                    0:退款订单',
+    orders_type     smallint comment '1:购买订单
+                                     0:退款订单',
     primary key (orders_id)
 );
 
@@ -153,3 +154,14 @@ alter table Ticket add constraint FK_ticket_schedule foreign key(schedule_id)
 alter table Salestatistics add constraint FK_Salestatistics_movie foreign key(movie_id)
     references Movie(movie_id) on delete restrict on update restrict;
 
+
+
+
+alter table Seat drop foreign key FK_hall_seat;
+alter table Schedule drop foreign key FK_schedule_hall;
+alter table Schedule drop foreign key FK_schedule_movie;
+alter table Orders drop foreign key FK_order_user;
+alter table Orders drop foreign key FK_order_ticket;
+alter table Ticket drop foreign key FK_ticket_seat;
+alter table Ticket drop foreign key FK_ticket_schedule;
+alter table Salestatistics drop foreign key FK_Salestatistics_movie;

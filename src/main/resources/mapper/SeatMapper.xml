@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coco.dao.SeatMapper">
+  <resultMap id="BaseResultMap" type="com.coco.entity.Seat">
+    <id column="seat_id" jdbcType="INTEGER" property="seatId" />
+    <result column="hall_id" jdbcType="INTEGER" property="hallId" />
+    <result column="seat_row" jdbcType="INTEGER" property="seatRow" />
+    <result column="seat_col" jdbcType="INTEGER" property="seatCol" />
+    <result column="seat_status" jdbcType="SMALLINT" property="seatStatus" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from Seat
+    where seat_id = #{seatId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.coco.entity.Seat">
+    insert into Seat (seat_id, hall_id, seat_row, 
+      seat_col, seat_status)
+    values (#{seatId,jdbcType=INTEGER}, #{hallId,jdbcType=INTEGER}, #{seatRow,jdbcType=INTEGER}, 
+      #{seatCol,jdbcType=INTEGER}, #{seatStatus,jdbcType=SMALLINT})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.coco.entity.Seat">
+    update Seat
+    set hall_id = #{hallId,jdbcType=INTEGER},
+      seat_row = #{seatRow,jdbcType=INTEGER},
+      seat_col = #{seatCol,jdbcType=INTEGER},
+      seat_status = #{seatStatus,jdbcType=SMALLINT}
+    where seat_id = #{seatId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByHallId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select seat_id, hall_id, seat_row, seat_col, seat_status
+    from Seat
+    where hall_id = #{hallId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select seat_id, hall_id, seat_row, seat_col, seat_status
+    from Seat
+  </select>
+</mapper>

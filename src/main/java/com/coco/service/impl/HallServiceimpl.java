@@ -50,10 +50,11 @@ public class HallServiceimpl implements HallService {
     public Boolean AddHall(Hall hall){
         Hall halll = hallMapper.selectByhallName(hall.getHallName());
         if(halll==null){
-            return false;
+            hall.setHallStatus((short) 0);
+            int a=hallMapper.insert(hall);
         }
         else{
-            int a=hallMapper.insert(hall);
+           return false;
         }
         return true;
     }
