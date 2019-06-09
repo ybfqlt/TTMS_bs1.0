@@ -72,7 +72,7 @@ create table Seat
     primary key (seat_id)
 );
 
-
+drop table Schedule;
 /*========================================================================*/
 /* Table:Schedule                                                */
 /*========================================================================*/
@@ -84,6 +84,8 @@ create table Schedule
     schedule_start_time   datetime not null,
     schedule_end_time     datetime not null,
     schedule_ticket_price numeric(5,2),
+    ticketinit_status     smallint comment '1:未生成演出票
+                                            0:已经生成演出票',
     primary key (schedule_id)
 );
 

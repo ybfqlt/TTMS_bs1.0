@@ -14,9 +14,11 @@ public interface ScheduleMapper {
 
     int insert(Schedule record);
 
-    Schedule selectByPrimaryKey(Integer scheduleId);
+    //根据演出计划id查询演出计划
+    Schedule selectByscheduleId(Integer scheduleId);
 
-    List<Schedule> selectAll();
+    //根据剧目id查询演出计划
+    List<Schedule> selectBymovieId(Integer movieId);
 
     //根据演出厅id查询演出计划
     List<Schedule> selectByhallId(Integer hallId);
@@ -27,5 +29,10 @@ public interface ScheduleMapper {
     //根据演出厅id查看结束时间是否与待添加计划冲突的计划
     List<Schedule> selectByhallIdendtime(@Param("hallId") Integer hallId, @Param("starttime") String starttime, @Param("endtime")String endtime);
 
-     int updateByPrimaryKey(Schedule record);
+    //根据剧目id和日期查询有关演出计划
+    List<Schedule> selectBymovieIdtime(@Param("movieId") Integer movieId,@Param("starttime") String starttime, @Param("endtime") String endtime);
+
+    List<Schedule> selectAll();
+
+    int updateByScheduleId(Schedule record);
 }

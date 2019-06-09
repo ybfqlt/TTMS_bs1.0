@@ -2,7 +2,6 @@ package com.coco.entity;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.sql.Time;
 import java.sql.Timestamp;
 import java.util.Date;
 
@@ -13,11 +12,13 @@ public class Schedule implements Serializable {
 
     private Integer movieId;
 
-    private Timestamp scheduleStartTime;
+    private Date scheduleStartTime;
 
     private Timestamp scheduleEndTime;
 
     private BigDecimal scheduleTicketPrice;
+
+    private Short ticketinitStatus;
 
     private static final long serialVersionUID = 1L;
 
@@ -45,11 +46,11 @@ public class Schedule implements Serializable {
         this.movieId = movieId;
     }
 
-    public Timestamp getScheduleStartTime() {
+    public Date getScheduleStartTime() {
         return scheduleStartTime;
     }
 
-    public void setScheduleStartTime(Timestamp scheduleStartTime) {
+    public void setScheduleStartTime(Date scheduleStartTime) {
         this.scheduleStartTime = scheduleStartTime;
     }
 
@@ -69,6 +70,14 @@ public class Schedule implements Serializable {
         this.scheduleTicketPrice = scheduleTicketPrice;
     }
 
+    public Short getTicketinitStatus() {
+        return ticketinitStatus;
+    }
+
+    public void setTicketinitStatus(Short ticketinitStatus) {
+        this.ticketinitStatus = ticketinitStatus;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -81,6 +90,7 @@ public class Schedule implements Serializable {
         sb.append(", scheduleStartTime=").append(scheduleStartTime);
         sb.append(", scheduleEndTime=").append(scheduleEndTime);
         sb.append(", scheduleTicketPrice=").append(scheduleTicketPrice);
+        sb.append(", ticketinitStatus=").append(ticketinitStatus);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();

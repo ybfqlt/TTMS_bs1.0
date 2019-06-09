@@ -16,7 +16,7 @@ public interface ScheduleService {
     Boolean addSchedule(Schedule schedule) throws ParseException;
 
     //根据剧目名称查询演出计划
-    Result selectScheduleBymovieId(Integer movieId);
+    Result selectScheduleBymovieId(String movieTitle);
 
     //查询所有演出计划
     Result selectAllSchedule();
