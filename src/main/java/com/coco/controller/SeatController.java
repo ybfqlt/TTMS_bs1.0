@@ -24,7 +24,7 @@ public class SeatController {
     private SeatmanageService seatmanageService;
 
     /**
-    * @Description 根据演出厅的iid返回演出厅的座位信息
+    * @Description 根据演出厅的id返回演出厅的座位信息
     * @return java.util.Map<java.lang.String,java.lang.Object>
     *
     **/

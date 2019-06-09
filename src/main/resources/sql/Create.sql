@@ -98,8 +98,8 @@ create table Ticket
     ticket_id      bigint not null auto_increment,
     seat_id        int,
     schedule_id    int,
-    ticket_status  smallint comment '1:已购
-                                    0:未购',
+    ticket_status  smallint comment '0:已购
+                                     1:可购',
     primary key (ticket_id)
 );
 

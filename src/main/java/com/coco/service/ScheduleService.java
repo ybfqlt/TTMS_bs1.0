@@ -13,10 +13,10 @@ import java.text.ParseException;
  */
 public interface ScheduleService {
     //添加演出计划
-    Boolean addSchedule(Schedule schedule) throws ParseException;
+    Result addSchedule(Schedule schedule) throws ParseException;
 
     //根据剧目名称查询演出计划
-    Result selectScheduleBymovieId(String movieTitle);
+    Result selectScheduleBymovieTitle(String movieTitle);
 
     //查询所有演出计划
     Result selectAllSchedule();

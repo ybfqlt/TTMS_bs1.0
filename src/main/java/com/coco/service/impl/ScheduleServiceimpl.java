@@ -36,18 +36,26 @@ public class ScheduleServiceimpl implements ScheduleService {
     @Autowired
     private HallMapper hallMapper;
 
+
     /**
     * @Description 添加演出计划
     * @return java.lang.Boolean
     *
     **/
     @Override
-    public Boolean addSchedule(Schedule schedule){
+    public Result addSchedule(Schedule schedule) throws ParseException{
+        Result res = new Result();
         Movie movie = movieMapper.selectBymovieId(schedule.getMovieId());
         Hall hall = hallMapper.selectByPrimaryKey(schedule.getHallId());
-        if(movie == null || hall == null){
-            return false;
+        if(movie == null){
+            res.setJudge(false);
+            res.setMes("剧目不存在!!!");
         }
+        if(hall == null){
+            res.setJudge(false);
+            res.setMes("演出厅不存在!!!");
+        }
+
 
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Calendar endtime = Calendar.getInstance();
@@ -59,7 +67,8 @@ public class ScheduleServiceimpl implements ScheduleService {
 
         Date date=new Date();//获取系统时间
         if(date.getTime()>=((Date)endtime.getTime()).getTime()){
-            return false;
+            res.setJudge(false);
+            res.setMes("对不起，您添加的时间已经是过去时，请慎重!!!");
         }
 
         //留出入场时间
@@ -74,18 +83,22 @@ public class ScheduleServiceimpl implements ScheduleService {
 
         List<Schedule> schedules = scheduleMapper.selectByhallIdstarttime(schedule.getHallId(),df.format(beforestart),df.format(afterend));
         if(schedules!=null){
-            return false;
+            res.setJudge(false);
+            res.setMes("对不起，在此时间段有其他计划，不能添加!!!");
         }
         else{
             List<Schedule> scheduless = scheduleMapper.selectByhallIdendtime(schedule.getHallId(),df.format(beforestart),df.format(afterend));
             if(scheduless!=null){
-                return false;
+                res.setJudge(false);
+                res.setMes("对不起，在此时间段有其他计划，不能添加!!!");
             }
             else{
                 scheduleMapper.insert(schedule);
-                return true;
+                res.setJudge(true);
+                res.setMes("添加成功,演出票生成成功!!!");
             }
         }
+        return res;
         //自动生成演出票
         //等待写
     }
@@ -96,7 +109,7 @@ public class ScheduleServiceimpl implements ScheduleService {
     *
     **/
     @Override
-    public Result selectScheduleBymovieId(String movieTitle){
+    public Result selectScheduleBymovieTitle(String movieTitle){
         Result res = new Result( );
         Movie movie = movieMapper.selectBymovieTitle(movieTitle);
         if(movie == null){
@@ -191,6 +204,7 @@ public class ScheduleServiceimpl implements ScheduleService {
     **/
     @Override
     public Boolean deleteSchedule(Integer scheduleId){
+        scheduleMapper.deleteByPrimaryKey(scheduleId);
         return true;
     }
 
