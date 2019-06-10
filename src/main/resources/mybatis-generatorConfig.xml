@@ -51,6 +51,8 @@
         <!--<table catalog="TTMS" tableName="Hall" domainObjectName="Hall"/>-->
         <!--<table catalog="TTMS" tableName="Seat" domainObjectName="Seat"/>-->
         <!--<table catalog="TTMS" tableName="Schedule" domainObjectName="Schedule"/>-->
-        <table catalog="TTMS" tableName="Ticket" domainObjectName="Ticket"/>
+        <!--<table catalog="TTMS" tableName="Ticket" domainObjectName="Ticket"/>-->
+        <table catalog="TTMS" tableName="Orders" domainObjectName="Orders"/>
+        <!--<table catalog="TTMS" tableName="Salestatistics" domainObjectName="Salestatistics"/>-->
     </context>
 </generatorConfiguration>

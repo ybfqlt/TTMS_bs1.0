@@ -24,6 +24,9 @@ public interface TicketMapper {
     //根据演出计划删除相关票
     int deleteByscheduleId(Integer scheduleId);
 
+    //根据计划id和seatid返回票的id
+    Long selectByscheduleIdseatId(@Param("scheduleId") Integer scheduleId,@Param("seatId")Integer seatId);
+
     //根据jihuaid和seaid更新票的状态
     int updateByscheduleIdseatId(@Param("scheduleId") Integer scheduleId,@Param("seatId")Integer seatId,@Param("ticketStatus") short ticketStatus);
 

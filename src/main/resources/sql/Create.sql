@@ -112,9 +112,9 @@ create table Orders
     orders_id       int not null auto_increment,
     user_id         int,
     ticket_id       bigint,
-    orders_time     datetime not null,
-    orders_type     smallint comment '1:购买订单
-                                     0:退款订单',
+    orders_time     datetime default CURRENT_TIMESTAMP not null,
+    orders_type     smallint comment '1:已经购买
+                                      0:已退款',
     primary key (orders_id)
 );
 

@@ -1,10 +1,14 @@
 package com.coco.service.impl;
 
 import com.coco.dao.MovieMapper;
+import com.coco.dao.SalestatisticsMapper;
 import com.coco.entity.Movie;
+import com.coco.entity.Salestatistics;
 import com.coco.service.MoviemanageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.math.BigDecimal;
 
 /**
  * @Classname Moviemannageimpl
@@ -18,6 +22,9 @@ public class Moviemannageimpl implements MoviemanageService {
     @Autowired
     private MovieMapper movieMapper;
 
+    @Autowired
+    private SalestatisticsMapper salestatisticsMapper;
+
     /**
     * @Description 增加剧目
     * @return java.lang.Boolean
@@ -28,6 +35,10 @@ public class Moviemannageimpl implements MoviemanageService {
         Movie mo = movieMapper.selectBymovieTitle(movie.getMovieTitle());
         if(mo==null){
             movieMapper.insert(movie);
+            //对每一个新加入的剧目在票房表里进行插入
+            Movie moo = movieMapper.selectBymovieTitle(movie.getMovieTitle());
+            Salestatistics sa = new Salestatistics(moo.getMovieId(),Long.valueOf(0),BigDecimal.valueOf(0));
+            salestatisticsMapper.insert(sa);
             return true;
         }
         else{

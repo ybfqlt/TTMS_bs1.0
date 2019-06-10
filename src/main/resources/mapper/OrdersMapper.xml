@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coco.dao.OrdersMapper">
+  <resultMap id="BaseResultMap" type="com.coco.entity.Orders">
+    <id column="orders_id" jdbcType="INTEGER" property="ordersId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="ticket_id" jdbcType="BIGINT" property="ticketId" />
+    <result column="orders_time" jdbcType="TIMESTAMP" property="ordersTime" />
+    <result column="orders_type" jdbcType="SMALLINT" property="ordersType" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from Orders
+    where orders_id = #{ordersId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.coco.entity.Orders">
+    insert into Orders (user_id, ticket_id,orders_type)
+    values (#{userId,jdbcType=INTEGER}, #{ticketId,jdbcType=BIGINT},#{ordersType,jdbcType=SMALLINT})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.coco.entity.Orders">
+    update Orders
+    set user_id = #{userId,jdbcType=INTEGER},
+      ticket_id = #{ticketId,jdbcType=BIGINT},
+      orders_time = #{ordersTime,jdbcType=TIMESTAMP},
+      orders_type = #{ordersType,jdbcType=SMALLINT}
+    where orders_id = #{ordersId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select orders_id, user_id, ticket_id, orders_time, orders_type
+    from Orders
+    where orders_id = #{ordersId,jdbcType=INTEGER}
+  </select>
+
+  <update id="updateByordersId" parameterType="java.lang.Integer">
+    update Orders
+    set orders_type = 0
+    where orders_id = #{ordersId,jdbcType=INTEGER}
+  </update>
+
+  <select id="selectByuserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select orders_id,user_id,ticket_id,orders_time,orders_type
+    from Orders
+    where user_id = #{userId,jdbcType=INTEGER}
+  </select>
+
+
+  <select id="selectAll" resultMap="BaseResultMap">
+    select orders_id, user_id, ticket_id, orders_time, orders_type
+    from Orders
+  </select>
+</mapper>

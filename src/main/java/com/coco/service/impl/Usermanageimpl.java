@@ -136,4 +136,14 @@ public class Usermanageimpl implements UsermanageService {
         }
         return res;
     }
+
+    /**
+    * @Description 根据用户名称返回用户id
+    * @return java.lang.Integer
+    *
+    **/
+    public Integer getuserId(String name){
+        user uu = usermapper.selectByuserName(name);
+        return uu.getUserId();
+    }
 }

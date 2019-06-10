@@ -18,6 +18,8 @@ public interface userMapper {
     user selectByuserQq(String userQq);
 
     List<user> selectAll();
+
+    //返回所有经理的信息
     List<user> selectjAll();
 
     int updatepasswordByQq(user record);

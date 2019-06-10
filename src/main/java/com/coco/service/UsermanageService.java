@@ -12,16 +12,24 @@ import java.util.List;
  * @Created by xns
  */
 public interface UsermanageService {
+    //添加一个经理
     Boolean addjUser(user uu);
 
+    //删除某一个经理
     Boolean deletejUser(String name);
 
+    //批量删除经理
     Result deletesomejUser(List<String> listnname);
 
+    //修改经理的信息
     Boolean modifyjUser(user uu);
 
     //查看经理
     Result selectjUser();
+
     //查看所有普通用户
     Result selectUser();
+
+    //根据用户名称返回用户id
+    Integer getuserId(String name);
 }

@@ -99,8 +99,6 @@ public class ScheduleServiceimpl implements ScheduleService {
             }
         }
         return res;
-        //自动生成演出票
-        //等待写
     }
 
     /**
