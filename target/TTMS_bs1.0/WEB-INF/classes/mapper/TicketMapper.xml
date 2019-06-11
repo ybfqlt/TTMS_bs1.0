@@ -16,11 +16,9 @@
     values (#{seatId,jdbcType=INTEGER}, #{scheduleId,jdbcType=INTEGER},
       #{ticketStatus,jdbcType=SMALLINT})
   </insert>
-  <update id="updateByPrimaryKey" parameterType="com.coco.entity.Ticket">
+  <update id="updateByticketId" parameterType="java.lang.Long">
     update Ticket
-    set seat_id = #{seatId,jdbcType=INTEGER},
-      schedule_id = #{scheduleId,jdbcType=INTEGER},
-      ticket_status = #{ticketStatus,jdbcType=SMALLINT}
+    set ticket_status = 1
     where ticket_id = #{ticketId,jdbcType=BIGINT}
   </update>
 

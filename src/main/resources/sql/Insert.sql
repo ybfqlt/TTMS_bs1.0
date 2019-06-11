@@ -59,3 +59,20 @@ values(8.2,'剧情/喜剧/传记',130,'绿皮书','http://img5.mtime.cn/mg/2019/
 
 
 
+
+/*票房*/
+insert into Salestatistics (movie_id, sale_count, sale_money_count) values(1,0,0);
+insert into Salestatistics (movie_id, sale_count, sale_money_count) values(2,0,0);
+insert into Salestatistics (movie_id, sale_count, sale_money_count) values(3,0,0);
+insert into Salestatistics (movie_id, sale_count, sale_money_count) values(4,0,0);
+insert into Salestatistics (movie_id, sale_count, sale_money_count) values(5,0,0);
+insert into Salestatistics (movie_id, sale_count, sale_money_count) values(6,0,0);
+insert into Salestatistics (movie_id, sale_count, sale_money_count) values(7,0,0);
+insert into Salestatistics (movie_id, sale_count, sale_money_count) values(8,0,0);
+insert into Salestatistics (movie_id, sale_count, sale_money_count) values(9,0,0);
+insert into Salestatistics (movie_id, sale_count, sale_money_count) values(10,0,0);
+insert into Salestatistics (movie_id, sale_count, sale_money_count) values(11,0,0);
+insert into Salestatistics (movie_id, sale_count, sale_money_count) values(12,0,0);
+
+
+

@@ -35,7 +35,6 @@ public class FindpasswordAndlogout {
         boolean judge;
         Map<String, Object> ma = new HashMap<>();
         /*System.out.println((Boolean)map.get("dataType"))*/
-        ;
         //输入的是用户名
         if ((Boolean) map.get("dataType") == true) {
             judge = findpasswordAndlogoutService.findname((String) map.get("data"));

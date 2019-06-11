@@ -30,5 +30,6 @@ public interface TicketMapper {
     //根据jihuaid和seaid更新票的状态
     int updateByscheduleIdseatId(@Param("scheduleId") Integer scheduleId,@Param("seatId")Integer seatId,@Param("ticketStatus") short ticketStatus);
 
-    int updateByPrimaryKey(Ticket record);
+    //根据票的id更新票的状态为可购买
+    int updateByticketId(@Param("ticketId")Long ticketId);
 }

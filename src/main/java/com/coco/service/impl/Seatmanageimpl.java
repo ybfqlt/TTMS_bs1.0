@@ -56,7 +56,7 @@ public class Seatmanageimpl implements SeatmanageService {
         }else{
             for(int i=1;i<=hall.getHallSeatRow();i++){
                 for(int j=1;j<=hall.getHallSeatCol();j++){
-                    Seat seat = new Seat(hall.getHallId(),hall.getHallSeatRow(),hall.getHallSeatCol(),Short.parseShort("1"));
+                    Seat seat = new Seat(hall.getHallId(),i,j,Short.parseShort("1"));
                     seatMapper.insert(seat);
                 }
             }

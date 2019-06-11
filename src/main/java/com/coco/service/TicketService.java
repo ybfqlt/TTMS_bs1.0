@@ -21,4 +21,7 @@ public interface TicketService {
 
     //根据演出计划id删除根据此演出计划生成的演出票
     Result DeletescheduleByscheduleId(Integer scheduleId);
+
+    //根据订单id将已经退款的票的状态更新为可购买
+    Boolean UpdateTicketByorderid(Integer orderId);
 }

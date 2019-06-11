@@ -1,9 +1,11 @@
 package com.coco.service.impl;
 
 import com.coco.dao.HallMapper;
+import com.coco.dao.OrdersMapper;
 import com.coco.dao.SeatMapper;
 import com.coco.dao.TicketMapper;
 import com.coco.entity.*;
+import com.coco.service.OrdersService;
 import com.coco.service.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,6 +28,9 @@ public class TicketServiceimpl implements TicketService {
 
     @Autowired
     private SeatMapper seatMapper;
+
+    @Autowired
+    private OrdersMapper ordersMapper;
 
     /**
     * @Description 根据演出计划生成票并且插入票的表里
@@ -57,7 +62,7 @@ public class TicketServiceimpl implements TicketService {
 
 
     /**
-    * @Description 批量更新票的信息(根据演出计划id以及座位行号和列号)。比如:同一个人买了好几张票或者一个人只买了一张票
+    * @Description 批量更新票的购买信息(根据演出计划id以及座位行号和列号)。比如:同一个人买了好几张票或者一个人只买了一张票
     * @return java.lang.Boolean
     *
     **/
@@ -95,5 +100,20 @@ public class TicketServiceimpl implements TicketService {
             res.setMes("此演出计划有"+count+"张票已经售出!!!,不能删除。");
         }
         return res;
+    }
+
+    /**
+    * @Description 根据订单id将票的信息更新为可购买
+    * @return java.lang.Boolean
+    *
+    **/
+    public Boolean UpdateTicketByorderid(Integer orderId){
+        Orders orders = ordersMapper.selectByPrimaryKey(orderId);
+        if(ticketMapper.updateByticketId(orders.getTicketId())!=0){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }

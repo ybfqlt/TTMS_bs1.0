@@ -52,15 +52,15 @@ public class LoginController {
     }
 
     /**
-    * @Description Get the currently logged in user
+    * @Description 每一个页面需要的
     * @return java.util.Map<java.lang.String,java.lang.Object>
     *
     **/
-    @RequestMapping(value="/Currentuser",method=RequestMethod.GET)
+    @RequestMapping(value="/LoginUserLog",method=RequestMethod.GET)
     public Map<String,Object> getCurrentUser(HttpServletRequest request){
         Map ma = new HashMap();
-        ma.put("loginuser",request.getSession().getAttribute("user"));
-        ma.put("loginState",request.getSession().getAttribute("login"));
+        ma.put("userName",request.getSession().getAttribute("user"));
+        ma.put("userState",request.getSession().getAttribute("login"));
         return ma;
     }
 
