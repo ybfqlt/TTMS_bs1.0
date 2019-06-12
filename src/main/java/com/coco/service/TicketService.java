@@ -5,6 +5,7 @@ import com.coco.entity.Schedule;
 import com.coco.entity.Ticket;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Classname TicketService
@@ -24,4 +25,5 @@ public interface TicketService {
 
     //根据订单id将已经退款的票的状态更新为可购买
     Boolean UpdateTicketByorderid(Integer orderId);
+
 }

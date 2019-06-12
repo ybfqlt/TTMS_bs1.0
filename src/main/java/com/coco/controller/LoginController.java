@@ -43,6 +43,7 @@ public class LoginController {
             ma.put("msg","登陆成功，欢迎使用!!!");
             request.getSession().setAttribute("user",map.get("name"));
             request.getSession().setAttribute("login",true);
+            request.getSession().setAttribute("type",res.getMes());
         }
         else{
             ma.put("loginInfo",res.getJudge());
@@ -56,11 +57,12 @@ public class LoginController {
     * @return java.util.Map<java.lang.String,java.lang.Object>
     *
     **/
-    @RequestMapping(value="/LoginUserLog",method=RequestMethod.GET)
+    @RequestMapping(value="/loginuserlog",method=RequestMethod.GET)
     public Map<String,Object> getCurrentUser(HttpServletRequest request){
         Map ma = new HashMap();
         ma.put("userName",request.getSession().getAttribute("user"));
         ma.put("userState",request.getSession().getAttribute("login"));
+        ma.put("userType",request.getSession().getAttribute("type"));
         return ma;
     }
 

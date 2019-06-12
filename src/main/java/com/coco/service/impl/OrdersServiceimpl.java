@@ -1,14 +1,14 @@
 package com.coco.service.impl;
 
-import com.coco.dao.OrdersMapper;
-import com.coco.dao.SeatMapper;
-import com.coco.dao.TicketMapper;
-import com.coco.dao.userMapper;
+import com.coco.dao.*;
 import com.coco.entity.*;
 import com.coco.service.OrdersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -34,6 +34,9 @@ public class OrdersServiceimpl implements OrdersService {
 
     @Autowired
     private TicketMapper ticketMapper;
+
+    @Autowired
+    private ScheduleMapper scheduleMapper;
 
     /**
     * @Description 将订单加入订单表中
@@ -116,5 +119,37 @@ public class OrdersServiceimpl implements OrdersService {
             ordersMapper.updateByordersId(orderId);
             return true;
         }
+    }
+
+
+    /**
+     * @Description 根据用户id返回用户买过的票的数量，以及未使用的票的数量和看过的电影的数量
+     * @return java.util.Map<java.lang.String,java.lang.Integer>
+     *
+     **/
+    @Override
+    public Map<String,Integer> getper(Integer userId){
+        Map<String, Integer> ma = new HashMap<>();
+        List<Orders> listo = ordersMapper.selectByuserIdandbuy(userId);
+        if(listo==null){
+            ma.put("ticketAll",0);
+            ma.put("ticketNo", 0);
+            ma.put("movieCount",0);
+        }else {
+            ma.put("ticketAll", listo.size());
+            Date date = new Date();//获取系统时间
+            Timestamp timestamp = new Timestamp((date.getTime()));
+            int count = 0;
+            for (int i = 0; i < listo.size(); i++) {
+                Ticket ticket = ticketMapper.selectByPrimaryKey(listo.get(i).getTicketId());
+                Schedule schedule = scheduleMapper.selectByscheduleId(ticket.getScheduleId());
+                if (schedule.getScheduleEndTime().before(timestamp)) {
+                    count++;
+                }
+            }
+            ma.put("movieCount", count);
+            ma.put("ticketNo", listo.size() - count);
+        }
+        return ma;
     }
 }

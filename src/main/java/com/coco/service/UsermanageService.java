@@ -32,4 +32,10 @@ public interface UsermanageService {
 
     //根据用户名称返回用户id
     Integer getuserId(String name);
+
+    //根据用户名称返回用户
+    user getUser(String name);
+
+    //获取某个用户已经注册的天数
+    Integer getDay(String name);
 }

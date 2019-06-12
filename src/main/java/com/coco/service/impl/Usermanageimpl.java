@@ -6,6 +6,11 @@ import com.coco.entity.user;
 import com.coco.service.UsermanageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -34,7 +39,7 @@ public class Usermanageimpl implements UsermanageService {
         else{
             uu.setUserQq("00000000");
             uu.setUserType("j");
-            int a= usermapper.insert(uu);
+            int a= usermapper.insertj(uu);
             if(a == 1){
                 return true;
             }
@@ -145,5 +150,37 @@ public class Usermanageimpl implements UsermanageService {
     public Integer getuserId(String name){
         user uu = usermapper.selectByuserName(name);
         return uu.getUserId();
+    }
+
+    /**
+    * @Description 根据用户名称返回用户
+    * @return com.coco.entity.user
+    *
+    **/
+    public user getUser(String name){
+        user uu = usermapper.selectByuserName(name);
+        return uu;
+    }
+
+    /**
+     * @Description 获取某个用户已经注册的天数
+     * @return java.lang.Integer
+     *
+     **/
+    @Override
+    public Integer getDay(String name){
+        user uu = usermapper.selectByuserName(name);
+        Date date=new Date();//获取系统时间
+        //将String类型转换为date类型
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date date1=null;
+        try{
+            Date date2 = df.parse(uu.getUserRegistertime());
+            date1 = new Date(date2.getTime());
+        }catch(ParseException e){
+            e.printStackTrace();
+        }
+        int days = (int) ((date.getTime()-date1.getTime()) / (1000*3600*24));
+        return days;
     }
 }

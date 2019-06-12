@@ -63,4 +63,8 @@ public class SeatController {
         }
         return ma;
     }
+
+
+   /* @RequestMapping(value="/loadseat",method=RequestMethod.POST)
+    public Map<String,Object> */
 }

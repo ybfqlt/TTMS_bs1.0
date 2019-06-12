@@ -116,6 +116,7 @@ public class UsermanageController {
         Result res = usermanageservice.selectjUser();
         if(res.getJudge()==true){
             ma.put("selectState",true);
+            ma.put("count",((List<user>)res.getMes()).size());
             ma.put("data",res.getMes());
             ma.put("msg","查询到了!");
         }
@@ -146,4 +147,5 @@ public class UsermanageController {
         }
         return ma;
     }
+
 }

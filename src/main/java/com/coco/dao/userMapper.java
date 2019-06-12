@@ -13,6 +13,9 @@ public interface userMapper {
 
     int insert(user record);
 
+    //添加经理
+    int insertj(user record);
+
     user selectByuserName(String userName);
 
     user selectByuserQq(String userQq);

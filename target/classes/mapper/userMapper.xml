@@ -19,6 +19,12 @@
     values (#{userName,jdbcType=VARCHAR}, #{userPassword,jdbcType=VARCHAR},
       #{userQq,jdbcType=VARCHAR})
   </insert>
+  <insert id="insertj" parameterType="com.coco.entity.user">
+    insert into User (user_name, user_password,
+                      user_qq,user_type)
+    values (#{userName,jdbcType=VARCHAR}, #{userPassword,jdbcType=VARCHAR},
+            #{userQq,jdbcType=VARCHAR},#{userType,jdbcType=VARCHAR})
+  </insert>
   <update id="updatepasswordByQq" parameterType="com.coco.entity.user">
     update User
     set user_password = #{userPassword,jdbcType=VARCHAR}

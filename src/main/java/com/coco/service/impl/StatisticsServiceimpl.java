@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -84,16 +85,16 @@ public class StatisticsServiceimpl implements StatisticsService {
     public Result returnStatistics(){
         Result res = new Result();
         List<Salestatistics> lists = salestatisticsMapper.selectAll();
+        System.out.println(lists);
         if(lists == null){
             res.setJudge(false);
             res.setMes("暂时没有任何剧目");
         }
         else {
-            List<Restatistics> list = new LinkedList<>();
+            List<Restatistics> list = new ArrayList<Restatistics>();
             for (int i = 0; i < lists.size(); i++) {
-                String name = movieMapper.selectBymovieId(lists.get(i).getMovieId()).getMovieTitle();
-                Restatistics a = new Restatistics(name, lists.get(i).getSaleCount(), lists.get(i).getSaleMoneyCount());
-                list.add(a);
+                Movie movie = movieMapper.selectBymovieId(lists.get(i).getMovieId());
+                list.add(new Restatistics(movie.getMovieTitle(), lists.get(i).getSaleCount(), lists.get(i).getSaleMoneyCount()));
             }
             res.setJudge(true);
             res.setMes(list);

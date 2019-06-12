@@ -32,6 +32,7 @@ public interface ScheduleMapper {
     //根据剧目id和日期查询有关演出计划
     List<Schedule> selectBymovieIdtime(@Param("movieId") Integer movieId,@Param("starttime") String starttime, @Param("endtime") String endtime);
 
+
     List<Schedule> selectAll();
 
     int updateByScheduleId(Schedule record);

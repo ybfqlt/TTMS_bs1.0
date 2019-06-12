@@ -21,6 +21,9 @@ public interface OrdersMapper {
     //根据订单id更新订单为已经退款
     int updateByordersId(Integer ordersId);
 
+    //通过userId查询某人买过的票
+    List<Orders> selectByuserIdandbuy(Integer user);
+
     List<Orders> selectAll();
 
     int updateByPrimaryKey(Orders record);

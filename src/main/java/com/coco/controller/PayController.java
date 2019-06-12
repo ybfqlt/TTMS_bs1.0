@@ -24,7 +24,7 @@ import java.util.Map;
  * @Created by xns
  */
 @RestController
-@RequestMapping(value="/in")
+@RequestMapping(value="/in/pay")
 public class PayController {
     @Autowired
     private OrdersService ordersService;
@@ -43,7 +43,7 @@ public class PayController {
     * @return java.util.Map<java.lang.String,java.lang.Object>
     *
     **/
-    @RequestMapping(value="/pay",method= RequestMethod.POST)
+    @RequestMapping(value="/paymoney",method= RequestMethod.POST)
     public Map<String,Object> StorageOrder(HttpServletRequest request, @RequestBody List<Reorder> lists){
         String name = (String)request.getSession().getAttribute("user");
         int id = usermanageService.getuserId(name);

@@ -26,4 +26,7 @@ public interface OrdersService {
 
     //根据订单id更新订单为已经退款
     Boolean updateOrder(Integer orderId);
+
+    //根据用户id返回用户买过的票的数量，以及未使用的票的数量和看过的电影的数量
+    Map<String,Integer> getper(Integer userId);
 }
