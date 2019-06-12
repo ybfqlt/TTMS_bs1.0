@@ -2,6 +2,7 @@ package com.coco.controller;
 
 import com.coco.entity.Hall;
 import com.coco.service.HallService;
+import com.coco.service.SeatmanageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
@@ -20,6 +21,9 @@ public class HallController {
     @Autowired
     private HallService hallService;
 
+    @Autowired
+    private SeatmanageService seatmanageService;
+
     /**
     * @Description Return to all performance halls
     * @return java.util.List<com.coco.entity.Hall>
@@ -28,12 +32,15 @@ public class HallController {
     @RequestMapping(value="/showhall",method= RequestMethod.GET)
     public Map<String,Object> GetallHall(){
         Map ma = new HashMap();
+        int a=0;
         List<Hall> halls = hallService.getAllHalls();
         if(halls == null){
+            ma.put("count",0);
             ma.put("hallsSate",false);
             ma.put("msg","暂时还没有演出厅数据");
         }
         else{
+            ma.put("count",halls.size());
             ma.put("hallsSate",false);
             ma.put("data",halls);
             ma.put("msg","success!!!");
@@ -70,11 +77,20 @@ public class HallController {
     **/
     @RequestMapping(value="/addhall",method=RequestMethod.POST)
     public Map<String,Object> Addmoviehall(@RequestBody Hall hall){
+        hall.setHallSeatCount(hall.getHallSeatCol()*hall.getHallSeatRow());
         Boolean judge = hallService.AddHall(hall);
         Map ma = new HashMap();
-        ma.put("addState",judge);
         if(judge==true) {
-            ma.put("msg", "添加成功");
+            Hall hal = hallService.GethallId(hall.getHallName());
+            Boolean judge2 = seatmanageService.Inithallseat(hal.getHallId());//初始化座位
+            if(judge2==false){
+                ma.put("addState",true);
+                ma.put("msg","添加成功，但是座位初始化失败");
+            }
+            else{
+                ma.put("msg", "添加成功");
+                ma.put("addState",true);
+            }
         }
         else{
             ma.put("msg","对不起,您要添加的影厅已经存在");
@@ -88,8 +104,8 @@ public class HallController {
     *
     **/
     @RequestMapping(value="/deletehall",method=RequestMethod.POST)
-    public Map<String,Object> DeletemovieHall(@RequestBody Map<String,String> map){
-        Boolean judge = hallService.DeleteHall(map.get("hallName"));
+    public Map<String,Object> DeletemovieHall(@RequestBody Map<String,Integer> map){
+        Boolean judge = hallService.DeleteHall(map.get("hallId"));
         Map ma = new HashMap();
         ma.put("deleteState",judge);
         if(judge==true) {

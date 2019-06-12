@@ -20,4 +20,5 @@ public interface HallMapper {
     Hall selectByhallName(String hallName);
 
     int updateByPrimaryKey(Hall record);
+
 }

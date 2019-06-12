@@ -49,6 +49,7 @@ com/coco/controller/FindpasswordAndlogout.class
 com/coco/service/impl/FindpasswordAndlogoutimpl.class
 com/coco/service/impl/HallServiceimpl.class
 com/coco/entity/Hall.class
+com/coco/entity/partmovie.class
 com/coco/service/impl/TicketServiceimpl.class
 com/coco/service/MailService.class
 com/coco/service/HallService.class

@@ -20,6 +20,7 @@
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/controller/ShowhomepageController.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/controller/SalestatisticsController.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/FindpasswordAndlogoutService.java
+/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/partmovie.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/Reorder.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/Schedule.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/HalfMovie.java

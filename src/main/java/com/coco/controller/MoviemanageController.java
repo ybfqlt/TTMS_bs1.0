@@ -1,6 +1,7 @@
 package com.coco.controller;
 
 import com.coco.entity.Movie;
+import com.coco.entity.partmovie;
 import com.coco.service.MoviemanageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -33,6 +35,7 @@ public class MoviemanageController {
     @RequestMapping(value="/addmovie",method= RequestMethod.POST)
     public Map<String,Object> Addmovie(@RequestBody Movie movie){
         Map<String,Object> ma = new HashMap<>();
+        /*Movie movie = new Movie(Double.parseDouble(map.get("movieRating")),map.get("movieGenres"), map.get("moviePlotSimple"), Integer.parseInt(map.get("movieRuntime")), map.get("movieTitle"), map.get("moviePoster"), map.get("movieWriters"), map.get("movieDirectors"), map.get("movieActors"), map.get("movieCountry"), map.get("movieAlsoKnownAs"));*/
         Boolean judge = moviemanageService.addMovie(movie);
         if(judge == true){
             ma.put("addState",true);
@@ -51,9 +54,9 @@ public class MoviemanageController {
     *
     **/
     @RequestMapping(value="deletemovie",method=RequestMethod.POST)
-    public Map<String,Object> Deletemovie(@RequestBody Map<String,String> map){
+    public Map<String,Object> Deletemovie(@RequestBody Map<String,Integer> map){
         Map<String,Object> ma = new HashMap<>();
-        Boolean judge = moviemanageService.deleteMovie(map.get("movieTilte"));
+        Boolean judge = moviemanageService.deleteMovie(map.get("movieId"));
         if(judge==false){
             ma.put("deleteState",false);
             ma.put("msg","删除剧目失败！此剧目不存在!");
@@ -81,6 +84,28 @@ public class MoviemanageController {
         else{
             ma.put("modifyState",true);
             ma.put("msg","修改成功!!!");
+        }
+        return ma;
+    }
+    /**
+    * @Description
+    * @return java.util.Map<java.lang.String,java.lang.Object>
+    *
+    **/
+    @RequestMapping(value="selectmovie",method=RequestMethod.GET)
+    public Map<String,Object> Selectmovie(){
+        List<partmovie> movies = moviemanageService.gethalfmovie();
+        Map<String,Object> ma = new HashMap<>();
+        if(movies ==null){
+            ma.put("count",0);
+            ma.put("state",false);
+            ma.put("msg","暂时无数据");
+        }
+        else{
+            ma.put("count",movies.size());
+            ma.put("state",true);
+            ma.put("data",movies);
+            ma.put("msg","查到了!!!");
         }
         return ma;
     }

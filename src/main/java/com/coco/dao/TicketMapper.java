@@ -18,6 +18,9 @@ public interface TicketMapper {
 
     List<Ticket> selectAll();
 
+    //根据座位id以及计划id返回票
+    Ticket selectByseatIdsid(@Param("seatId") Integer seatId,@Param("scheduleId") Integer scheduleId);
+
     //根据演出计划id返回票
     List<Ticket> sealectByscheduleId(Integer scheduleId);
 

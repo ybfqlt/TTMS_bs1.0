@@ -2,14 +2,16 @@ package com.coco.service.impl;
 
 import com.coco.dao.HallMapper;
 import com.coco.dao.SeatMapper;
-import com.coco.entity.Hall;
-import com.coco.entity.Result;
-import com.coco.entity.Seat;
+import com.coco.dao.TicketMapper;
+import com.coco.entity.*;
 import com.coco.service.SeatmanageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Classname Seatmanageimpl
@@ -25,20 +27,36 @@ public class Seatmanageimpl implements SeatmanageService {
     @Autowired
     private HallMapper hallMapper;
 
+    @Autowired
+    private TicketMapper ticketMapper;
+
     /**
     * @Description 根据演出厅id返回演出厅的座位
     * @return com.coco.entity.Result
     *
     **/
     @Override
-    public Result Gethallseat(Integer hallId){
-        Result res;
+    public Result Gethallseat(Integer hallId, Schedule schedule){
+        Result res = new Result();
+        Map<String,Integer> a = new LinkedHashMap<>();
         List<Seat> seats = seatMapper.selectByHallId(hallId);
+        for(int i=0;i<seats.size();i++){
+            if(seats.get(i).getSeatStatus()==0){
+                a.put("state",0);
+            }else {
+                Ticket ticket = ticketMapper.selectByseatIdsid(seats.get(i).getSeatId(), schedule.getScheduleId());
+                if (ticket.getTicketStatus() == 0) {
+                    a.put("state",2);
+                } else {
+                    a.put("state",1);
+                }
+            }
+        }
         if(seats == null){
-           res = new Result(false,"次演出厅未进行初始化，暂时没有座位信息!!!");
+           res = new Result(false,"此演出厅未进行初始化，暂时没有座位信息!!!");
         }
         else{
-           res = new Result(true,seats);
+           res = new Result(true,a);
         }
         return res;
     }
@@ -60,9 +78,43 @@ public class Seatmanageimpl implements SeatmanageService {
                     seatMapper.insert(seat);
                 }
             }
-            hall.setHallStatus(Short.valueOf("1"));
             return true;
         }
     }
 
+    /**
+    * @Description 根据演出厅id加载管理员座位页面
+    * @return com.coco.entity.Result
+    *
+    **/
+    @Override
+    public Result getjingliseat(Integer hallId){
+        Result res = new Result();
+        Map<String,Integer> a = new LinkedHashMap<>();
+        List<Seat> seats = seatMapper.selectByHallId(hallId);
+        for(int i=0;i<seats.size();i++){
+            if(seats.get(i).getSeatStatus()==0){
+                a.put("state",0);
+            }else {
+                a.put("state",1);
+            }
+        }
+        if(seats == null){
+            res = new Result(false,"此演出厅未进行初始化，暂时没有座位信息!!!");
+        }
+        else{
+            res = new Result(true,a);
+        }
+        return res;
+    }
+
+    /**
+    * @Description 根据演出厅id更新座位的好坏和前端的字符串
+    * @return java.lang.Boolean
+    *
+    **/
+    /*@Override
+    public Boolean updateseatByid(Integer hallId,String seat){
+        List<Hall> seats
+    }*/
 }

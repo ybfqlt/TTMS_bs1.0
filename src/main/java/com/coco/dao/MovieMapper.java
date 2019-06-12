@@ -12,6 +12,9 @@ import java.util.List;
 public interface MovieMapper {
     int deleteBymovieTitle(String movieTitle);
 
+    //通过电影id删除
+    int deleteBymovieId(Integer movieId);
+
     int insert(Movie record);
 
     //根据电影名称进行查询

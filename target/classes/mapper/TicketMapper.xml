@@ -40,6 +40,12 @@
     where schedule_id = #{scheduleId,jdbcType=INTEGER} and seat_id = #{seatId,jdbcType=INTEGER}
   </select>
 
+  <select id="selectByseatIdsid" resultMap="BaseResultMap">
+    select ticket_id, seat_id, schedule_id, ticket_status
+    from Ticket
+    where seat_id = #{seatId,jdbcType=INTEGER} and schedule_id = #{scheduleId,jdbcType=INTEGER}
+  </select>
+
   <delete id="deleteByscheduleId" parameterType="java.lang.Integer">
     delete from Ticket
     where schedule_id = #{scheduleId,jdbcType=INTEGER}

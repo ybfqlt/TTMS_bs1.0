@@ -3,6 +3,7 @@ package com.coco.service;
 import com.coco.entity.Result;
 import com.coco.entity.Schedule;
 
+import java.sql.Timestamp;
 import java.text.ParseException;
 
 /**
@@ -30,6 +31,12 @@ public interface ScheduleService {
     //删除演出计划
     Boolean deleteSchedule(Integer scheduleId);
 
+    //根据scheduleId返回演出计划的信息
+    Schedule GetscheduleByscheduleId(Integer scheduleId);
+
     //修改演出计划
     Boolean modifySchedule(Schedule schedule);
+
+    //根据演出厅id及演出开始时间返回演出计划
+    Schedule get(Integer hallId, Timestamp time);
 }

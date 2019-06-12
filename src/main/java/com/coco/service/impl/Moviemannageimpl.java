@@ -4,11 +4,14 @@ import com.coco.dao.MovieMapper;
 import com.coco.dao.SalestatisticsMapper;
 import com.coco.entity.Movie;
 import com.coco.entity.Salestatistics;
+import com.coco.entity.partmovie;
 import com.coco.service.MoviemanageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @Classname Moviemannageimpl
@@ -52,10 +55,10 @@ public class Moviemannageimpl implements MoviemanageService {
     *
     **/
     @Override
-    public Boolean deleteMovie(String title){
-        Movie mo = movieMapper.selectBymovieTitle(title);
+    public Boolean deleteMovie(Integer movieId){
+        Movie mo = movieMapper.selectBymovieId(movieId);
         if(mo != null){
-            movieMapper.deleteBymovieTitle(title);
+            movieMapper.deleteBymovieId(movieId);
             return true;
         }
         else{
@@ -78,5 +81,32 @@ public class Moviemannageimpl implements MoviemanageService {
             movieMapper.updateByPrimaryKey(movie);
             return true;
         }
+    }
+
+    /**
+    * @Description 根据影片id返回影片信息
+    * @return com.coco.entity.Movie
+    *
+    **/
+    @Override
+    public Movie getMovie(Integer movieId){
+        Movie movie = movieMapper.selectBymovieId(movieId);
+        return movie;
+    }
+
+    /**
+    * @Description 返回所有影片的部分片段
+    * @return com.coco.entity.partmovie
+    *
+    **/
+    @Override
+    public List<partmovie> gethalfmovie(){
+        List<partmovie> movies = new ArrayList<>();
+        List<Movie> movie = movieMapper.selectAll();
+        for(int i=0;i<movie.size();i++){
+            partmovie mm = new partmovie(movie.get(i).getMovieId(),movie.get(i).getMovieRating(),movie.get(i).getMovieTitle(),movie.get(i).getMovieGenres(),movie.get(i).getMovieCountry(),movie.get(i).getMovieRuntime());
+            movies.add(mm);
+        }
+        return movies;
     }
 }

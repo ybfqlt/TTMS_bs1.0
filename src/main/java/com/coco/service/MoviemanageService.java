@@ -1,6 +1,9 @@
 package com.coco.service;
 
 import com.coco.entity.Movie;
+import com.coco.entity.partmovie;
+
+import java.util.List;
 
 /**
  * @Classname MoviemanageService
@@ -13,10 +16,14 @@ public interface MoviemanageService {
     Boolean addMovie(Movie movie);
 
     //删除影片
-    Boolean deleteMovie(String name);
+    Boolean deleteMovie(Integer movieId);
 
     //修改影片信息
     Boolean modifyMovie(Movie movie);
 
+    //根据影片id返回影片信息
+    Movie getMovie(Integer movieId);
 
+    //返回所有影片的部分片段
+    List<partmovie> gethalfmovie();
 }

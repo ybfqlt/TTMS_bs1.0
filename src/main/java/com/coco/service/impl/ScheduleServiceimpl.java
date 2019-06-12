@@ -81,18 +81,19 @@ public class ScheduleServiceimpl implements ScheduleService {
         afterend.setTime(schedule.getScheduleEndTime());
         afterend.add(Calendar.MINUTE,20);
 
-        List<Schedule> schedules = scheduleMapper.selectByhallIdstarttime(schedule.getHallId(),df.format(beforestart),df.format(afterend));
-        if(schedules!=null){
+        List<Schedule> schedules = scheduleMapper.selectByhallIdstarttime(schedule.getHallId(),df.format(beforestart.getTime()),df.format(afterend.getTime()));
+        if(schedules.size()!=0){
             res.setJudge(false);
             res.setMes("对不起，在此时间段有其他计划，不能添加!!!");
         }
         else{
-            List<Schedule> scheduless = scheduleMapper.selectByhallIdendtime(schedule.getHallId(),df.format(beforestart),df.format(afterend));
-            if(scheduless!=null){
+            List<Schedule> scheduless = scheduleMapper.selectByhallIdendtime(schedule.getHallId(),df.format(beforestart.getTime()),df.format(afterend.getTime()));
+            if(scheduless.size()!=0){
                 res.setJudge(false);
                 res.setMes("对不起，在此时间段有其他计划，不能添加!!!");
             }
             else{
+                schedule.setTicketinitStatus(Short.parseShort("0"));
                 scheduleMapper.insert(schedule);
                 res.setJudge(true);
                 res.setMes("添加成功,演出票生成成功!!!");
@@ -115,7 +116,7 @@ public class ScheduleServiceimpl implements ScheduleService {
             res.setMes("此剧目不存在!!!");
         }else{
             List<Schedule> schedules = scheduleMapper.selectBymovieId(movie.getMovieId());
-            if(schedules == null){
+            if(schedules.size()==0){
                 res.setJudge(false);
                 res.setMes("此剧目暂时没有相关演出计划!!!");
             }
@@ -221,5 +222,26 @@ public class ScheduleServiceimpl implements ScheduleService {
             scheduleMapper.updateByScheduleId(schedule);
         }
         return true;
+    }
+
+    /**
+    * @Description 根据scheduleId返回演出计划的信息
+    * @return com.coco.entity.Schedule
+    *
+    **/
+    @Override
+    public Schedule GetscheduleByscheduleId(Integer scheduleId){
+        Schedule schedule = scheduleMapper.selectByscheduleId(scheduleId);
+        return schedule;
+    }
+
+    /**
+    * @Description 根据演出厅id及演出开始时间返回演出计划
+    * @return com.coco.entity.Schedule
+    *
+    **/
+    @Override
+    public Schedule get(Integer hallId, Timestamp time){
+        return scheduleMapper.selectBystarttime(hallId,time);
     }
 }

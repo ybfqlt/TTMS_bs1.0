@@ -22,15 +22,21 @@
   </resultMap>
   <delete id="deleteBymovieTitle" parameterType="java.lang.String">
     delete from Movie
-    where movie_id = #{movieTitle,jdbcType=VARCHAR}
+    where movie_Title = #{movieTitle,jdbcType=VARCHAR}
   </delete>
+
+    <delete id="deleteBymovieId" parameterType="java.lang.Integer">
+        delete from Movie
+        where movie_id = #{movieId,jdbcType=INTEGER}
+    </delete>
+
   <insert id="insert" parameterType="com.coco.entity.Movie">
-    insert into Movie (movie_id, movie_rating, movie_genres, 
+    insert into Movie (movie_rating, movie_genres,
       movie_runtime, movie_title, movie_poster, 
       movie_Writers, movie_directors, movie_actors, 
       movie_plot_simple, movie_country, movie_also_known_as
       )
-    values (#{movieId,jdbcType=INTEGER}, #{movieRating,jdbcType=DOUBLE}, #{movieGenres,jdbcType=VARCHAR}, 
+    values (#{movieRating,jdbcType=DOUBLE}, #{movieGenres,jdbcType=VARCHAR},
       #{movieRuntime,jdbcType=INTEGER}, #{movieTitle,jdbcType=VARCHAR}, #{moviePoster,jdbcType=VARCHAR}, 
       #{movieWriters,jdbcType=VARCHAR}, #{movieDirectors,jdbcType=VARCHAR}, #{movieActors,jdbcType=VARCHAR}, 
       #{moviePlotSimple,jdbcType=VARCHAR}, #{movieCountry,jdbcType=VARCHAR}, #{movieAlsoKnownAs,jdbcType=VARCHAR}

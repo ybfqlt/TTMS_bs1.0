@@ -73,6 +73,3 @@ insert into Salestatistics (movie_id, sale_count, sale_money_count) values(9,0,0
 insert into Salestatistics (movie_id, sale_count, sale_money_count) values(10,0,0);
 insert into Salestatistics (movie_id, sale_count, sale_money_count) values(11,0,0);
 insert into Salestatistics (movie_id, sale_count, sale_money_count) values(12,0,0);
-
-
-

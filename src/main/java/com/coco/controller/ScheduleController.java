@@ -3,6 +3,7 @@ package com.coco.controller;
 import com.coco.entity.Result;
 import com.coco.entity.Schedule;
 import com.coco.service.ScheduleService;
+import com.coco.service.SeatmanageService;
 import com.coco.service.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -10,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.math.BigDecimal;
+import java.sql.Timestamp;
 import java.text.ParseException;
 import java.util.HashMap;
 import java.util.Map;
@@ -29,17 +32,22 @@ public class ScheduleController {
     @Autowired
     private TicketService ticketService;
 
+    @Autowired
+    private SeatmanageService seatmanageService;
+
     /**
     * @Description 添加演出计划
     * @return java.util.Map<java.lang.String,java.lang.Object>
     *
     **/
     @RequestMapping(value="/addschedule",method=RequestMethod.POST)
-    public Map<String,Object> Addschedule(@RequestBody Schedule schedule){
+    public Map<String,Object> Addschedule(@RequestBody Map<String,Object> map){
+        Schedule schedule = new Schedule((Integer)map.get("hallId"),(Integer)map.get("movieId"), Timestamp.valueOf((String)map.get("scheduleStartTime")),BigDecimal.valueOf((Double)map.get("scheduleTicketPrice")));
         Map<String,Object> ma = new HashMap<>();
         try {
             Result res = scheduleService.addSchedule(schedule);
             if(res.getJudge() == true) {
+                schedule = scheduleService.get(schedule.getHallId(),schedule.getScheduleStartTime());
                 Result ress = ticketService.ProduceticketByschedule(schedule);//根据添加的演出计划自动生成对应的票
                 if (ress.getJudge() == true) {
                     ma.put("addState", true);

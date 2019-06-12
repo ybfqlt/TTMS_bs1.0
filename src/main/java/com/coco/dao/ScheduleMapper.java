@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 @Mapper
@@ -32,6 +33,8 @@ public interface ScheduleMapper {
     //根据剧目id和日期查询有关演出计划
     List<Schedule> selectBymovieIdtime(@Param("movieId") Integer movieId,@Param("starttime") String starttime, @Param("endtime") String endtime);
 
+    //根据演出厅id及开始时间获取演出计划
+    Schedule selectBystarttime(@Param("hallId") Integer hallId, @Param("scheduleStartTime")Timestamp scheduleStartTime);
 
     List<Schedule> selectAll();
 

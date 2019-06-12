@@ -50,7 +50,7 @@ public class HallServiceimpl implements HallService {
     public Boolean AddHall(Hall hall){
         Hall halll = hallMapper.selectByhallName(hall.getHallName());
         if(halll==null){
-            hall.setHallStatus((short) 0);
+            hall.setHallStatus((short) 1);
             int a=hallMapper.insert(hall);
         }
         else{
@@ -65,13 +65,13 @@ public class HallServiceimpl implements HallService {
     * @return java.lang.Boolean
     *
     **/
-    public Boolean DeleteHall(String hallName){
-        Hall hall = hallMapper.selectByhallName(hallName);
+    public Boolean DeleteHall(Integer hallId){
+        Hall hall = hallMapper.selectByPrimaryKey(hallId);
         if(hall==null){
             return false;
         }
         else{
-            int a = hallMapper.deleteByhallName(hallName);
+            int a = hallMapper.deleteByhallName(hall.getHallName());
         }
         return true;
     }
@@ -99,5 +99,26 @@ public class HallServiceimpl implements HallService {
                 }
             }
         }
+    }
+
+    /**
+    * @Description 个人剧hallId获取演出厅信息
+    * @return com.coco.entity.Hall
+    *
+    **/
+    public Hall Gethall(Integer hallId){
+        Hall hall = hallMapper.selectByPrimaryKey(hallId);
+        return hall;
+    }
+
+
+    /**
+    * @Description 根据名称获取演出厅
+    * @return com.coco.entity.Hall
+    *
+    **/
+    public Hall GethallId(String hallName){
+        Hall hall=hallMapper.selectByhallName(hallName);
+        return hall;
     }
 }

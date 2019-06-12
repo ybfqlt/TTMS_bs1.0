@@ -4,28 +4,30 @@ import java.io.Serializable;
 
 public class Movie implements Serializable {
     private Integer movieId;
-
     private Double movieRating;
-
     private String movieGenres;
-
     private Integer movieRuntime;
-
     private String movieTitle;
-
     private String moviePoster;
-
     private String movieWriters;
-
     private String movieDirectors;
-
     private String movieActors;
-
     private String moviePlotSimple;
-
     private String movieCountry;
-
     private String movieAlsoKnownAs;
+ /*   public Movie(Double movieRating,String movieGenres,String moviePlotSimple,Integer movieRuntime,String movieTitle,String moviePoster,String movieWriters,String movieDirectors,String movieActors,String movieCountry,String movieAlsoKnownAs){
+        this.movieRating=movieRating;
+        this.movieActors=movieActors;
+        this.movieAlsoKnownAs=movieAlsoKnownAs;
+        this.movieCountry=movieCountry;
+        this.movieGenres=movieGenres;
+        this.moviePlotSimple=moviePlotSimple;
+        this.movieDirectors=movieDirectors;
+        this.moviePoster=moviePoster;
+        this.movieWriters=movieWriters;
+        this.movieTitle=movieTitle;
+        this.movieRuntime=movieRuntime;
+    }*/
 
     private static final long serialVersionUID = 1L;
 

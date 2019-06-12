@@ -15,10 +15,10 @@
     where schedule_id = #{scheduleId,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.coco.entity.Schedule">
-    insert into Schedule (schedule_id, hall_id, movie_id, 
+    insert into Schedule ( hall_id, movie_id,
       schedule_start_time, schedule_end_time, 
       schedule_ticket_price, ticketinit_status)
-    values (#{scheduleId,jdbcType=INTEGER}, #{hallId,jdbcType=INTEGER}, #{movieId,jdbcType=INTEGER}, 
+    values (#{hallId,jdbcType=INTEGER}, #{movieId,jdbcType=INTEGER},
       #{scheduleStartTime,jdbcType=TIMESTAMP}, #{scheduleEndTime,jdbcType=TIMESTAMP}, 
       #{scheduleTicketPrice,jdbcType=DECIMAL}, #{ticketinitStatus,jdbcType=SMALLINT})
   </insert>
@@ -37,7 +37,14 @@
     select schedule_id, hall_id, movie_id, schedule_start_time, schedule_end_time, schedule_ticket_price,
     ticketinit_status
     from Schedule
-    where schedule_id = #{movieId,jdbcType=INTEGER}
+    where movie_id = #{movieId,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectBystarttime" resultMap="BaseResultMap">
+    select schedule_id, hall_id, movie_id, schedule_start_time, schedule_end_time, schedule_ticket_price,
+           ticketinit_status
+    from Schedule
+    where hall_id = #{hallId,jdbcType=INTEGER} and schedule_start_time = #{scheduleStartTime,jdbcType=TIMESTAMP}
   </select>
 
   <select id="selectByscheduleId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
