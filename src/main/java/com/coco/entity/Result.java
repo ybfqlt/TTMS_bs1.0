@@ -12,7 +12,7 @@ public class Result {
 
     public Result(){
     }
-    public Result(boolean judge,Object type){
+    public Result(boolean judge,Object mes){
         this.judge=judge;
         this.mes = mes;
     }

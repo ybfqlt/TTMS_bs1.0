@@ -12,12 +12,14 @@ public class Reorder {
     private Integer scheduleId;
 
     private Integer seatRow;
+    private Integer seatCol;
 
     public Reorder(Integer movieId, Integer scheduleId, Integer seatRow, Integer seatCol){
         this.movieId=movieId;
         this.scheduleId=scheduleId;
         this.seatRow=seatRow;
         this.seatCol=seatCol;
+
     }
     public Integer getScheduleId() {
         return scheduleId;
@@ -43,7 +45,6 @@ public class Reorder {
         this.seatCol = seatCol;
     }
 
-    private Integer seatCol;
 
     public Integer getMovieId() {
         return movieId;

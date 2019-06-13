@@ -53,6 +53,7 @@ com/coco/entity/Hall.class
 com/coco/entity/partmovie.class
 com/coco/service/impl/TicketServiceimpl.class
 com/coco/service/MailService.class
+com/coco/entity/Sseat.class
 com/coco/service/HallService.class
 com/coco/Filter/AjaxFilter.class
 com/coco/dao/ScheduleMapper.class

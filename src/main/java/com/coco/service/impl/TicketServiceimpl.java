@@ -44,7 +44,7 @@ public class TicketServiceimpl implements TicketService {
         Hall hall = hallMapper.selectByPrimaryKey(schedule.getHallId());
         for(int i=1;i<=hall.getHallSeatRow();i++){
             for(int j =1;j<=hall.getHallSeatCol();j++){
-                Seat seat = seatMapper.selectByrowcol(i,j);
+                Seat seat = seatMapper.selectByrowcol(hall.getHallId(),i,j);
                 if(seat == null){
                     res.setJudge(false);
                     res.setMes("第"+i+"行"+"第"+j+"列的座位不存在!!!");

@@ -16,12 +16,13 @@ public interface SeatMapper {
     int insert(Seat record);
 
     //根据座位的行列号返回座位信息
-    Seat selectByrowcol(@Param("seatRow") Integer setRow, @Param("seatCol") Integer seatCol);
+    Seat selectByrowcol(@Param("hallId") Integer hallId,@Param("seatRow") Integer setRow, @Param("seatCol") Integer seatCol);
 
+    Seat selectByrowcol2(@Param("seatRow") Integer setRow, @Param("seatCol") Integer seatCol);
     //根据演出厅id返回此演出厅的所有座位
     List<Seat> selectByHallId(Integer hallId);
 
     List<Seat> selectAll();
 
-    int updateByPrimaryKey(Seat record);
+    int update(@Param("hallId") Integer hallId,@Param("seatRow") Integer seatRow,@Param("seatCol")Integer seatCol,@Param("seatStatus") Short seatStatus);
 }

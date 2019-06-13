@@ -40,6 +40,7 @@
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/impl/Showhomepageimpl.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/controller/TicketController.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/Movie.java
+/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/Sseat.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/impl/FindpasswordAndlogoutimpl.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/Orders.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/controller/PayController.java

@@ -42,17 +42,17 @@ public class SeatController {
     * @return java.util.Map<java.lang.String,java.lang.Object>
     *
     **/
-    @RequestMapping(value="/updateseat",method = RequestMethod.POST)
-    public Map<String,Object> InitSeat(@RequestBody Map<String,Integer> map){
+    @RequestMapping(value="/jingli/updateseat",method = RequestMethod.POST)
+    public Map<String,Object> InitSeat(@RequestBody Map<String,Object> map){
         Map<String,Object> ma = new HashMap<>();
-        Boolean judge = seatmanageService.Inithallseat(map.get("hallId"));
+        Boolean judge = seatmanageService.Updatehallseat((Integer)map.get("hallId"),(String)map.get("State"));
         if(judge == true){
             ma.put("state",true);
             ma.put("msg","更新完成!!!");
         }
         else{
             ma.put("state",false);
-            ma.put("msg","演出厅不存在，更新座位失败!!!");
+            ma.put("msg","更新座位失败,无座位可更新!!!");
         }
         return ma;
     }
@@ -77,24 +77,23 @@ public class SeatController {
         ma.put("hallstarttime",schedule.getScheduleStartTime());
         ma.put("rowCount",hall.getHallSeatRow());
         ma.put("colCount",hall.getHallSeatCol());
-        ma.put("seat",seatmanageService.Gethallseat(hall.getHallId(),schedule));
+        ma.put("seat",(seatmanageService.Gethallseat(hall.getHallId(),schedule)).getMes());
         return ma;
     }
 
     /**
-     * @Description 加载座位用户要看到的页面
+     * @Description 加载座经理要看到的页面
      * @return java.util.Map<java.lang.String,java.lang.Object>
      *
      **/
-    @RequestMapping(value="/loadjseat",method=RequestMethod.POST)
+    @RequestMapping(value="/jingli/loadjseat",method=RequestMethod.POST)
     public Map<String,Object> Loadingmanageseat(@RequestBody Map<String,Integer> map){
         Map<String,Object> ma =new HashMap<>();
-        Schedule schedule = scheduleService.GetscheduleByscheduleId(map.get("scheduleId"));
-        Hall hall = hallService.Gethall(schedule.getHallId());
+        Hall hall = hallService.Gethall(map.get("hallId"));
         ma.put("hallName",hall.getHallName());
         ma.put("rowCount",hall.getHallSeatRow());
         ma.put("colCount",hall.getHallSeatCol());
-        ma.put("seat",seatmanageService.getjingliseat(hall.getHallId()));
+        ma.put("seat",(seatmanageService.getjingliseat(map.get("hallId")).getMes()));
         return ma;
     }
 }

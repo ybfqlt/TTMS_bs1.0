@@ -18,13 +18,10 @@
     values (#{seatId,jdbcType=INTEGER}, #{hallId,jdbcType=INTEGER}, #{seatRow,jdbcType=INTEGER}, 
       #{seatCol,jdbcType=INTEGER}, #{seatStatus,jdbcType=SMALLINT})
   </insert>
-  <update id="updateByPrimaryKey" parameterType="com.coco.entity.Seat">
+  <update id="update" parameterType="com.coco.entity.Seat">
     update Seat
-    set hall_id = #{hallId,jdbcType=INTEGER},
-      seat_row = #{seatRow,jdbcType=INTEGER},
-      seat_col = #{seatCol,jdbcType=INTEGER},
-      seat_status = #{seatStatus,jdbcType=SMALLINT}
-    where seat_id = #{seatId,jdbcType=INTEGER}
+    set seat_status = #{seatStatus,jdbcType=SMALLINT}
+    where hall_id = #{hallId,jdbcType=INTEGER} and seat_row = #{seatRow,jdbcType=INTEGER} and seat_col = #{seatCol,jdbcType=INTEGER}
   </update>
   <select id="selectByHallId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select seat_id, hall_id, seat_row, seat_col, seat_status
@@ -33,6 +30,12 @@
   </select>
 
   <select id="selectByrowcol" resultMap="BaseResultMap">
+    select seat_id, hall_id, seat_row, seat_col, seat_status
+    from Seat
+    where hall_id = #{hallId} and seat_row = #{seatRow} and seat_col = #{seatCol}
+  </select>
+
+  <select id="selectByrowcol2" resultMap="BaseResultMap">
     select seat_id, hall_id, seat_row, seat_col, seat_status
     from Seat
     where seat_row = #{seatRow} and seat_col = #{seatCol}

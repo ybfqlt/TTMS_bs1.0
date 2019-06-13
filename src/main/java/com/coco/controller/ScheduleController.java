@@ -46,23 +46,24 @@ public class ScheduleController {
     public Map<String,Object> Addschedule(@RequestBody Map<String,Object> map){
         Schedule schedule = new Schedule((Integer)map.get("hallId"),(Integer)map.get("movieId"), Timestamp.valueOf((String)map.get("scheduleStartTime")),BigDecimal.valueOf((Double)map.get("scheduleTicketPrice")));
         Map<String,Object> ma = new HashMap<>();
+        Result res = null;
         try {
-            Result res = scheduleService.addSchedule(schedule);
-            if(res.getJudge() == true) {
-                int a = scheduleService.get(schedule.getHallId(),schedule.getScheduleStartTime());
-                schedule.setScheduleId(a);
-                Result ress = ticketService.ProduceticketByschedule(schedule);//根据添加的演出计划自动生成对应的票
-                if (ress.getJudge() == true) {
-                    ma.put("addState", true);
-                    ma.put("msg", res.getMes());
-                }
-            }
-            else{
-                ma.put("addState",false);
-                ma.put("msg",res.getMes());;
-            }
+            res = scheduleService.addSchedule(schedule);
         } catch (ParseException e) {
             e.printStackTrace();
+        }
+        if(res.getJudge() == true) {
+            int a = scheduleService.get(schedule.getHallId(),schedule.getScheduleStartTime());
+            schedule.setScheduleId(a);
+            Result ress = ticketService.ProduceticketByschedule(schedule);//根据添加的演出计划自动生成对应的票
+            if (ress.getJudge() == true) {
+                ma.put("addState", true);
+                ma.put("msg", res.getMes());
+            }
+        }
+        else{
+            ma.put("addState",false);
+            ma.put("msg",res.getMes());
         }
         return ma;
     }
@@ -72,18 +73,20 @@ public class ScheduleController {
     * @return java.util.Map<java.lang.String,java.lang.Object>
     *
     **/
-    @RequestMapping(value="/selectBymovieId",method=RequestMethod.POST)
+    @RequestMapping(value="/selectBymovieTitle",method=RequestMethod.POST)
     public Map<String,Object> SelectBymovieId(@RequestBody Map<String,String> map){
         Map<String,Object> ma = new HashMap<>();
         Result res = scheduleService.selectScheduleBymovieTitle(map.get("movieTitle"));
         if(res.getJudge()==true){
-            ma.put("selectbymovieidState",true);
-            ma.put("msg",res.getMes());
+            ma.put("count",((List<Schedule>)res.getMes()).size());
+            ma.put("State",true);
+            ma.put("data",res.getMes());
+            ma.put("msg","查询到了!!!");
         }
         else{
-            ma.put("selectState",false);
-            ma.put("data",res.getMes());
-            ma.put("msg","查询到了");
+            ma.put("count",0);
+            ma.put("State",false);
+            ma.put("msg",res.getMes());
         }
         return ma;
     }

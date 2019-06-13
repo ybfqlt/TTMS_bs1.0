@@ -20,6 +20,6 @@ public interface SeatmanageService {
     //根据演出厅id加载管理员座位页面
     Result getjingliseat(Integer hallId);
 
-    /*//根据演出厅id更新座位的好坏
-    Boolean updateseatByid(Integer hallId,String seat);*/
+    //根据演出厅id更新座位的好坏
+    Boolean Updatehallseat(Integer hallId,String seat);
 }

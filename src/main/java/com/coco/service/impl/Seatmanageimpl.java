@@ -8,10 +8,7 @@ import com.coco.service.SeatmanageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @Classname Seatmanageimpl
@@ -37,18 +34,21 @@ public class Seatmanageimpl implements SeatmanageService {
     **/
     @Override
     public Result Gethallseat(Integer hallId, Schedule schedule){
-        Result res = new Result();
-        Map<String,Integer> a = new LinkedHashMap<>();
+        Result res;
         List<Seat> seats = seatMapper.selectByHallId(hallId);
+        List<Sseat> lists= new LinkedList<>();
         for(int i=0;i<seats.size();i++){
             if(seats.get(i).getSeatStatus()==0){
-                a.put("state",0);
+                Sseat a = new Sseat(0);
+                lists.add(a);
             }else {
                 Ticket ticket = ticketMapper.selectByseatIdsid(seats.get(i).getSeatId(), schedule.getScheduleId());
                 if (ticket.getTicketStatus() == 0) {
-                    a.put("state",2);
+                    Sseat a = new Sseat(1);
+                    lists.add(a);
                 } else {
-                    a.put("state",1);
+                    Sseat a = new Sseat(2);
+                    lists.add(a);
                 }
             }
         }
@@ -56,7 +56,7 @@ public class Seatmanageimpl implements SeatmanageService {
            res = new Result(false,"此演出厅未进行初始化，暂时没有座位信息!!!");
         }
         else{
-           res = new Result(true,a);
+            res = new Result(true,lists);
         }
         return res;
     }
@@ -89,32 +89,46 @@ public class Seatmanageimpl implements SeatmanageService {
     **/
     @Override
     public Result getjingliseat(Integer hallId){
-        Result res = new Result();
-        Map<String,Integer> a = new LinkedHashMap<>();
+        Result res;
+        List<Sseat> lists= new LinkedList<>();
         List<Seat> seats = seatMapper.selectByHallId(hallId);
         for(int i=0;i<seats.size();i++){
             if(seats.get(i).getSeatStatus()==0){
-                a.put("state",0);
+                Sseat a = new Sseat(0);
+                lists.add(a);
             }else {
-                a.put("state",1);
+                Sseat a = new Sseat(1);
+                lists.add(a);
             }
         }
         if(seats == null){
             res = new Result(false,"此演出厅未进行初始化，暂时没有座位信息!!!");
         }
         else{
-            res = new Result(true,a);
+            res = new Result(true,lists);
         }
         return res;
     }
 
     /**
-    * @Description 根据演出厅id更新座位的好坏和前端的字符串
+    * @Description 根据演出厅id更新座位的好坏
     * @return java.lang.Boolean
     *
     **/
-    /*@Override
-    public Boolean updateseatByid(Integer hallId,String seat){
-        List<Hall> seats
-    }*/
+    @Override
+    public Boolean Updatehallseat(Integer hallId,String seat){
+        Hall hall = hallMapper.selectByPrimaryKey(hallId);
+        int a=0;
+        for(int i=1;i<=hall.getHallSeatRow();i++){
+            for(int j=1;j<=hall.getHallSeatCol();j++){
+                seatMapper.update(hallId,i,j,Short.parseShort(String.valueOf(seat.charAt(a++))));
+            }
+        }
+        if(a==0){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
 }

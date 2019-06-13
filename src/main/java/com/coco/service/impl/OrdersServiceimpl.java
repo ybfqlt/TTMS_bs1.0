@@ -46,7 +46,7 @@ public class OrdersServiceimpl implements OrdersService {
     @Override
     public Boolean Addorders(Integer userId, List<Reorder> order1){
         for(int i=0;i<order1.size();i++) {
-            Seat seat = seatMapper.selectByrowcol(order1.get(i).getSeatRow(),order1.get(i).getSeatCol());
+            Seat seat = seatMapper.selectByrowcol2(order1.get(i).getSeatRow(),order1.get(i).getSeatCol());
             Long ticketId = ticketMapper.selectByscheduleIdseatId(order1.get(i).getScheduleId(),seat.getSeatId());
             //在票的表中将其修改为已经购买
             ticketMapper.updateByscheduleIdseatId(order1.get(i).getScheduleId(),seat.getSeatId(),Short.parseShort("0"));

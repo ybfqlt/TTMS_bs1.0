@@ -40,6 +40,7 @@ public class Moviemannageimpl implements MoviemanageService {
             movieMapper.insert(movie);
             //对每一个新加入的剧目在票房表里进行插入
             Movie moo = movieMapper.selectBymovieTitle(movie.getMovieTitle());
+            System.out.println(moo);
             Salestatistics sa = new Salestatistics(moo.getMovieId(),Long.valueOf(0),BigDecimal.valueOf(0));
             salestatisticsMapper.insert(sa);
             return true;
