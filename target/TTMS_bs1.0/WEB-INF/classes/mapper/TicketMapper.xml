@@ -51,7 +51,7 @@
     where schedule_id = #{scheduleId,jdbcType=INTEGER}
   </delete>
 
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap">
     select ticket_id, seat_id, schedule_id, ticket_status
     from Ticket
     where ticket_id = #{ticketId,jdbcType=BIGINT}

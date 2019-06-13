@@ -226,10 +226,11 @@ public class OrdersServiceimpl implements OrdersService {
         for(int i=0;i<cun.size();i++){
             List<Reticket> list4 = new LinkedList<>();
             List<Long> list2 = ordersMapper.selectBydate((Timestamp)cun.get(i));
-            Ticket tic = ticketMapper.selectByPrimaryKey(Long.valueOf(list2.get(0)));
+            System.out.println(list2);
+            Ticket tic = ticketMapper.selectByPrimaryKey(Long.parseLong((String.valueOf(list2.get(0)))));
             Schedule sch = scheduleMapper.selectByscheduleId(tic.getScheduleId());
             for(int j =0;j<list2.size();j++) {
-                Reticket ti = new Reticket(list2.get(i));
+                Reticket ti = new Reticket(Long.parseLong(String.valueOf(list2.get(j))));
                 list4.add(ti);
             }
             Reeticket ticke = new Reeticket(list4.size(),list4);

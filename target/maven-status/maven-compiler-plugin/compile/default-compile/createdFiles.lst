@@ -2,6 +2,7 @@ com/coco/controller/TicketController.class
 com/coco/dao/SalestatisticsMapper.class
 com/coco/service/UsermanageService.class
 com/coco/service/impl/Usermanageimpl.class
+com/coco/entity/Reticket.class
 com/coco/service/LoginService.class
 com/coco/service/MoviemanageService.class
 com/coco/service/impl/Showhomepageimpl.class
@@ -14,6 +15,7 @@ com/coco/dao/OrdersMapper.class
 com/coco/service/ScheduleService.class
 com/coco/service/SeatmanageService.class
 com/coco/service/OrdersService.class
+com/coco/entity/Reeticket.class
 com/coco/dao/MovieMapper.class
 com/coco/utils/RandomSecuritycode.class
 com/coco/entity/Reschedule.class
@@ -38,6 +40,7 @@ com/coco/entity/Ticket.class
 com/coco/controller/PayController.class
 com/coco/entity/Reorder.class
 com/coco/service/impl/StatisticsServiceimpl.class
+com/coco/entity/Reeorder.class
 com/coco/controller/ScheduleController.class
 com/coco/dao/TicketMapper.class
 com/coco/entity/Result.class

@@ -32,6 +32,7 @@
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/controller/FindpasswordAndlogout.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/dao/OrdersMapper.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/dao/userMapper.java
+/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/Reeorder.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/ScheduleService.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/ShowhomepageService.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/MoviemanageService.java
@@ -46,6 +47,7 @@
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/Orders.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/controller/PayController.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/controller/HallController.java
+/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/Reticket.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/UsermanageService.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/impl/Moviemannageimpl.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/Restatistics.java
@@ -58,6 +60,7 @@
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/LoginService.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/controller/OrdersController.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/controller/LoginController.java
+/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/Reeticket.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/Hall.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/TicketService.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/dao/MovieMapper.java

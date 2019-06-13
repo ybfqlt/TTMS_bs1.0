@@ -14,7 +14,7 @@ public interface TicketMapper {
 
     int insert(Ticket record);
 
-    Ticket selectByPrimaryKey(Long ticketId);
+    Ticket selectByPrimaryKey(@Param("ticketId") Long ticketId);
 
     List<Ticket> selectAll();
 
