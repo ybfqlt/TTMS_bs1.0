@@ -38,4 +38,7 @@ public interface UsermanageService {
 
     //获取某个用户已经注册的天数
     Integer getDay(String name);
+
+    //根据字母进行用户的模糊查询
+    Result getHuuser(String name);
 }

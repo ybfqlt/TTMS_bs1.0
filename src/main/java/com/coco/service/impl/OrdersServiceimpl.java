@@ -3,15 +3,14 @@ package com.coco.service.impl;
 import com.coco.dao.*;
 import com.coco.entity.*;
 import com.coco.service.OrdersService;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @Classname OrdersServiceimpl
@@ -44,18 +43,22 @@ public class OrdersServiceimpl implements OrdersService {
     *
     **/
     @Override
-    public Boolean Addorders(Integer userId, List<Reorder> order1){
+    public Result Addorders(Integer userId, Integer scheduleId,List<Reorder> order1){
+        Result res = new Result();
+        List<Integer> list = new LinkedList<>();
+        Schedule schedulee = scheduleMapper.selectByscheduleId(scheduleId);
         for(int i=0;i<order1.size();i++) {
-            Seat seat = seatMapper.selectByrowcol2(order1.get(i).getSeatRow(),order1.get(i).getSeatCol());
-            Long ticketId = ticketMapper.selectByscheduleIdseatId(order1.get(i).getScheduleId(),seat.getSeatId());
-            //在票的表中将其修改为已经购买
-            ticketMapper.updateByscheduleIdseatId(order1.get(i).getScheduleId(),seat.getSeatId(),Short.parseShort("0"));
+            Seat seat = seatMapper.selectByrowcol(schedulee.getHallId(),order1.get(i).getSeatRow(),order1.get(i).getSeatCol());
+            Long ticketId = ticketMapper.selectByscheduleIdseatId(scheduleId,seat.getSeatId());
             //将订单设为购买记录的订单
-            Orders order = new Orders(userId,ticketId,Short.parseShort("1"));
+            Orders order = new Orders(userId,ticketId,Short.parseShort("0"));
             //插入
             ordersMapper.insert(order);
+            list.add(ordersMapper.selectByuserIdandticketId(userId,ticketId));
         }
-        return true;
+        res.setMes(list);
+        res.setJudge(true);
+        return res;
     }
 
     /**
@@ -105,7 +108,7 @@ public class OrdersServiceimpl implements OrdersService {
     }
 
     /**
-    * @Description 根据订单id更新订单为已经退款
+    * @Description 根据订单id更新订单为已经
     * @return java.lang.Boolean
     *
     **/
@@ -121,6 +124,42 @@ public class OrdersServiceimpl implements OrdersService {
         }
     }
 
+    /**
+     * @Description 根据订单id更新订单为已经付款
+     * @return java.lang.Boolean
+     *
+     **/
+    @Override
+    public Boolean updateOrderf(String di){
+        StringBuilder a= new StringBuilder();
+        for(int i=0;i<di.length();i++) {
+            if(di.charAt(i)!='t') {
+                a.append(di.charAt(i));
+            }
+            else{
+                System.out.println(Integer.valueOf(a.toString()));
+                Orders order1 = ordersMapper.selectByPrimaryKey(Integer.valueOf(a.toString()));
+                Ticket ticket = ticketMapper.selectByPrimaryKey(order1.getTicketId());
+                //在票的表中将其修改为已经购买
+                ticketMapper.updateByscheduleIdseatId(ticket.getScheduleId(), ticket.getSeatId(), Short.parseShort("0"));
+                ordersMapper.updateByordersId(order1.getOrdersId());
+                a.setLength(0);
+            }
+        }
+        return true;
+    }
+
+    /**
+    * @Description 根据id删除订单
+    * @return java.lang.Boolean
+    *
+    **/
+    public Boolean deleteByid(String di){
+        for(int i=0;i<di.length();i++) {
+           ordersMapper.deleteByPrimaryKey(Integer.valueOf(di.charAt(i)));
+        }
+        return true;
+    }
 
     /**
      * @Description 根据用户id返回用户买过的票的数量，以及未使用的票的数量和看过的电影的数量
@@ -151,5 +190,52 @@ public class OrdersServiceimpl implements OrdersService {
             ma.put("ticketNo", listo.size() - count);
         }
         return ma;
+    }
+
+
+    /**
+    * @Description 根据orderid获取订单
+    * @return com.coco.entity.Orders
+    *
+    **/
+    @Override
+    public Orders getorderById(Integer orderId){
+        return ordersMapper.selectByPrimaryKey(orderId);
+    }
+
+
+
+    /**
+    * @Description 查询个人订单
+    * @return com.coco.entity.Reeorder
+    *
+    **/
+    @Override
+    public List<Reeorder> selectper(String name){
+        List<Reeorder> list = new ArrayList<>();
+        user uu = usermapper.selectByuserName(name);
+        List<Timestamp> cun = new LinkedList<>();
+        List<Orders> list1 = ordersMapper.selectByuserId(uu.getUserId());
+        for(int i=0;i<list1.size();i++){
+            if(cun.contains(list1.get(i).getOrdersTime())){
+
+            }else {
+                cun.add((Timestamp) list1.get(i).getOrdersTime());
+            }
+        }
+        for(int i=0;i<cun.size();i++){
+            List<Reticket> list4 = new LinkedList<>();
+            List<Long> list2 = ordersMapper.selectBydate((Timestamp)cun.get(i));
+            Ticket tic = ticketMapper.selectByPrimaryKey(Long.valueOf(list2.get(0)));
+            Schedule sch = scheduleMapper.selectByscheduleId(tic.getScheduleId());
+            for(int j =0;j<list2.size();j++) {
+                Reticket ti = new Reticket(list2.get(i));
+                list4.add(ti);
+            }
+            Reeticket ticke = new Reeticket(list4.size(),list4);
+            Reeorder re = new Reeorder(i+1, (sch.getScheduleTicketPrice()).multiply(BigDecimal.valueOf(list4.size())),cun.get(i),ticke);
+            list.add(re);
+        }
+        return list;
     }
 }

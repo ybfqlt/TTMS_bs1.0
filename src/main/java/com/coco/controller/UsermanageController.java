@@ -148,4 +148,20 @@ public class UsermanageController {
         return ma;
     }
 
+    @RequestMapping(value = "/selecthuuser",method = RequestMethod.POST)
+    public Map<String,Object> Showhuuser(@RequestBody Map<String,String> map){
+        Map<String,Object> ma = new HashMap<>();
+        Result res = usermanageservice.getHuuser(map.get("userName"));
+        List<user> aa = (List<user>)res.getMes();
+        if(res.getJudge()== true){
+            ma.put("state",true);
+            ma.put("count",aa.size());
+            ma.put("data",aa);
+        }
+        else{
+            ma.put("state",false);
+            ma.put("msg","未查询到数据!!!");
+        }
+        return ma;
+    }
 }

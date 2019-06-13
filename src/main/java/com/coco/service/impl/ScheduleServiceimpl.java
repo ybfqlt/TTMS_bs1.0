@@ -110,11 +110,18 @@ public class ScheduleServiceimpl implements ScheduleService {
     public Result selectScheduleBymovieTitle(String movieTitle){
         Result res = new Result( );
         Movie movie = movieMapper.selectBymovieTitle(movieTitle);
+        Date date = new Date();
+        Timestamp ndate = new Timestamp(date.getTime());
         if(movie == null){
             res.setJudge(false);
             res.setMes("此剧目不存在!!!");
         }else{
             List<Schedule> schedules = scheduleMapper.selectBymovieId(movie.getMovieId());
+            for(int i=0;i<schedules.size();i++){
+                if(schedules.get(i).getScheduleEndTime().before(ndate)){
+                    schedules.remove(i);
+                }
+            }
             if(schedules.size()==0){
                 res.setJudge(false);
                 res.setMes("此剧目暂时没有相关演出计划!!!");

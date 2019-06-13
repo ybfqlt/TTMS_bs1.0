@@ -62,4 +62,10 @@
     from User
     where user_type ='j';
   </select>
+
+  <select id="gethuuser" resultMap="BaseResultMap">
+    select user_id, user_name, user_password, user_type, user_qq, user_registertime
+    from User
+    where user_name like concat('%',#{username},'%')
+  </select>
 </mapper>

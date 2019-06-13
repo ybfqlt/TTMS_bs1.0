@@ -2,8 +2,10 @@ package com.coco.dao;
 
 import com.coco.entity.user;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
+import javax.xml.registry.infomodel.User;
 import java.util.List;
 
 @Mapper
@@ -30,4 +32,7 @@ public interface userMapper {
     int updatepassworduserName(user record);
 
     int updateByuserId(user uu);
+
+    //模糊查询用户
+    List<user>  gethuuser(@Param("username")String username);
 }

@@ -1,6 +1,7 @@
 package com.coco.controller;
 
 import com.coco.entity.Reorder;
+import com.coco.entity.Result;
 import com.coco.entity.Salestatistics;
 import com.coco.service.OrdersService;
 import com.coco.service.StatisticsService;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -30,35 +32,81 @@ public class PayController {
     private OrdersService ordersService;
 
     @Autowired
-    private UsermanageService usermanageService;
+    private TicketService ticketService;
 
     @Autowired
-    private TicketService ticketService;
+    private UsermanageService usermanageService;
+
 
     @Autowired
     private StatisticsService statisticsService;
 
     /**
-    * @Description 支付
-    * @return java.util.Map<java.lang.String,java.lang.Object>
-    *
-    **/
-    @RequestMapping(value="/paymoney",method= RequestMethod.POST)
-    public Map<String,Object> StorageOrder(HttpServletRequest request, @RequestBody List<Reorder> lists){
+     * @Description 下单
+     * @return java.util.Map<java.lang.String,java.lang.Object>
+     *
+     **/
+    @RequestMapping(value="/saveorder",method= RequestMethod.POST)
+    public Map<String,Object> StorageOrder(HttpServletRequest request, @RequestBody Map<String,Object> map){
         String name = (String)request.getSession().getAttribute("user");
         int id = usermanageService.getuserId(name);
-        Boolean judge = ordersService.Addorders(id,lists);
-        //添加订单后更新票房
-        Boolean judge2 = statisticsService.updateStatistics(lists.size(),lists.get(0).getScheduleId());
+        String la = (String)map.get("data");
+        List<Reorder> lists = new LinkedList<>();
+        int row=0,col = 0,j=0;
+        for(int i=0;i<la.length();i++){
+            System.out.println(la.charAt(i));
+            if(la.charAt(i)=='排') {
+                j++;
+                row = Integer.valueOf(String.valueOf(la.charAt(i-1)));
+            }
+            if(la.charAt(i)=='列') {
+                j++;
+                col = Integer.valueOf(String.valueOf(la.charAt(i-1)));
+            }
+            if(j==2){
+                Reorder aa = new Reorder(row,col);
+                lists.add(aa);
+                j=0;
+            }
+        }
+        Result res = ordersService.Addorders(id,(Integer)map.get("scheduleId"),lists);
         Map<String,Object> ma = new HashMap<>();
-        ma.put("payState",judge);
-        if(judge2==false){
-            ma.put("msg","支付成功,但是票房添加失败!!!!");
-        }else{
-            ma.put("msg","支付成功，希望您观影愉快!!!");
+        StringBuilder s = new StringBuilder();
+        List<Integer> aa = (List<Integer>)res.getMes();
+        for(int t=0;t<aa.size();t++){
+            s.append(aa.get(t));
+            s.append("t");
+        }
+        ma.put("payState",res.getJudge());
+        ma.put("id",s.toString());
+        ma.put("count",aa.size());
+        ma.put("scheduleId",map.get("scheduleId"));
+        return ma;
+    }
+
+    /**
+     * @Description 支付
+     * @return java.util.Map<java.lang.String,java.lang.Object>
+     *
+     **/
+    @RequestMapping(value="/paymoney",method= RequestMethod.POST)
+    public Map<String,Object> Paymoney(HttpServletRequest request, @RequestBody Map<String,Object> map){
+        Map<String,Object> ma = new HashMap<>();
+        if((Boolean)map.get("state") == true ) {
+            ordersService.updateOrderf((String) map.get("id"));
+            //添加订单后更新票房
+            Boolean judge2 = statisticsService.updateStatistics((Integer)map.get("count"),(Integer)map.get("scheduleId"));
+            ma.put("state",judge2);
+            ma.put("msg","支付成功!!!");
+        }
+        else{
+            ordersService.deleteByid((String)map.get("data"));
+            ma.put("state",false);
+            ma.put("msg","支付失败,请重新下单!!!");
         }
         return ma;
     }
+
 
 
     /**

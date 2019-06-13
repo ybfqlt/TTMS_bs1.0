@@ -183,4 +183,24 @@ public class Usermanageimpl implements UsermanageService {
         int days = (int) ((date.getTime()-date1.getTime()) / (1000*3600*24));
         return days;
     }
+
+    /**
+    * @Description 根据字母进行用户的模糊查询
+    * @return java.util.List<com.coco.entity.user>
+    *
+    **/
+    @Override
+    public Result getHuuser(String name){
+        Result res = new Result();
+        List<user> lists = usermapper.gethuuser(name);
+        if(lists.size()==0){
+           res.setJudge(false);
+           res.setMes("未查到数据!!!");
+        }
+        else{
+            res.setJudge(true);
+            res.setMes(lists);
+        }
+        return res;
+    }
 }

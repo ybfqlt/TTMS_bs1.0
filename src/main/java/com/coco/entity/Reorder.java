@@ -7,28 +7,26 @@ package com.coco.entity;
  * @Created by xns
  */
 public class Reorder {
-    private Integer movieId;
 
-    private Integer scheduleId;
+    /*private Integer scheduleId;*/
 
     private Integer seatRow;
     private Integer seatCol;
 
-    public Reorder(Integer movieId, Integer scheduleId, Integer seatRow, Integer seatCol){
-        this.movieId=movieId;
-        this.scheduleId=scheduleId;
+    public Reorder(Integer seatRow, Integer seatCol){
+       /* this.scheduleId=scheduleId;*/
         this.seatRow=seatRow;
         this.seatCol=seatCol;
 
     }
-    public Integer getScheduleId() {
+    /*public Integer getScheduleId() {
         return scheduleId;
     }
 
     public void setScheduleId(Integer scheduleId) {
         this.scheduleId = scheduleId;
     }
-
+*/
     public Integer getSeatRow() {
         return seatRow;
     }
@@ -45,12 +43,4 @@ public class Reorder {
         this.seatCol = seatCol;
     }
 
-
-    public Integer getMovieId() {
-        return movieId;
-    }
-
-    public void setMovieId(Integer movieId) {
-        this.movieId = movieId;
-    }
 }

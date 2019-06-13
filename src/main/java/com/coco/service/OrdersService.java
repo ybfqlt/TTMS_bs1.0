@@ -1,6 +1,7 @@
 package com.coco.service;
 
 import com.coco.entity.Orders;
+import com.coco.entity.Reeorder;
 import com.coco.entity.Reorder;
 import com.coco.entity.Result;
 
@@ -16,7 +17,7 @@ import java.util.Map;
 public interface OrdersService {
 
     //将订单加入订单表中
-    Boolean Addorders(Integer userId, List<Reorder> order);
+    Result Addorders(Integer userId, Integer scheduleId,List<Reorder> order);
 
     //根据名称查询某人的所有订单
     Result orderlist(String name);
@@ -29,4 +30,15 @@ public interface OrdersService {
 
     //根据用户id返回用户买过的票的数量，以及未使用的票的数量和看过的电影的数量
     Map<String,Integer> getper(Integer userId);
+
+    //根据orderid获取订单
+    Orders getorderById(Integer orderId);
+
+    Boolean updateOrderf(String di);
+
+    //根据id删除订单
+    Boolean deleteByid(String di);
+
+    //查询个人订单
+    List<Reeorder> selectper(String name);
 }

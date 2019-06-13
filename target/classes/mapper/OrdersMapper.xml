@@ -32,16 +32,26 @@
 
   <update id="updateByordersId" parameterType="java.lang.Integer">
     update Orders
-    set orders_type = 0
+    set orders_type = 1
     where orders_id = #{ordersId,jdbcType=INTEGER}
   </update>
 
+  <select id="selectByuserIdandticketId" resultType="Integer">
+    select orders_id
+    from Orders
+    where user_id=#{userId,jdbcType=INTEGER} and ticket_id=#{ticketId,jdbcType=INTEGER}
+  </select>
   <select id="selectByuserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select orders_id,user_id,ticket_id,orders_time,orders_type
     from Orders
     where user_id = #{userId,jdbcType=INTEGER}
   </select>
 
+  <select id="selectBydate" resultType="java.lang.Integer">
+    select ticket_id
+    from Orders
+    where orders_time = #{time,jdbcType=TIMESTAMP}
+  </select>
   <select id="selectByuserIdandbuy" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select orders_id,user_id,ticket_id,orders_time,orders_type
     from Orders

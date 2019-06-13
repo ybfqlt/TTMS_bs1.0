@@ -14,6 +14,7 @@
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/Salestatistics.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/impl/Usermanageimpl.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/impl/OrdersServiceimpl.java
+/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/config/AlipayConfig.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/HallService.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/impl/LoginServiceimpl.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/StatisticsService.java
