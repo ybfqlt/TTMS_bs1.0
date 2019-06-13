@@ -34,7 +34,7 @@ public interface ScheduleMapper {
     List<Schedule> selectBymovieIdtime(@Param("movieId") Integer movieId,@Param("starttime") String starttime, @Param("endtime") String endtime);
 
     //根据演出厅id及开始时间获取演出计划
-    Schedule selectBystarttime(@Param("hallId") Integer hallId, @Param("scheduleStartTime")Timestamp scheduleStartTime);
+    Integer selectBystarttime(@Param("hallId") Integer hallId, @Param("scheduleStartTime") Timestamp scheduleStartTime);
 
     List<Schedule> selectAll();
 

@@ -1,12 +1,9 @@
 package com.coco.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.sql.Time;
 import java.sql.Timestamp;
-import java.util.Date;
+
 
 public class Schedule implements Serializable {
     private Integer scheduleId;
@@ -22,6 +19,8 @@ public class Schedule implements Serializable {
     private BigDecimal scheduleTicketPrice;
 
     private Short ticketinitStatus;
+    public Schedule(){
+    }
 
     public Schedule(Integer hallId,Integer movieId,Timestamp scheduleStartTime,BigDecimal scheduleTicketPrice){
         this.hallId=hallId;

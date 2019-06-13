@@ -3,18 +3,17 @@ package com.coco.service.impl;
 import com.coco.dao.HallMapper;
 import com.coco.dao.MovieMapper;
 import com.coco.dao.ScheduleMapper;
-import com.coco.entity.Hall;
-import com.coco.entity.Movie;
-import com.coco.entity.Result;
-import com.coco.entity.Schedule;
+import com.coco.entity.*;
 import com.coco.service.ScheduleService;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.awt.geom.RectangularShape;
 import java.sql.Timestamp;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -138,13 +137,20 @@ public class ScheduleServiceimpl implements ScheduleService {
     public Result selectAllSchedule(){
         Result res = new Result();
         List<Schedule> schedules = scheduleMapper.selectAll();
+        List<Reschedule> reschedules = new ArrayList<>();
         if(schedules == null){
             res.setJudge(false);
             res.setMes("暂时没有演出计划!!!");
         }
         else{
+            for(int i=0;i<schedules.size();i++){
+                Hall hall = hallMapper.selectByPrimaryKey(schedules.get(i).getHallId());
+                Movie movie = movieMapper.selectBymovieId(schedules.get(i).getMovieId());
+                Reschedule aa = new Reschedule(schedules.get(i).getScheduleId(),schedules.get(i).getHallId(),hall.getHallName(),movie.getMovieTitle(),schedules.get(i).getScheduleStartTime(),schedules.get(i).getScheduleEndTime(),schedules.get(i).getScheduleTicketPrice());
+                reschedules.add(aa);
+            }
             res.setJudge(true);
-            res.setMes(schedules);
+            res.setMes(reschedules);
         }
         return res;
     }
@@ -241,7 +247,8 @@ public class ScheduleServiceimpl implements ScheduleService {
     *
     **/
     @Override
-    public Schedule get(Integer hallId, Timestamp time){
+    public Integer get(Integer hallId, Timestamp time){
+        System.out.println(scheduleMapper.selectBystarttime(hallId,time));
         return scheduleMapper.selectBystarttime(hallId,time);
     }
 }

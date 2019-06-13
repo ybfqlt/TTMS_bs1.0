@@ -15,6 +15,7 @@ com/coco/service/SeatmanageService.class
 com/coco/service/OrdersService.class
 com/coco/dao/MovieMapper.class
 com/coco/utils/RandomSecuritycode.class
+com/coco/entity/Reschedule.class
 com/coco/controller/SeatController.class
 com/coco/service/FindpasswordAndlogoutService.class
 com/coco/service/impl/MailServiceimpl.class

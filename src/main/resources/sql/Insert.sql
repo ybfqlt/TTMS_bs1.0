@@ -73,3 +73,6 @@ insert into Salestatistics (movie_id, sale_count, sale_money_count) values(9,0,0
 insert into Salestatistics (movie_id, sale_count, sale_money_count) values(10,0,0);
 insert into Salestatistics (movie_id, sale_count, sale_money_count) values(11,0,0);
 insert into Salestatistics (movie_id, sale_count, sale_money_count) values(12,0,0);
+
+
+insert into User(user_name, user_password, user_qq, user_type) values('admin001','4eef1e1ea34879a2ae60c60815927ed9','00000000','g');

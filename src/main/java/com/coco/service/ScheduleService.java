@@ -38,5 +38,5 @@ public interface ScheduleService {
     Boolean modifySchedule(Schedule schedule);
 
     //根据演出厅id及演出开始时间返回演出计划
-    Schedule get(Integer hallId, Timestamp time);
+    Integer get(Integer hallId, Timestamp time);
 }

@@ -1,4 +1,5 @@
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/OrdersService.java
+/home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/entity/Reschedule.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/controller/SeatController.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/service/SeatmanageService.java
 /home/ltt/IdeaProjects/TTMS_bs1.0/src/main/java/com/coco/dao/HallMapper.java

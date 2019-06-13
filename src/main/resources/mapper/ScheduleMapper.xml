@@ -15,10 +15,10 @@
     where schedule_id = #{scheduleId,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.coco.entity.Schedule">
-    insert into Schedule ( hall_id, movie_id,
+    insert into Schedule (hall_id, movie_id,
       schedule_start_time, schedule_end_time, 
       schedule_ticket_price, ticketinit_status)
-    values (#{hallId,jdbcType=INTEGER}, #{movieId,jdbcType=INTEGER},
+    values (#{hallId,jdbcType=INTEGER},#{movieId,jdbcType=INTEGER},
       #{scheduleStartTime,jdbcType=TIMESTAMP}, #{scheduleEndTime,jdbcType=TIMESTAMP}, 
       #{scheduleTicketPrice,jdbcType=DECIMAL}, #{ticketinitStatus,jdbcType=SMALLINT})
   </insert>
@@ -40,9 +40,8 @@
     where movie_id = #{movieId,jdbcType=INTEGER}
   </select>
 
-  <select id="selectBystarttime" resultMap="BaseResultMap">
-    select schedule_id, hall_id, movie_id, schedule_start_time, schedule_end_time, schedule_ticket_price,
-           ticketinit_status
+  <select id="selectBystarttime" resultType="java.lang.Integer">
+    select schedule_id
     from Schedule
     where hall_id = #{hallId,jdbcType=INTEGER} and schedule_start_time = #{scheduleStartTime,jdbcType=TIMESTAMP}
   </select>
@@ -72,7 +71,8 @@
     select schedule_id, hall_id, movie_id, schedule_start_time, schedule_end_time, schedule_ticket_price,
     ticketinit_status
     from Schedule
-    where hall_id = #{hallId} and schedule_end_time >= #{starttime} and #{endtime} >= schedule_end_time
+    where hall_id = #{hallId} and (schedule_end_time >= #{starttime} and #{endtime} >= schedule_end_time)
+       or (#{endtime} >= schedule_end_time and schedule_start_time >= #{starttime})
   </select>
 
   <select id="selectBymovieIdtime"  resultMap="BaseResultMap">

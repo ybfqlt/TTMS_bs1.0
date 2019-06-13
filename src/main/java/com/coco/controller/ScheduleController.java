@@ -1,5 +1,6 @@
 package com.coco.controller;
 
+import com.coco.entity.Reschedule;
 import com.coco.entity.Result;
 import com.coco.entity.Schedule;
 import com.coco.service.ScheduleService;
@@ -15,6 +16,7 @@ import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.text.ParseException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -47,7 +49,8 @@ public class ScheduleController {
         try {
             Result res = scheduleService.addSchedule(schedule);
             if(res.getJudge() == true) {
-                schedule = scheduleService.get(schedule.getHallId(),schedule.getScheduleStartTime());
+                int a = scheduleService.get(schedule.getHallId(),schedule.getScheduleStartTime());
+                schedule.setScheduleId(a);
                 Result ress = ticketService.ProduceticketByschedule(schedule);//根据添加的演出计划自动生成对应的票
                 if (ress.getJudge() == true) {
                     ma.put("addState", true);
@@ -95,6 +98,7 @@ public class ScheduleController {
         Map<String,Object> ma = new HashMap<>();
         Result res = scheduleService.selectAllSchedule();
         if(res.getJudge()==true){
+            ma.put("count",((List<Reschedule>)res.getMes()).size());
             ma.put("selectallState",true);
             ma.put("data",res.getMes());
             ma.put("msg","查询到了!!!");
