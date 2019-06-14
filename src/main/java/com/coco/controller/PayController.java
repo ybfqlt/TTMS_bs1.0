@@ -1,5 +1,6 @@
 package com.coco.controller;
 
+import com.coco.entity.Orders;
 import com.coco.entity.Reorder;
 import com.coco.entity.Result;
 import com.coco.entity.Salestatistics;
@@ -108,6 +109,23 @@ public class PayController {
     }
 
 
+    /**
+    * @Description 前端请求关闭座位页面
+    * @return java.util.Map<java.lang.String,java.lang.Object>
+    *
+    **/
+    @RequestMapping(value="/free",method=RequestMethod.POST)
+    public Map<String,Object> reState(@RequestBody Map<String,Integer> map){
+        Map<String,Object> ma = new HashMap<>();
+        Orders order= ordersService.getorderById(map.get("orderId"));
+        if(order.getOrdersType()==1){
+            ma.put("State",true);
+        }
+        else{
+            ma.put("State",false);
+        }
+        return ma;
+    }
 
     /**
     * @Description 退款

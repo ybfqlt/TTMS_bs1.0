@@ -239,4 +239,15 @@ public class OrdersServiceimpl implements OrdersService {
         }
         return list;
     }
+
+    /**
+    * @Description 根据id返回某一个订单
+    * @return com.coco.entity.Orders
+    *
+    **/
+    @Override
+    public Orders reOrder(Integer orderId){
+        Orders order = ordersMapper.selectByPrimaryKey(orderId);
+        return order;
+    }
 }

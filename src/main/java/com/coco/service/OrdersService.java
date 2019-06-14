@@ -41,4 +41,7 @@ public interface OrdersService {
 
     //查询个人订单
     List<Reeorder> selectper(String name);
+
+    //根据id返回某一个订单
+    Orders reOrder(Integer orderId);
 }
