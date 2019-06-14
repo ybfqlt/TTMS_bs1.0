@@ -38,7 +38,7 @@ public class MailServiceimpl implements MailService {
             //收件人
             email.addTo(mail);
             email.setFrom("672107240@qq.com", "coco剧院票务有限公司");
-            email.setAuthentication("672107240@qq.com", "sljbjdmdpyxtbfbh");
+            email.setAuthentication("672107240@qq.com", "goesgvhbtqxhbdgh");
             email.setSSLOnConnect(true);
             String securitycode = RandomSecuritycode.achieveCode();
             re.setMes(securitycode);

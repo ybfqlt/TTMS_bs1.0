@@ -125,22 +125,22 @@ public class FindpasswordAndlogout {
         Map<String, Object> ma = new HashMap<>();
         Result res = findpasswordAndlogoutService.logout((String) request.getSession().getAttribute("user"));
         if (res.getJudge() == false) {
-            ma.put("sendSecurityCodeState", false);
-            ma.put("msg", "session error and no user");
+            ma.put("state", false);
+            ma.put("msg", "session null");
         } else {
-            Result result = mailservice.SendSecuritycode(res.getMes() + "@qq.com");
-            System.out.println(result.getMes());//测试
-            request.getSession().setAttribute("Securitycode", result.getMes());
-            ma.put("sendSecurityCodeState", result.getJudge());
-            ma.put("msg", "验证码发送成功，请查收，请注意垃圾邮箱!!!");
+            if (request.getSession(false) != null) {
+                request.getSession(false).invalidate();
+                ma.put("state", true);
+                ma.put("msg", "注销成功");
+            }
         }
         return ma;
     }
 
-    /**
+   /* *//**
      * @return java.util.Map<java.lang.String, java.lang.Object>
      * @Description logout返回验证码的状态，注销是否成功and msg
-     **/
+     **//*
     @RequestMapping(value = "/logout", method = RequestMethod.POST)
     public Map<String, Object> Logout(HttpServletRequest request, @RequestBody Map<String, String> map) {
         Map<String, Object> ma = new HashMap<>();
@@ -160,7 +160,7 @@ public class FindpasswordAndlogout {
         }
         return ma;
     }
-
+*/
 
     /**
      * @return java.util.Map<java.lang.String, java.lang.Object>
