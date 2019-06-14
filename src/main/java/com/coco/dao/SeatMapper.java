@@ -24,5 +24,7 @@ public interface SeatMapper {
 
     List<Seat> selectAll();
 
+    Seat selectByseatId(@Param("seatId") Integer seatId);
+
     int update(@Param("hallId") Integer hallId,@Param("seatRow") Integer seatRow,@Param("seatCol")Integer seatCol,@Param("seatStatus") Short seatStatus);
 }

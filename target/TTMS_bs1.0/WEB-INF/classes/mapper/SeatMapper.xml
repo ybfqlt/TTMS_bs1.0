@@ -29,6 +29,12 @@
     where hall_id = #{hallId,jdbcType=INTEGER}
   </select>
 
+  <select id="selectByseatId" resultMap="BaseResultMap">
+    select seat_id, hall_id, seat_row, seat_col, seat_status
+    from Seat
+    where seat_id = #{seatId,jdbcType=INTEGER}
+  </select>
+
   <select id="selectByrowcol" resultMap="BaseResultMap">
     select seat_id, hall_id, seat_row, seat_col, seat_status
     from Seat

@@ -26,4 +26,6 @@ public interface TicketService {
     //根据订单id将已经退款的票的状态更新为可购买
     Boolean UpdateTicketByorderid(Integer orderId);
 
+    //根据票的id查询票
+    Map<String,Object> selectById(Long ticketId);
 }

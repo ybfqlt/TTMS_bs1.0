@@ -30,6 +30,13 @@
         where movie_id = #{movieId,jdbcType=INTEGER}
     </delete>
 
+  <select id="selectHuMovie" resultMap="BaseResultMap">
+    select movie_id, movie_rating, movie_genres, movie_runtime, movie_title, movie_poster,
+           movie_Writers, movie_directors, movie_actors, movie_plot_simple, movie_country, movie_also_known_as
+    from Movie
+    where movie_title like concat ('%',#{title,jdbcType=VARCHAR} ,'%')
+  </select>
+
   <insert id="insert" parameterType="com.coco.entity.Movie">
     insert into Movie (movie_rating, movie_genres,
       movie_runtime, movie_title, movie_poster, 

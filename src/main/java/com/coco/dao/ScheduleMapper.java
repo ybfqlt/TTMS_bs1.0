@@ -39,4 +39,6 @@ public interface ScheduleMapper {
     List<Schedule> selectAll();
 
     int updateByScheduleId(Schedule record);
+
+    List<Schedule> selectByhallIdmovieId(@Param("movieId") Integer movieId,@Param("hallId")Integer hallId);
 }

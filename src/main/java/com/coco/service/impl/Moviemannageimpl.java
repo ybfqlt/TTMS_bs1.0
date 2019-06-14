@@ -2,9 +2,7 @@ package com.coco.service.impl;
 
 import com.coco.dao.MovieMapper;
 import com.coco.dao.SalestatisticsMapper;
-import com.coco.entity.Movie;
-import com.coco.entity.Salestatistics;
-import com.coco.entity.partmovie;
+import com.coco.entity.*;
 import com.coco.service.MoviemanageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -109,5 +107,30 @@ public class Moviemannageimpl implements MoviemanageService {
             movies.add(mm);
         }
         return movies;
+    }
+
+    /**
+     * @Description 根据字母进行用户的模糊查询
+     * @return java.util.List<com.coco.entity.user>
+     *
+     **/
+    @Override
+    public Result getHumovie(String title){
+        Result res = new Result();
+        List<partmovie> moviess = new ArrayList<>();
+        List<Movie> movies = movieMapper.selectHuMovie(title);
+        for(int i=0;i<movies.size();i++){
+            partmovie mm = new partmovie(movies.get(i).getMovieId(),movies.get(i).getMovieRating(),movies.get(i).getMovieTitle(),movies.get(i).getMovieGenres(),movies.get(i).getMovieCountry(),movies.get(i).getMovieRuntime());
+            moviess.add(mm);
+        }
+        if(movies.size()==0){
+            res.setJudge(false);
+            res.setMes("未查到数据!!!");
+        }
+        else{
+            res.setJudge(true);
+            res.setMes(moviess);
+        }
+        return res;
     }
 }

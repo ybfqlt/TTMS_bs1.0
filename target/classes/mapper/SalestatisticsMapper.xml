@@ -12,9 +12,9 @@
     where sales_statistics_id = #{salesStatisticsId,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.coco.entity.Salestatistics">
-    insert into Salestatistics (sale_count,
+    insert into Salestatistics (movie_id,sale_count,
       sale_money_count)
-    values (#{saleCount,jdbcType=BIGINT},
+    values (#{movieId,jdbcType=INTEGER},#{saleCount,jdbcType=BIGINT},
       #{saleMoneyCount,jdbcType=DECIMAL})
   </insert>
   <update id="updateByPrimaryKey" parameterType="com.coco.entity.Salestatistics">

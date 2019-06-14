@@ -1,15 +1,14 @@
 package com.coco.service.impl;
 
-import com.coco.dao.HallMapper;
-import com.coco.dao.OrdersMapper;
-import com.coco.dao.SeatMapper;
-import com.coco.dao.TicketMapper;
+import com.coco.dao.*;
 import com.coco.entity.*;
 import com.coco.service.OrdersService;
+import com.coco.service.ScheduleService;
 import com.coco.service.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -32,6 +31,13 @@ public class TicketServiceimpl implements TicketService {
 
     @Autowired
     private OrdersMapper ordersMapper;
+
+    @Autowired
+    private ScheduleMapper scheduleMapper;
+
+    @Autowired
+    private MovieMapper movieMapper;
+
 
     /**
     * @Description 根据演出计划生成票并且插入票的表里
@@ -117,5 +123,31 @@ public class TicketServiceimpl implements TicketService {
         else{
             return false;
         }
+    }
+
+    /**
+    * @Description 根据票的id查询票
+    * @return java.util.Map<java.lang.String,java.lang.Integer>
+    *
+    **/
+    @Override
+    public Map<String,Object> selectById(Long ticketId){
+        Ticket ticket = ticketMapper.selectByPrimaryKey(ticketId);
+        Schedule schedule = scheduleMapper.selectByscheduleId(ticket.getScheduleId());
+        Movie movie = movieMapper.selectBymovieId(schedule.getMovieId());
+        Seat seat = seatMapper.selectByseatId(ticket.getSeatId());
+        Map<String,Object> ma = new HashMap<>();
+        ma.put("ticketId",ticketId);
+        ma.put("movieTitle",movie.getMovieTitle());
+        ma.put("playStartTime",schedule.getScheduleStartTime());
+        ma.put("seatRow",seat.getSeatRow());
+        ma.put("seatCol",seat.getSeatCol());
+        if(ticket.getTicketStatus() == 0) {
+            ma.put("payState", true);
+        }
+        else{
+            ma.put("payState",false);
+        }
+        return ma;
     }
 }

@@ -3,6 +3,7 @@ package com.coco.dao;
 import com.coco.entity.HalfMovie;
 import com.coco.entity.Movie;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -19,6 +20,9 @@ public interface MovieMapper {
 
     //根据电影名称进行查询
     Movie selectBymovieTitle(String movieTitle);
+
+    //根据某一个字母进行电影的模糊查询
+    List<Movie> selectHuMovie(@Param("title") String title);
 
     //根据电影id进行查询
     Movie selectBymovieId(Integer movieId);

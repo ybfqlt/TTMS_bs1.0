@@ -88,4 +88,11 @@
     ticketinit_status
     from Schedule
   </select>
+
+  <select id="selectByhallIdmovieId" resultMap="BaseResultMap">
+    select schedule_id, hall_id, movie_id, schedule_start_time, schedule_end_time, schedule_ticket_price,
+           ticketinit_status
+    from Schedule
+    where movie_id = #{movieId,jdbcType=INTEGER} and hall_id = #{hallId,jdbcType=INTEGER}
+  </select>
 </mapper>

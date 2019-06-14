@@ -173,4 +173,21 @@ public class ScheduleController {
         }
         return ma;
     }
+
+
+    @RequestMapping(value="/selectsao",method = RequestMethod.POST)
+    public Map<String,Object> Saoselect(@RequestBody Map<String,Integer> map){
+        Map<String,Object> ma = new HashMap<>();
+        Result res = scheduleService.selectByhallIdormovieId(map.get("hallId"),map.get("movieId"));
+        if(res.getJudge() == true){
+            ma.put("State",true);
+            ma.put("data",res.getMes());
+            ma.put("msg","查到了");
+        }
+        else{
+            ma.put("State",false);
+            ma.put("msg",res.getMes());
+        }
+        return ma;
+    }
 }

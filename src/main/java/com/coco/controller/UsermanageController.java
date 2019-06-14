@@ -148,6 +148,11 @@ public class UsermanageController {
         return ma;
     }
 
+    /**
+    * @Description 模糊查询用户
+    * @return java.util.Map<java.lang.String,java.lang.Object>
+    *
+    **/
     @RequestMapping(value = "/selecthuuser",method = RequestMethod.POST)
     public Map<String,Object> Showhuuser(@RequestBody Map<String,String> map){
         Map<String,Object> ma = new HashMap<>();

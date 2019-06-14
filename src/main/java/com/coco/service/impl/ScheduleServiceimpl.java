@@ -258,4 +258,43 @@ public class ScheduleServiceimpl implements ScheduleService {
         System.out.println(scheduleMapper.selectBystarttime(hallId,time));
         return scheduleMapper.selectBystarttime(hallId,time);
     }
+
+
+    /**
+    * @Description 花式查询
+    * @return com.coco.entity.Result
+    *
+    **/
+    public Result selectByhallIdormovieId(Integer hallId,Integer movieId){
+        Result res = new Result();
+        List<Schedule> schedules;
+        if(hallId==0&&movieId==0){
+            schedules = scheduleMapper.selectAll();
+        }
+        else if(hallId == 0){
+            schedules =scheduleMapper.selectBymovieId(movieId);
+        }
+        else if(movieId == 0){
+            schedules = scheduleMapper.selectByhallId(hallId);
+        }
+        else{
+            schedules = scheduleMapper.selectByhallIdmovieId(movieId,hallId);
+        }
+        List<Reschedule> reschedules = new ArrayList<>();
+        if(schedules == null){
+            res.setJudge(false);
+            res.setMes("暂时没有演出计划!!!");
+        }
+        else{
+            for(int i=0;i<schedules.size();i++){
+                Hall hall = hallMapper.selectByPrimaryKey(schedules.get(i).getHallId());
+                Movie movie = movieMapper.selectBymovieId(schedules.get(i).getMovieId());
+                Reschedule aa = new Reschedule(schedules.get(i).getScheduleId(),schedules.get(i).getHallId(),hall.getHallName(),movie.getMovieTitle(),schedules.get(i).getScheduleStartTime(),schedules.get(i).getScheduleEndTime(),schedules.get(i).getScheduleTicketPrice());
+                reschedules.add(aa);
+            }
+            res.setJudge(true);
+            res.setMes(reschedules);
+        }
+        return res;
+    }
 }

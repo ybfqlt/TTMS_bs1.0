@@ -1,6 +1,7 @@
 package com.coco.service;
 
 import com.coco.entity.Movie;
+import com.coco.entity.Result;
 import com.coco.entity.partmovie;
 
 import java.util.List;
@@ -26,4 +27,7 @@ public interface MoviemanageService {
 
     //返回所有影片的部分片段
     List<partmovie> gethalfmovie();
+
+    //根据字母进行用户的模糊查询
+    Result getHumovie(String title);
 }

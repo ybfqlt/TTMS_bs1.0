@@ -39,4 +39,7 @@ public interface ScheduleService {
 
     //根据演出厅id及演出开始时间返回演出计划
     Integer get(Integer hallId, Timestamp time);
+
+    //扫查询
+    Result selectByhallIdormovieId(Integer hallId,Integer movieId);
 }
