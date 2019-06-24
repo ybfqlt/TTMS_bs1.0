@@ -94,7 +94,11 @@ public class StatisticsServiceimpl implements StatisticsService {
             List<Restatistics> list = new ArrayList<Restatistics>();
             for (int i = 0; i < lists.size(); i++) {
                 Movie movie = movieMapper.selectBymovieId(lists.get(i).getMovieId());
-                list.add(new Restatistics(movie.getMovieTitle(), lists.get(i).getSaleCount(), lists.get(i).getSaleMoneyCount()));
+                if(movie==null){
+                }
+                else {
+                    list.add(new Restatistics(movie.getMovieTitle(), lists.get(i).getSaleCount(), lists.get(i).getSaleMoneyCount()));
+                }
             }
             res.setJudge(true);
             res.setMes(list);

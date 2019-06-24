@@ -54,33 +54,24 @@ public class PayController {
         String la = (String)map.get("data");
         List<Reorder> lists = new LinkedList<>();
         int row=0,col = 0,j=0;
-        for(int i=0;i<la.length();i++){
-            System.out.println(la.charAt(i));
-            if(la.charAt(i)=='排') {
-                j++;
-                row = Integer.valueOf(String.valueOf(la.charAt(i-1)));
-            }
-            if(la.charAt(i)=='列') {
-                j++;
-                col = Integer.valueOf(String.valueOf(la.charAt(i-1)));
-            }
-            if(j==2){
-                Reorder aa = new Reorder(row,col);
-                lists.add(aa);
-                j=0;
-            }
+        String[] aa = la.split("排|列");
+        for(int i=0;i<aa.length;i+=2){
+            row=Integer.valueOf(aa[i]);
+            col=Integer.valueOf(aa[i+1]);
+            Reorder aaa = new Reorder(row,col);
+            lists.add(aaa);
         }
         Result res = ordersService.Addorders(id,(Integer)map.get("scheduleId"),lists);
         Map<String,Object> ma = new HashMap<>();
         StringBuilder s = new StringBuilder();
-        List<Integer> aa = (List<Integer>)res.getMes();
-        for(int t=0;t<aa.size();t++){
-            s.append(aa.get(t));
+        List<Integer> list = (List<Integer>)res.getMes();
+        for(int t=0;t<list.size();t++){
+            s.append(list.get(t));
             s.append("t");
         }
         ma.put("payState",res.getJudge());
         ma.put("id",s.toString());
-        ma.put("count",aa.size());
+        ma.put("count",list.size());
         ma.put("scheduleId",map.get("scheduleId"));
         return ma;
     }
