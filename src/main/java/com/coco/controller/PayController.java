@@ -69,6 +69,7 @@ public class PayController {
             s.append(list.get(t));
             s.append("t");
         }
+
         ma.put("payState",res.getJudge());
         ma.put("id",s.toString());
         ma.put("count",list.size());
