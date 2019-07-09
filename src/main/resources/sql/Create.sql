@@ -18,7 +18,7 @@ create table User
     primary key(user_id)
 );
 
-drop table Movie;
+/*drop table Movie;*/
 /*========================================================================*/
 /* Table:Movie 影片表                                            */
 /*========================================================================*/
@@ -57,7 +57,7 @@ create table Hall
     primary key (hall_id)
 );
 
-drop table Seat;
+/*drop table Seat;*/
 /*========================================================================*/
 /* Table: Seat座位表                                             */
 /*========================================================================*/
@@ -72,7 +72,7 @@ create table Seat
     primary key (seat_id)
 );
 
-drop table Schedule;
+/*drop table Schedule;*/
 /*========================================================================*/
 /* Table:Schedule                                                */
 /*========================================================================*/
@@ -89,7 +89,7 @@ create table Schedule
     primary key (schedule_id)
 );
 
-drop table Ticket;
+/*drop table Ticket;*/
 /*========================================================================*/
 /* Table: Ticket票表                                                */
 /*========================================================================*/
@@ -103,7 +103,7 @@ create table Ticket
     primary key (ticket_id)
 );
 
-drop table Orders;
+/*drop table Orders;*/
 /*========================================================================*/
 /* Table:  Order订单表                                              */
 /*========================================================================*/
@@ -159,11 +159,11 @@ alter table Salestatistics add constraint FK_Salestatistics_movie foreign key(mo
 
 
 
-alter table Seat drop foreign key FK_hall_seat;
+/*alter table Seat drop foreign key FK_hall_seat;
 alter table Schedule drop foreign key FK_schedule_hall;
 alter table Schedule drop foreign key FK_schedule_movie;
 alter table Orders drop foreign key FK_order_user;
 alter table Orders drop foreign key FK_order_ticket;
 alter table Ticket drop foreign key FK_ticket_seat;
 alter table Ticket drop foreign key FK_ticket_schedule;
-alter table Salestatistics drop foreign key FK_Salestatistics_movie;
+alter table Salestatistics drop foreign key FK_Salestatistics_movie;*/
