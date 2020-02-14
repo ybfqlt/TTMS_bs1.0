@@ -1,40 +1,48 @@
 package com.coco.Filter;
 
 /**
- * @Classname AjaxFilter
+ * @Classname 处理跨域的过滤器
  * @Description TODO
  * @Date 19-6-3 下午3:39
  * @Created by ltt
  */
 
-import org.springframework.web.filter.OncePerRequestFilter;
 
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
+import org.apache.commons.lang.StringUtils;
+import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+public class AjaxFilter implements Filter {
 
-public class AjaxFilter extends OncePerRequestFilter {
-
-    /**
-    * @Description 此文件令我疑惑，暂时让它存在这儿
-    * @return void
-    *
-    **/
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
-            throws ServletException, IOException {
+    public void init(FilterConfig filterConfig) throws ServletException {
 
-        response.setHeader("Access-Control-Allow-Origin", request.getHeader("Origin"));
+    }
+
+    @Override
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        HttpServletResponse response = (HttpServletResponse) servletResponse;
+        String orign = ((HttpServletRequest)servletRequest).getHeader("Origin");
+        response.setHeader("Access-Control-Allow-Origin", StringUtils.isEmpty(orign)?"*":orign);
         response.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, If-Modified-Since");
         response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
         response.setHeader("Access-Control-Max-Age", "3600");
         response.addHeader("Access-Control-Allow-Credentials", "true");
         response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json");
+
+//        if (((HttpServletRequest) servletRequest).getMethod().equals(RequestMethod.OPTIONS.name())){
+//            response.setStatus(HttpStatus.OK.value());
+//            return;
+//        }
         //此行代码确保请求可以继续执行至Controller
-        filterChain.doFilter(request, response);
+        filterChain.doFilter(servletRequest, servletResponse);
+    }
+
+    @Override
+    public void destroy() {
+
     }
 }

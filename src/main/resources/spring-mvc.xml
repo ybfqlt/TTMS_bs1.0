@@ -17,12 +17,18 @@
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
-            <bean class="com.coco.Interceptor.Crossdomain">
-            <property name="excludedUrls">
-            <list>
-                <value>/</value>
-            </list>
-            </property>
+            <bean class="com.coco.Interceptor.LoginInterceptor">
+                <property name="excludedUrls">
+                    <list>
+                        <value>/up/login</value>
+                        <value>/up/Securityqqtocode</value>
+                        <value>/up/Senameandcode</value>
+                        <value>/up/register</value>
+                        <value>/up/loginuserlog</value>
+                        <value>/in/showmovie</value>
+                        <value>/in/showonemovie</value>
+                    </list>
+                </property>
             </bean>
         </mvc:interceptor>
     </mvc:interceptors>
@@ -30,7 +36,7 @@
 
 
     <!--2、视图解析器 定义跳转的文件的前后缀，视图模式配置-->
-    <bean class ="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!--<span style="white-space:pre">    </span>前缀和后缀-->
         <!-- controller最后返回的值xx，则页面即是webapp/views/xx.html -->
         <property name="prefix" value="/WEB-INF/views/"/>

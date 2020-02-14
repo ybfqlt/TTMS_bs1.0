@@ -53,7 +53,7 @@ public class LoginController {
     }
 
     /**
-    * @Description 每一个页面需要的
+    * @Description 每一个页面得到用户信息，还是太年轻，早知道让前端直接从session取
     * @return java.util.Map<java.lang.String,java.lang.Object>
     *
     **/
