@@ -37,7 +37,7 @@ public class LoginInterceptor implements HandlerInterceptor {
         if(requestUri.startsWith(request.getContextPath())) {
             requestUri = requestUri.substring(request.getContextPath().length(), requestUri.length());
         }
-        //放行exceptUrls中配置的url
+        //放行excludeUrls中配置的url
         for (String url : excludeUrls) {
             log.debug(requestUri.startsWith(url));
             if (url.endsWith("/**")) {
@@ -48,10 +48,10 @@ public class LoginInterceptor implements HandlerInterceptor {
                 return true;
             }
         }
-
         if (request.getSession().getAttribute("login") == null || !((boolean) (request.getSession().getAttribute("login")))) {
-//            System.out.println(request.getContextPath());
-            response.sendRedirect("http://120.78.64.17:8080/HTML_TTMS/html/Login.html");
+            response.setHeader("REDIRECT","REDIRECT");//告诉ajax这是重定向
+            response.setHeader("PATH","http://120.78.64.17:8080/HTML_TTMS/html/Login.html");
+//            response.setStatus(HttpServletResponse.SC_FORBIDDEN);
             return false;
         }
         return true;
