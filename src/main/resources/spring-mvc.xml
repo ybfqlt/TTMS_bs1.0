@@ -24,9 +24,10 @@
                         <value>/up/Securityqqtocode</value>
                         <value>/up/Senameandcode</value>
                         <value>/up/register</value>
-                        <value>/up/loginuserlog</value>
                         <value>/in/showmovie</value>
                         <value>/in/showonemovie</value>
+                        <value>/up/forgotpassword</value>
+                        <value>/up/seecoderight</value>
                     </list>
                 </property>
             </bean>

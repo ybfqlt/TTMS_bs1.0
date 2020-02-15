@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
+
 public class LoginInterceptor implements HandlerInterceptor {
 
     public static Logger log = Logger.getLogger(LoginInterceptor.class.getName());
@@ -34,12 +35,15 @@ public class LoginInterceptor implements HandlerInterceptor {
         log.debug("login===============   " + request.getSession().getAttribute("login"));
 
         String requestUri = request.getRequestURI();
+//        log.debug( "requestUri========="+requestUri);
         if(requestUri.startsWith(request.getContextPath())) {
+//            log.debug("contextPath========="+request.getContextPath()+"length====="+request.getContextPath().length() + requestUri.length());
             requestUri = requestUri.substring(request.getContextPath().length(), requestUri.length());
+//            log.debug( "requestUri===#####==="+requestUri);
         }
         //放行excludeUrls中配置的url
         for (String url : excludeUrls) {
-            log.debug(requestUri.startsWith(url));
+            //url以“/**"结尾
             if (url.endsWith("/**")) {
                 if (requestUri.startsWith(url.substring(0, url.length() - 3))) {
                     return true;
