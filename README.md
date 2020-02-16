@@ -15,8 +15,8 @@
 ## 职责
 &#160;&#160;此项目为团队合作项目，我作为组长,负责所有的后端开发， 以及项目部署,其他组员进行前端开发，后期，我对前端有过3%的修改和添加。
 
-## 系统框架
-[coco影院票务管理系统](https://github.com/ybfqlt/TTMS_bs1.0/blob/master/docs/%E5%9B%BE%E7%89%871.png)
+## 系统框架  
+![coco影院票务管理系统](https://github.com/ybfqlt/TTMS_bs1.0/blob/master/docs/%E5%9B%BE%E7%89%871.png)
 
 ## 遇到的问题
 1. 前后端分离遇到跨域问题，前端的请求发送不到后端。　
